@@ -1,0 +1,96 @@
+# Temporary artwork: replace the borrowed 9mmSMG RSI when Uzi sprites are available.
+- type: entity
+  name: Uzi
+  parent: N14WeaponSMGBase
+  id: N14WeaponSMGUzi
+  description: A compact 9mm submachine gun with a folding stock and a detachable magazine.
+  components:
+  - type: FirearmAttachmentHost
+    muzzleSlot:
+      name: Suppressor
+      priority: 3
+      insertOnInteract: true
+      ejectOnInteract: false
+      ejectOnUse: false
+      disableEject: true
+      whitelist:
+        components:
+        - SuppressorAttachment
+  - type: Clothing
+    sprite: _Nuclear14/Objects/Weapons/Guns/SMGs/9mmSMG.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: Item # Forge-Change
+    size: Large
+    shape:
+    - 0,0,2,1
+    - 0,1,0,1
+  - type: Sprite
+    sprite: _Nuclear14/Objects/Weapons/Guns/SMGs/9mmSMG.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    fireRate: 8.5
+    soundGunshot:
+      collection: N14Pistol9mmGunshot
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    minAngle: 8
+    maxAngle: 24
+    angleIncrease: 4
+    angleDecay: 16
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Nuclear14/Weapons/Effects/Reload/SMGs/smg_cock.ogg
+  - type: GunWieldBonus
+    minAngle: -7
+    maxAngle: -15
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: N14MagazineSMG9mm
+        insertSound: /Audio/_Nuclear14/Weapons/Effects/Reload/SMGs/smg_magin.ogg
+        ejectSound: /Audio/_Nuclear14/Weapons/Effects/Reload/SMGs/smg_magout.ogg
+        whitelist:
+          tags:
+            - N14MagazineSMG9mm
+      gun_chamber:
+        name: Chamber
+        startingItem: N14CartridgePistol9
+        priority: 1
+        whitelist:
+          tags:
+            - N14CartridgePistol9
+  - type: StaticPrice
+    price: 50
+
+# Temporary artwork inherited from the Uzi; replace with dedicated MP5SD sprites.
+- type: entity
+  parent: N14WeaponSMGUzi
+  id: N14WeaponSMGMP5SD
+  name: MP5SD
+  description: A 9mm submachine gun with an integral suppressor and a smooth automatic action.
+  components:
+  - type: FirearmAttachmentHost
+    showMuzzleVisual: false
+    muzzleSlot:
+      name: Integral suppressor
+      startingItem: N14FirearmSuppressor
+      locked: true
+      insertOnInteract: false
+      ejectOnInteract: false
+      ejectOnUse: false
+      disableEject: true
+  - type: Gun
+    fireRate: 9
+    soundGunshot:
+      collection: N14PistolSpyGunshot
+  - type: StaticPrice
+    price: 175

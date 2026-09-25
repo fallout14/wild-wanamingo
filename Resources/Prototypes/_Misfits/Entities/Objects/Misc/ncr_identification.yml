@@ -1,0 +1,221 @@
+#Misfits Change /Add/: Rank-specific NCR dogtags for active Misfits NCR jobs.
+
+- type: entity
+  parent: N14IDNCRDogtag
+  id: N14IDNCRDogtagSoldier
+  name: private's dogtags
+  description: An ID dogtag worn by NCR privates.
+  suffix: Soldier
+  components:
+  - type: PresetIdCard
+    job: NCRSoldier
+
+- type: entity
+  parent: N14IDNCRDogtag
+  id: N14IDNCRDogtagPrivateFirstClass
+  name: private first class dogtags
+  description: An ID dogtag worn by NCR privates first class.
+  suffix: Private First Class
+  components:
+  - type: PresetIdCard
+    job: NCRPrivateFirstClass
+
+- type: entity
+  parent: N14IDNCRDogtagNCO
+  id: N14IDNCRDogtagStaffSergeant
+  name: staff sergeant's dogtags
+  description: An ID dogtag worn by NCR staff sergeants.
+  suffix: Staff Sergeant
+  components:
+  - type: PresetIdCard
+    job: NCRStaffSergeant
+
+- type: entity
+  parent: N14IDNCRDogtagNCO
+  id: N14IDNCRDogtagFirstSergeant
+  name: sergeant first class's dogtags
+  description: An ID dogtag worn by NCR sergeants first class.
+  suffix: Sergeant First Class
+  components:
+  - type: PresetIdCard
+    job: NCRFirstSergeant
+
+- type: entity
+  parent: N14IDNCRDogtagNCO
+  id: N14IDNCRDogtagMPInvestigator
+  name: MP investigator's dogtags
+  description: An ID dogtag worn by NCR military police investigators.
+  suffix: MP Investigator
+  components:
+  - type: PresetIdCard
+    job: NCRMPinvestigator
+
+- type: entity
+  parent: N14IDNCRDogtagDoctor
+  id: N14IDNCRDogtagDoctorSenior
+  name: senior doctor's dogtags
+  description: An ID dogtag worn by NCR doctors.
+  suffix: Doctor
+  components:
+  - type: PresetIdCard
+    job: NCRDoctor
+
+- type: entity
+  parent: N14IDNCRDogtagOfficer
+  id: N14IDNCRDogtagCaptain
+  name: captain's dogtags
+  description: An ID dogtag worn by NCR captains.
+  suffix: Captain
+  components:
+  - type: PresetIdCard
+    job: NCRCommander
+
+- type: entity
+  parent: N14IDNCRDogtagCaptain
+  id: N14IDNCRDogtagMajor
+  name: major's dogtags
+  description: An ID dogtag worn by NCR majors.
+  suffix: Major
+  components:
+  - type: PresetIdCard
+    job: NCRMajor
+
+- type: entity
+  parent: N14IDNCRDogtagCaptain
+  id: N14IDNCRDogtagProvost
+  name: Provost Badge
+  description: An ID dogtag worn by Provosts
+  suffix: Investigator
+  components:
+  - type: PresetIdCard
+    job: NCRProvost
+
+- type: entity
+  parent: N14IDNCRDogtagNCO
+  id: N14IDNCRDogtagMPRecruit
+  name: military police recruit's dogtags
+  description: An ID dogtag worn by NCR military police specialists.
+  suffix: Military Police Specialist
+  components:
+  - type: PresetIdCard
+    job: NCRMilitaryPoliceRecruit
+
+- type: entity
+  parent: N14IDNCRDogtagNCO
+  id: N14IDNCRDogtagMPSergeant
+  name: military police staff sergeant's dogtags
+  description: An ID dogtag worn by NCR military police staff sergeants.
+  suffix: Military Police Staff Sergeant
+  components:
+  - type: PresetIdCard
+    job: NCRMilitaryPoliceSergeant
+
+- type: entity
+  parent: N14IDNCRDogtagNCO
+  id: N14IDNCRDogtagMPCaptain
+  name: military police first lieutenant's dogtags
+  description: An ID dogtag worn by NCR military police first lieutenants.
+  suffix: Military Police First Lieutenant
+  components:
+  - type: PresetIdCard
+    job: NCRMilitaryPoliceCaptain
+
+- type: entity
+  parent: N14IDNCRDogtagNCO
+  id: N14IDNCRDogtagNCRRO
+  name: Requisition officer's dogtags
+  description: An ID dogtag worn by NCR Requisition Officers.
+  suffix: Requisition Officer
+  components:
+  - type: PresetIdCard
+    job: NCRRO
+
+- type: entity
+  parent: N14IDNCRDogtagOfficer
+  id: N14IDNCRDogtagltcol
+  name: Lieutenant Colonel's dogtags
+  description: An ID dogtag worn by NCR Lieutenant Colonels.
+  suffix: Lieutenant Colonel
+  components:
+  - type: PresetIdCard
+    job: NCRLTCol
+
+#Misfits Add - Prisoner ID dogtag: NCR prisoners had no ID slot item, so they never got a
+#station general record and were missing from the crew manifest. This fixes that.
+- type: entity
+  parent: N14IDNCRDogtag
+  id: N14IDNCRDogtagPrisoner
+  name: prisoner's dogtags
+  description: An ID dogtag worn by NCR prisoners.
+  suffix: Prisoner
+  components:
+  - type: PresetIdCard
+    job: NCRPrisoner
+
+- type: entity
+  parent: N14IDPassportPhoto
+  id: N14IDNCRPassportCitizen
+  name: NCR Civilian Passport
+  description: A common Passport for NCR Civilians.
+  suffix: Citizen
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Objects/Misc/identification.rsi
+    state: passport
+  - type: PresetIdCard
+    job: NCRCitizen
+
+- type: entity
+  parent: N14IDPassportPhoto
+  id: N14IDNCRPassportTrader
+  name: NCR Trader Passport
+  description: A common Passport for NCR Civilians, this one is stamped by a trade union and has attached Caravaneer papers.
+  suffix: Trader
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Objects/Misc/identification.rsi
+    state: passport
+  - type: PresetIdCard
+    job: NCRTrader
+
+#Misfits Add - NCR Office of Science and Industry (OSI) rank dogtags. Every OSI billet
+#carries an id-slot dogtag so members appear on the crew manifest like other NCR jobs.
+- type: entity
+  parent: N14IDNCRDogtagOfficer
+  id: N14IDNCRDogtagOSIChiefScientist
+  name: OSI chief scientist's dogtags
+  description: An ID dogtag worn by the NCR Office of Science and Industry's chief scientist.
+  suffix: Chief Scientist
+  components:
+  - type: PresetIdCard
+    job: OSIChiefScientist
+
+- type: entity
+  parent: N14IDNCRDogtag
+  id: N14IDNCRDogtagOSIScientist
+  name: OSI scientist's dogtags
+  description: An ID dogtag worn by a scientist of the NCR Office of Science and Industry.
+  suffix: Scientist
+  components:
+  - type: PresetIdCard
+    job: OSIScientist
+
+- type: entity
+  parent: N14IDNCRDogtag
+  id: N14IDNCRDogtagOSIAssistant
+  name: OSI assistant's dogtags
+  description: An ID dogtag worn by an assistant of the NCR Office of Science and Industry.
+  suffix: Assistant
+  components:
+  - type: PresetIdCard
+    job: OSIAssistant
+
+- type: entity
+  parent: N14IDNCRDogtagOfficer
+  id: N14IDNCRDogtagOSIAgent
+  name: OSI agent's dogtags
+  description: An ID dogtag worn by a field agent of the NCR Office of Science and Industry.
+  suffix: Agent
+  components:
+  - type: PresetIdCard
+    job: OSIAgent

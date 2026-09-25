@@ -1,0 +1,366 @@
+# Rifle ammunition variants. Compatibility is determined by cartridge tags, not display names.
+# Legacy .308 and 5.56 prototypes remain valid for existing maps and loadouts.
+
+- type: entity
+  id: N14Bullet762x51FMJ
+  parent: N14Bullet308
+  name: bullet (7.62x51mm FMJ)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    armorPenetration: 0
+    damage:
+      types:
+        Piercing: 38
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 11
+    maxFalloffTiles: 22
+    minDamageMultiplier: 0.65
+
+- type: entity
+  id: N14Cartridge762x51FMJ
+  parent: N14Cartridge308Rifle
+  name: cartridge (7.62x51mm FMJ)
+  description: General-purpose ammunition. Compatible with .308 firearms and magazines.
+  components:
+  - type: CartridgeAmmo
+    proto: N14Bullet762x51FMJ
+
+- type: entity
+  id: N14MagazineBox762x51FMJ
+  parent: MagazineBox308
+  name: ammunition box (7.62x51mm FMJ)
+  description: General-purpose ammunition. Compatible with .308 firearms and magazines.
+  components:
+  - type: BallisticAmmoProvider
+    proto: N14Cartridge762x51FMJ
+
+- type: entity
+  id: N14Bullet762x51AP
+  parent: N14Bullet308
+  name: bullet (7.62x51mm AP)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    armorPenetration: 0.35
+    damage:
+      types:
+        Piercing: 32
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 11
+    maxFalloffTiles: 22
+    minDamageMultiplier: 0.65
+
+- type: entity
+  id: N14Cartridge762x51AP
+  parent: N14Cartridge308Rifle
+  name: cartridge (7.62x51mm AP)
+  description: Armor-piercing ammunition with reduced impact damage. Compatible with .308 firearms and magazines.
+  components:
+  - type: CartridgeAmmo
+    proto: N14Bullet762x51AP
+
+- type: entity
+  id: N14MagazineBox762x51AP
+  parent: MagazineBox308
+  name: ammunition box (7.62x51mm AP)
+  description: Armor-piercing ammunition with reduced impact damage. Compatible with .308 firearms and magazines.
+  components:
+  - type: BallisticAmmoProvider
+    proto: N14Cartridge762x51AP
+
+- type: entity
+  id: N14Bullet308JHP
+  parent: N14Bullet308
+  name: bullet (.308 JHP)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    armorPenetration: -0.3
+    damage:
+      types:
+        Piercing: 46
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 9
+    maxFalloffTiles: 18
+    minDamageMultiplier: 0.5
+
+- type: entity
+  id: N14Cartridge308JHP
+  parent: N14Cartridge308Rifle
+  name: cartridge (.308 JHP)
+  description: Hollow-point ammunition with higher unarmored damage and reduced performance against armor. Compatible with 7.62x51mm firearms and magazines.
+  components:
+  - type: CartridgeAmmo
+    proto: N14Bullet308JHP
+
+- type: entity
+  id: N14MagazineBox308JHP
+  parent: MagazineBox308
+  name: ammunition box (.308 JHP)
+  description: Hollow-point ammunition with higher unarmored damage and reduced performance against armor. Compatible with 7.62x51mm firearms and magazines.
+  components:
+  - type: BallisticAmmoProvider
+    proto: N14Cartridge308JHP
+
+- type: entity
+  id: N14Bullet308Match
+  parent: N14Bullet308
+  name: bullet (.308 Match)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    armorPenetration: 0
+    damage:
+      types:
+        Piercing: 38
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 15
+    maxFalloffTiles: 26
+    minDamageMultiplier: 0.8
+
+- type: entity
+  id: N14Cartridge308Match
+  parent: N14Cartridge308Rifle
+  name: cartridge (.308 Match)
+  description: Match ammunition with improved damage retention at range. Compatible with 7.62x51mm firearms and magazines.
+  components:
+  - type: CartridgeAmmo
+    proto: N14Bullet308Match
+
+- type: entity
+  id: N14MagazineBox308Match
+  parent: MagazineBox308
+  name: ammunition box (.308 Match)
+  description: Match ammunition with improved damage retention at range. Compatible with 7.62x51mm firearms and magazines.
+  components:
+  - type: BallisticAmmoProvider
+    proto: N14Cartridge308Match
+
+- type: entity
+  id: N14Bullet556FMJ
+  parent: N14Bullet556
+  name: bullet (5.56mm FMJ)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    armorPenetration: 0
+    damage:
+      types:
+        Piercing: 20
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 9
+    maxFalloffTiles: 18
+    minDamageMultiplier: 0.57
+
+- type: entity
+  id: N14Cartridge556FMJ
+  parent: N14Cartridge556Rifle
+  name: cartridge (5.56mm FMJ)
+  description: General-purpose ammunition. Compatible with .223 firearms and magazines.
+  components:
+  - type: CartridgeAmmo
+    proto: N14Bullet556FMJ
+
+- type: entity
+  id: N14MagazineBox556FMJ
+  parent: MagazineBox556
+  name: ammunition box (5.56mm FMJ)
+  description: General-purpose ammunition. Compatible with .223 firearms and magazines.
+  components:
+  - type: BallisticAmmoProvider
+    proto: N14Cartridge556FMJ
+
+- type: entity
+  id: N14Bullet556AP
+  parent: N14Bullet556
+  name: bullet (5.56mm AP)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    armorPenetration: 0.35
+    damage:
+      types:
+        Piercing: 17
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 9
+    maxFalloffTiles: 18
+    minDamageMultiplier: 0.57
+
+- type: entity
+  id: N14Cartridge556AP
+  parent: N14Cartridge556Rifle
+  name: cartridge (5.56mm AP)
+  description: Armor-piercing ammunition with reduced impact damage. Compatible with .223 firearms and magazines.
+  components:
+  - type: CartridgeAmmo
+    proto: N14Bullet556AP
+
+- type: entity
+  id: N14MagazineBox556AP
+  parent: MagazineBox556
+  name: ammunition box (5.56mm AP)
+  description: Armor-piercing ammunition with reduced impact damage. Compatible with .223 firearms and magazines.
+  components:
+  - type: BallisticAmmoProvider
+    proto: N14Cartridge556AP
+
+- type: entity
+  id: N14Bullet223JHP
+  parent: N14Bullet556
+  name: bullet (.223 JHP)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    armorPenetration: -0.3
+    damage:
+      types:
+        Piercing: 24
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 7
+    maxFalloffTiles: 15
+    minDamageMultiplier: 0.45
+
+- type: entity
+  id: N14Cartridge223JHP
+  parent: N14Cartridge556Rifle
+  name: cartridge (.223 JHP)
+  description: Hollow-point ammunition with higher unarmored damage and reduced performance against armor. Compatible with 5.56mm firearms and magazines.
+  components:
+  - type: CartridgeAmmo
+    proto: N14Bullet223JHP
+
+- type: entity
+  id: N14MagazineBox223JHP
+  parent: MagazineBox556
+  name: ammunition box (.223 JHP)
+  description: Hollow-point ammunition with higher unarmored damage and reduced performance against armor. Compatible with 5.56mm firearms and magazines.
+  components:
+  - type: BallisticAmmoProvider
+    proto: N14Cartridge223JHP
+
+- type: entity
+  id: N14Bullet223Match
+  parent: N14Bullet556
+  name: bullet (.223 Match)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    armorPenetration: 0
+    damage:
+      types:
+        Piercing: 20
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 12
+    maxFalloffTiles: 24
+    minDamageMultiplier: 0.75
+
+- type: entity
+  id: N14Cartridge223Match
+  parent: N14Cartridge556Rifle
+  name: cartridge (.223 Match)
+  description: Match ammunition with improved damage retention at range. Compatible with 5.56mm firearms and magazines.
+  components:
+  - type: CartridgeAmmo
+    proto: N14Bullet223Match
+
+- type: entity
+  id: N14MagazineBox223Match
+  parent: MagazineBox556
+  name: ammunition box (.223 Match)
+  description: Match ammunition with improved damage retention at range. Compatible with 5.56mm firearms and magazines.
+  components:
+  - type: BallisticAmmoProvider
+    proto: N14Cartridge223Match
+
+- type: entity
+  id: N14Bullet303
+  parent: N14Bullet308
+  name: bullet (.303)
+  categories: [HideSpawnMenu]
+  components:
+  - type: Projectile
+    armorPenetration: 0
+    damage:
+      types:
+        Piercing: 38
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 11
+    maxFalloffTiles: 22
+    minDamageMultiplier: 0.65
+
+- type: entity
+  id: N14Cartridge303
+  parent: N14Cartridge308Rifle
+  name: cartridge (.303)
+  description: Rifle ammunition for the Lee-Enfield, Ross rifle, and Bren. Incompatible with .308 and 7.62x51mm firearms.
+  components:
+  - type: CartridgeAmmo
+    proto: N14Bullet303
+  - type: Tag
+    tags:
+    - Cartridge
+    - N14Cartridge303Rifle
+
+- type: entity
+  id: N14MagazineBox303
+  parent: MagazineBox308
+  name: ammunition box (.303)
+  description: Rifle ammunition for the Lee-Enfield, Ross rifle, and Bren. Incompatible with .308 and 7.62x51mm firearms.
+  components:
+  - type: BallisticAmmoProvider
+    proto: N14Cartridge303
+    whitelist:
+      tags:
+      - N14Cartridge303Rifle
+
+- type: Tag
+  id: N14Cartridge303Rifle
+
+- type: Tag
+  id: N14Magazine303Bren
+
+- type: entity
+  id: N14Magazine303Bren
+  parent: Magazine308RifleLong
+  name: Bren magazine (.303)
+  description: A .303 magazine for the Bren machine gun.
+  components:
+  - type: Tag
+    tags:
+    - N14Magazine303Bren
+  - type: BallisticAmmoProvider
+    proto: N14Cartridge303
+    whitelist:
+      tags:
+      - N14Cartridge303Rifle
+
+- type: entity
+  id: N14SpeedLoader303
+  parent: SpeedLoader308Tube
+  name: speed loader (.303)
+  components:
+  - type: BallisticAmmoProvider
+    proto: N14Cartridge303
+    whitelist:
+      tags:
+      - N14Cartridge303Rifle
+
+
+- type: Tag
+  id: N14Magazine303EM2
+
+- type: entity
+  id: N14Magazine303EM2
+  parent: LongMagazine556Rifle
+  name: EM2 magazine (.303 British)
+  description: A 35-round .303 British magazine for the EM2 rifle.
+  components:
+  - type: Tag
+    tags:
+    - N14Magazine303EM2
+  - type: BallisticAmmoProvider
+    proto: N14Cartridge303
+    whitelist:
+      tags:
+      - N14Cartridge303Rifle

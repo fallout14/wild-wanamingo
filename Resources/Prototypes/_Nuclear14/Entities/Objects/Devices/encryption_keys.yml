@@ -1,0 +1,231 @@
+# #Misfits Change - Uncommented to fix missing prototype reference in Wendover map
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyBrotherhoodMidwest
+  name: BoS Encryption Key
+  description: An encryption key used by the Brotherhood of Steel.
+  components:
+  - type: EncryptionKey
+    channels:
+    - BrotherhoodOfSteel
+    defaultChannel: BrotherhoodOfSteel
+  - type: Sprite
+    layers:
+    - state: crypt_silver
+    - state: common_label
+
+# - type: entity
+#   parent: EncryptionKey
+#   id: EncryptionKeyBrotherhoodWashington
+#   name: Washington BoS Encryption Key
+#   description: An encryption key used by the Washington Brotherhood of Steel.
+#   components:
+#   - type: EncryptionKey
+#     channels:
+#     - BrotherhoodWashington
+#     defaultChannel: BrotherhoodWashington
+#   - type: Sprite
+#     layers:
+#     - state: crypt_silver
+#     - state: common_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyBrotherhoodOfSteel
+  name: Brotherhood encryption key
+  description: An encryption key used by the Brotherhood of Steel.
+  components:
+  - type: EncryptionKey
+    channels:
+    - BrotherhoodOfSteel
+    defaultChannel: BrotherhoodOfSteel
+  - type: Sprite
+    layers:
+    - state: crypt_silver
+    - state: common_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyEnclave
+  name: Enclave encryption key
+  description: An encryption key used by the Enclave.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: EncryptionKey
+    channels:
+    - Enclave
+    defaultChannel: Enclave
+  - type: Sprite
+    layers:
+    - state: crypt_red
+    - state: synd_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyNCR
+  name: NCR encryption key
+  description: An encryption key used by the NCR.
+  components:
+  - type: EncryptionKey
+    channels:
+    - NCR
+    defaultChannel: NCR
+  - type: Sprite
+    layers:
+    - state: crypt_gray
+    - state: sec_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyOSI
+  name: OSI encryption key
+  description: An encryption key for NCR Office of Science and Industry personnel.
+  components:
+  - type: EncryptionKey
+    channels:
+    - OSI
+    defaultChannel: OSI
+  - type: Sprite
+    layers:
+    - state: crypt_gray
+    - state: rd_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyNCRRangers
+  name: NCR Ranger encryption key
+  description: An encryption key for NCR Ranger field traffic.
+  components:
+  - type: EncryptionKey
+    channels:
+    - NCRRangers
+    defaultChannel: NCRRangers
+  - type: Sprite
+    layers:
+    - state: crypt_gray
+    - state: sec_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyVault
+  name: Vault encryption key
+  description: An encryption key used by the local Vault.
+  components:
+  - type: EncryptionKey
+    channels:
+    - VaultCommon
+    defaultChannel: VaultCommon
+  - type: Sprite
+    layers:
+    - state: crypt_gray
+    - state: com_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyPBS
+  name: PBS encryption key
+  description: An encryption key used by the local broadcast messages.
+  components:
+  - type: EncryptionKey
+    channels:
+    - PBS
+    defaultChannel: PBS
+  - type: Sprite
+    layers:
+    - state: crypt_gray
+    - state: com_label
+
+# #Misfits Change - Legion encryption key
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyLegion
+  name: Legion encryption key
+  description: An encryption key used by Caesar's Legion.
+  components:
+  - type: EncryptionKey
+    channels:
+    - Legion
+    defaultChannel: Legion
+  - type: Sprite
+    layers:
+    - state: crypt_red
+    - state: synd_label
+
+# #Misfits Change - Global wasteland radio key, included in all headsets
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyEighties
+  name: Eighties encryption key
+  description: An encryption key used by the Eighties raiders.
+  components:
+  - type: EncryptionKey
+    channels:
+    - Eighties
+    defaultChannel: Eighties
+  - type: Sprite
+    layers:
+    - state: crypt_gray
+    - state: common_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyWastelandGlobal
+  name: wasteland radio encryption key
+  description: A common encryption key used across the wasteland.
+  components:
+  - type: EncryptionKey
+    channels:
+    - WastelandGlobal
+    defaultChannel: WastelandGlobal
+  - type: Sprite
+    layers:
+    - state: crypt_gray
+    - state: common_label
+
+# #Misfits Add — Followers of the Apocalypse private encryption key
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyFollowers
+  name: Followers encryption key
+  description: An encryption key used by the Followers of the Apocalypse.
+  components:
+  - type: EncryptionKey
+    channels:
+    - FollowersOfApocalypse
+    defaultChannel: FollowersOfApocalypse
+  - type: Sprite
+    layers:
+    - state: crypt_gray
+    - state: med_label
+
+# #Misfits Add — Bazaar Townsfolk private encryption key
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyTown
+  name: Town encryption key
+  description: An encryption key used by the Bazaar Townsfolk.
+  components:
+  - type: EncryptionKey
+    channels:
+    - Townsfolk
+    defaultChannel: Townsfolk
+  - type: Sprite
+    layers:
+    - state: crypt_gray
+    - state: com_label
+
+# #Misfits Add - Z.A.X binary encryption key for future Z.A.X equipment and comms devices.
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyZAX
+  name: Z.A.X binary encryption key
+  description: An encryption key used by Z.A.X-linked silicon units.
+  components:
+  - type: EncryptionKey
+    channels:
+    - ZAXBinary
+    defaultChannel: ZAXBinary
+  - type: Sprite
+    layers:
+    - state: crypt_silver
+    - state: rd_label

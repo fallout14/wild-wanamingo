@@ -1,0 +1,218 @@
+- type: latheRecipe
+  id: N14Magazine303Bren
+  result: N14Magazine303Bren
+  category: N14AmmoMagazine
+  completetime: 5
+  materials:
+    Lead: 120
+    Steel: 260
+    N14Gunpowder: 120
+
+- type: latheRecipe
+  id: N14SpeedLoader303
+  result: N14SpeedLoader303
+  category: N14AmmoMagazine
+  completetime: 5
+  materials:
+    Lead: 24
+    Steel: 132
+    N14Gunpowder: 24
+
+- type: latheRecipe
+  id: N14Cartridge762x51FMJ
+  result: N14Cartridge762x51FMJ
+  category: N14Ammo
+  completetime: 2
+  materials:
+    Lead: 3
+    Steel: 4
+    N14Gunpowder: 3
+
+- type: latheRecipe
+  id: N14MagazineBox762x51FMJ
+  result: N14MagazineBox762x51FMJ
+  category: N14AmmoBox
+  completetime: 5
+  materials:
+    Lead: 96
+    Steel: 128
+    N14Gunpowder: 96
+    Cardboard: 100
+
+- type: latheRecipe
+  id: N14Cartridge762x51AP
+  result: N14Cartridge762x51AP
+  category: N14Ammo
+  completetime: 2
+  materials:
+    Lead: 3
+    Steel: 5
+    N14Gunpowder: 3
+
+- type: latheRecipe
+  id: N14MagazineBox762x51AP
+  result: N14MagazineBox762x51AP
+  category: N14AmmoBox
+  completetime: 5
+  materials:
+    Lead: 96
+    Steel: 160
+    N14Gunpowder: 96
+    Cardboard: 100
+
+- type: latheRecipe
+  id: N14Cartridge308JHP
+  result: N14Cartridge308JHP
+  category: N14Ammo
+  completetime: 2
+  materials:
+    Lead: 3
+    Steel: 4
+    N14Gunpowder: 3
+
+- type: latheRecipe
+  id: N14MagazineBox308JHP
+  result: N14MagazineBox308JHP
+  category: N14AmmoBox
+  completetime: 5
+  materials:
+    Lead: 96
+    Steel: 128
+    N14Gunpowder: 96
+    Cardboard: 100
+
+- type: latheRecipe
+  id: N14Cartridge308Match
+  result: N14Cartridge308Match
+  category: N14Ammo
+  completetime: 2
+  materials:
+    Lead: 3
+    Steel: 5
+    N14Gunpowder: 3
+
+- type: latheRecipe
+  id: N14MagazineBox308Match
+  result: N14MagazineBox308Match
+  category: N14AmmoBox
+  completetime: 5
+  materials:
+    Lead: 96
+    Steel: 160
+    N14Gunpowder: 96
+    Cardboard: 100
+
+- type: latheRecipe
+  id: N14Cartridge556FMJ
+  result: N14Cartridge556FMJ
+  category: N14Ammo
+  completetime: 2
+  materials:
+    Lead: 2
+    Steel: 3
+    N14Gunpowder: 2
+
+- type: latheRecipe
+  id: N14MagazineBox556FMJ
+  result: N14MagazineBox556FMJ
+  category: N14AmmoBox
+  completetime: 5
+  materials:
+    Lead: 150
+    Steel: 225
+    N14Gunpowder: 150
+    Cardboard: 100
+
+- type: latheRecipe
+  id: N14Cartridge556AP
+  result: N14Cartridge556AP
+  category: N14Ammo
+  completetime: 2
+  materials:
+    Lead: 2
+    Steel: 4
+    N14Gunpowder: 2
+
+- type: latheRecipe
+  id: N14MagazineBox556AP
+  result: N14MagazineBox556AP
+  category: N14AmmoBox
+  completetime: 5
+  materials:
+    Lead: 150
+    Steel: 300
+    N14Gunpowder: 150
+    Cardboard: 100
+
+- type: latheRecipe
+  id: N14Cartridge223JHP
+  result: N14Cartridge223JHP
+  category: N14Ammo
+  completetime: 2
+  materials:
+    Lead: 2
+    Steel: 3
+    N14Gunpowder: 2
+
+- type: latheRecipe
+  id: N14MagazineBox223JHP
+  result: N14MagazineBox223JHP
+  category: N14AmmoBox
+  completetime: 5
+  materials:
+    Lead: 150
+    Steel: 225
+    N14Gunpowder: 150
+    Cardboard: 100
+
+- type: latheRecipe
+  id: N14Cartridge223Match
+  result: N14Cartridge223Match
+  category: N14Ammo
+  completetime: 2
+  materials:
+    Lead: 2
+    Steel: 4
+    N14Gunpowder: 2
+
+- type: latheRecipe
+  id: N14MagazineBox223Match
+  result: N14MagazineBox223Match
+  category: N14AmmoBox
+  completetime: 5
+  materials:
+    Lead: 150
+    Steel: 300
+    N14Gunpowder: 150
+    Cardboard: 100
+
+- type: latheRecipe
+  id: N14Cartridge303
+  result: N14Cartridge303
+  category: N14Ammo
+  completetime: 2
+  materials:
+    Lead: 3
+    Steel: 4
+    N14Gunpowder: 3
+
+- type: latheRecipe
+  id: N14MagazineBox303
+  result: N14MagazineBox303
+  category: N14AmmoBox
+  completetime: 5
+  materials:
+    Lead: 96
+    Steel: 128
+    N14Gunpowder: 96
+    Cardboard: 100
+
+- type: latheRecipe
+  id: N14Magazine303EM2
+  result: N14Magazine303EM2
+  category: N14Ammo
+  completetime: 5
+  materials:
+    Lead: 105
+    Steel: 240
+    N14Gunpowder: 105

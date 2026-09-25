@@ -1,0 +1,50 @@
+- type: entity
+  id: N14MagazineRifle9mm
+  parent: N14MagazineSMG9mm
+  name: rifle magazine (9mm)
+  components:
+  - type: Tag
+    tags:
+    - N14MagazineRifle9mm
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - N14CartridgePistol9
+    proto: N14CartridgePistol9
+    capacity: 24
+
+- type: entity
+  id: N14MagazineCarbine5mm
+  parent: LongMagazine556Rifle
+  name: carbine magazine (5mm)
+  components:
+  - type: Tag
+    tags:
+    - N14MagazineCarbine5mm
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - N14CartridgePistol5
+    proto: N14CartridgePistol5
+    capacity: 35
+
+- type: entity
+  id: N14MagazineShotgun12Blowback
+  parent: N14MagazineShotgun12
+  name: blowback drum (12 gauge shells)
+  components:
+  - type: Tag
+    tags:
+    - N14MagazineShotgun12
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - N14ShellShotgun12
+    proto: N14ShellShotgun12
+    capacity: 12
+
+- type: Tag
+  id: N14MagazineRifle9mm
+
+- type: Tag
+  id: N14MagazineCarbine5mm

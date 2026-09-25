@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Firearm attachment sprites created for the Misfits project; carbine_scope by Superspheres",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "suppressor-horizontal"
+    },
+    {
+      "name": "suppressor-diagonal"
+    },
+    {
+      "name": "bayonet-horizontal"
+    },
+    {
+      "name": "bayonet-diagonal"
+    },
+    {
+      "name": "carbine_scope"
+    },
+    {
+      "name": "rangemaster_scope"
+    },
+    {
+      "name": "battlerifle_scope"
+    },
+    {
+      "name": "svt_scope"
+    },
+    {
+      "name": "revolver_scope"
+    },
+    {
+      "name": "leveraction_scope"
+    },
+    {
+      "name": "suppressor-horizontal2"
+    }
+  ]
+}

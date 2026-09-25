@@ -1,0 +1,34 @@
+- type: entity
+  parent: BaseItem
+  id: N14FirearmSuppressor
+  name: firearm suppressor
+  description: A detachable muzzle suppressor. It dampens a compatible firearm's report and conceals its muzzle flash.
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: _Nuclear14/Objects/Misc/crafting_junk.rsi
+    state: recoilcomp
+  - type: SuppressorAttachment
+  - type: Tag
+    tags:
+    - N14FirearmMuzzleAttachment
+  - type: StaticPrice
+    price: 125
+
+- type: entity
+  parent: N14CombatKnife
+  id: N14FirearmBayonet
+  name: rifle bayonet
+  description: A combat knife fitted with a mounting ring for use as a rifle bayonet.
+  components:
+  - type: BayonetAttachment
+    damage:
+      types:
+        Piercing: 12
+        Slash: 6
+  - type: Tag
+    tags:
+    - CombatKnife
+    - Knife
+    - N14FirearmMuzzleAttachment

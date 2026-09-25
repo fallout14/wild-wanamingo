@@ -1,0 +1,65 @@
+﻿
+# blueprints
+
+- type: entity
+  id: MisfitsCrateAluminiumBlueprintsTribe
+  suffix: Filled, Blueprints, Tribe
+  parent: N14CrateAluminium
+  components:
+  - type: StorageFill
+    contents:
+    - id: N14BlueprintTribeAmmoT4
+    - id: N14BlueprintTribeAmmoT3
+    - id: N14BlueprintTribeAmmoT2
+    - id: N14BlueprintTribeAmmoT1
+    - id: N14BlueprintTribeWeaponsT4
+    - id: N14BlueprintTribeWeaponsT3
+    - id: N14BlueprintTribeWeaponsT2
+    - id: N14BlueprintTribeWeaponsT1
+    - id: N14BlueprintTribeArmorT4
+    - id: N14BlueprintTribeArmorT3
+    - id: N14BlueprintTribeArmorT2
+    - id: N14BlueprintTribeArmorT1
+    - id: TribalLegendaryArmorChestBlueprint
+    - id: TribalLegendaryArmorHeadBlueprint
+
+- type: entity
+  id: MisfitsCrateAluminiumBlueprints80s
+  suffix: Filled, Blueprints, 80s
+  parent: N14CrateAluminium
+  components:
+  - type: StorageFill
+    contents:
+    - id: MisfitsBlueprintMotorbikeAssemblyManual
+    - id: MisfitsBlueprintEightiesOrdnance
+    - id: N14BlueprintEightiesAmmoT4
+    - id: N14BlueprintEightiesAmmoT3
+    - id: N14BlueprintEightiesAmmoT2
+    - id: N14BlueprintEightiesAmmoT1
+    - id: N14BlueprintEightiesWeaponsT5
+    - id: N14BlueprintEightiesWeaponsT4
+    - id: N14BlueprintEightiesWeaponsT3
+    - id: N14BlueprintEightiesWeaponsT2
+    - id: N14BlueprintEightiesWeaponsT1
+    - id: N14BlueprintEightiesArmorT4
+    - id: N14BlueprintEightiesArmorT3
+    - id: N14BlueprintEightiesArmorT2
+    - id: N14BlueprintEightiesArmorT1
+
+
+- type: entity
+  id: MisfitsCrateAluminiumBlueprintsEnclave
+  suffix: Filled, Blueprints, Enclave
+  parent: N14CrateAluminium
+  components:
+  - type: StorageFill
+    contents:
+    - id: BoxFolderGrey
+    # #Misfits Add - Enclave faction blueprints. This crate already exists on the
+    # Enclave map and Wendover but held only the folder above, so none of the
+    # Enclave blueprints had an obtain path. The gauss ordnance plans below are
+    # pre-existing and were likewise unobtainable outside admin spawn.
+    - id: N14BlueprintEnclaveArmor
+    - id: N14BlueprintEnclaveWeapons
+    - id: N14BlueprintEnclaveAmmo
+    - id: N14enclaveheavyordnancet5

@@ -1,0 +1,129 @@
+# #Misfits Removed - Old N14Scope/Telescope-based prototypes, replaced by RMC-style ScopeComponent system
+# Old binoculars/scope attachment prototypes preserved below for history.
+# See git history for original definitions.
+
+# - type: entity
+#   parent: BaseItem
+#   id: N14Binoculars_OLD
+#   ...
+
+# - type: entity
+#   parent: BaseItem
+#   id: N14WeaponScopeAttachment_OLD
+#   ...
+
+# ────────────────────────────────────────────────────────────────────────────
+# N14 Binoculars — RMC-style directional scope (DoAfter, PVS relay, zoom levels)
+# Two handed. Little delay. Locks view in cardinal direction. We kinda Stalker meta now boys HEH -pierow
+- type: entity
+  parent: BaseItem
+  id: N14Binoculars
+  name: binoculars
+  description: A pair of pre-war binoculars. Wield them with two hands and look through to see far in one direction.
+  components:
+  - type: Item
+    size: Small
+    heldPrefix: binoculars
+  - type: Sprite
+    sprite: _Misfits/Objects/Devices/binoculars.rsi
+    state: binoculars_civ
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - Belt
+    - suitstorage
+  - type: Scope
+    useInHand: true
+    requireWielding: true
+    zoomLevels:
+    - name: 5x
+      zoom: 1.2
+      offset: 17
+      allowMovement: false
+      doAfter: 0.3
+  - type: StaticPrice
+    price: 100
+  # #Misfits Removed - Binoculars TagPrototype not defined in Nuclear-14
+  # - type: Tag
+  #   tags:
+  #   - Binoculars
+
+# N14 Rifle Scope Attachment — attach to a gun's ItemSlot to gain a scope action.
+# Uses ScopeComponent with attachment: true so it only activates from inside a container.
+- type: entity
+  parent: BaseItem
+  id: N14WeaponScopeAttachment
+  name: 4x rifle scope
+  description: A fixed-magnification rifle optic. Attach it to a compatible weapon to gain a 4x directional scope action.
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: _Nuclear14/Objects/Misc/crafting_junk.rsi
+    state: scope
+  - type: Scope
+    attachment: true
+    useInHand: true
+    requireWielding: true
+    zoomLevels:
+    - name: 4x
+      zoom: 1.0
+      offset: 15
+      allowMovement: false
+      doAfter: 0.8
+  - type: Tag
+    tags:
+    - RifleScope
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: N14WeaponScopeAttachment
+  id: N14WeaponScopeVariable
+  name: variable rifle scope
+  description: A variable-power rifle optic. Use the mouse wheel while scoped to adjust between 2x, 4x, and 6x magnification.
+  components:
+  - type: Scope
+    attachment: true
+    useInHand: true
+    requireWielding: true
+    zoomLevels:
+    - name: 2x
+      zoom: 1.2
+      offset: 11
+      allowMovement: false
+      doAfter: 0.6
+    - name: 4x
+      zoom: 1.0
+      offset: 15
+      allowMovement: false
+      doAfter: 0.8
+    - name: 6x
+      zoom: 0.8
+      offset: 21
+      allowMovement: false
+      doAfter: 1.0
+  - type: StaticPrice
+    price: 200
+
+- type: entity
+  parent: N14WeaponScopeAttachment
+  id: N14WeaponScopeNightVision
+  name: night vision rifle scope
+  description: An amplified-light optic that automatically engages night vision while scoped.
+  components:
+  - type: ScopeVision
+    mode: NightVision
+  - type: StaticPrice
+    price: 350
+
+- type: entity
+  parent: N14WeaponScopeAttachment
+  id: N14WeaponScopeThermal
+  name: thermal rifle scope
+  description: An advanced heat-detecting optic that automatically engages thermal vision while scoped.
+  components:
+  - type: ScopeVision
+    mode: Thermal
+  - type: StaticPrice
+    price: 600

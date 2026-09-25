@@ -1,0 +1,661 @@
+#MARK: Legion
+- type: entity
+  parent: N14IDPassportBlank
+  id: N14IDLegionaryMedalLegate
+  name: legion legate medallion
+  description: "The sign of Caesar's will."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/identification.rsi
+    state: medal-gold
+  - type: IdCard # #Misfits Add - display "medallion" instead of default "ID card"
+    nameLocId: n14-id-medallion-name
+    fullNameLocId: n14-id-medallion-full-name
+  - type: PresetIdCard
+    job: CaesarLegionLegate
+  #Misfits Add - IdCardLegion enables this medallion to appear on the Centurion's tactical map terminal
+  - type: Tag
+    tags:
+    - IdCardLegion
+
+- type: entity
+  parent: N14IDPassportBlank
+  id: N14IDLegionaryBadge
+  name: distinctive sign
+  description: "The sign of the red bull."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/identification.rsi
+    state: sign
+  - type: IdCard # #Misfits Add - display "medallion" instead of default "ID card"
+    nameLocId: n14-id-medallion-name
+    fullNameLocId: n14-id-medallion-full-name
+  - type: PresetIdCard
+    job: CaesarLegionAuxilia
+  #Misfits Add - IdCardLegion enables this badge to appear on the Centurion's tactical map terminal
+  - type: Tag
+    tags:
+    - IdCardLegion
+
+- type: entity
+  parent: N14IDPassportBlank
+  id: N14IDLegionaryBadgeCitizen
+  name: Distinctive Sign
+  description: "A Sign of the red bull, this one is given to Citizen's of Legion Tribute towns. protecting them from slavery and allowing them to travel in Legion lands."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/identification.rsi
+    state: sign
+  - type: IdCard # #Misfits Add - display "medallion" instead of default "ID card"
+    nameLocId: n14-id-medallion-name
+    fullNameLocId: n14-id-medallion-full-name
+  - type: PresetIdCard
+    job: CaesarLegionCitizen
+  #Misfits Add - IdCardLegion enables this badge to appear on the Centurion's tactical map terminal
+  - type: Tag
+    tags:
+    - IdCardLegion
+
+- type: entity
+  parent: N14IDPassportBlank
+  id: N14IDLegionaryBadgeTrader
+  name: Distinctive Sign
+  description: "A Sign of the red bull, this one is given to Caravaneers that trade in Legion lands."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/identification.rsi
+    state: sign
+  - type: IdCard # #Misfits Add - display "medallion" instead of default "ID card"
+    nameLocId: n14-id-medallion-name
+    fullNameLocId: n14-id-medallion-full-name
+  - type: PresetIdCard
+    job: CaesarLegionTrader
+  #Misfits Add - IdCardLegion enables this badge to appear on the Centurion's tactical map terminal
+  - type: Tag
+    tags:
+    - IdCardLegion
+
+- type: entity
+  parent: N14IDPassportBlank
+  id: N14IDLegionaryBadgeRecruit
+  name: distinctive sign
+  description: "The sign of a Legion recruit."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/identification.rsi
+    state: sign
+  - type: IdCard # #Misfits Add - display "medallion" instead of default "ID card"
+    nameLocId: n14-id-medallion-name
+    fullNameLocId: n14-id-medallion-full-name
+  - type: PresetIdCard
+    job: CaesarLegionLegionnaireRecruit # #Misfits Change: Redirected from defunct CaesarLegionRecruit
+  #Misfits Add - IdCardLegion enables this badge to appear on the Centurion's tactical map terminal
+  - type: Tag
+    tags:
+    - IdCardLegion
+
+- type: entity
+  parent: N14IDPassportBlank
+  id: N14IDLegionaryMedalSilver
+  name: legion legionnaire medallion
+  description: "A distinctive medal with the sign of the bull."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/identification.rsi
+    state: medal-silver
+  - type: IdCard # #Misfits Add - display "medallion" instead of default "ID card"
+    nameLocId: n14-id-medallion-name
+    fullNameLocId: n14-id-medallion-full-name
+  - type: PresetIdCard
+    job: CaesarLegionLegionnaireWarrior
+  #Misfits Add - IdCardLegion enables this medallion to appear on the Centurion's tactical map terminal
+  - type: Tag
+    tags:
+    - IdCardLegion
+
+#Misfits Change /Add/: Recruit-tier Legion medals so combat roles no longer use sign IDs.
+- type: entity
+  parent: N14IDPassportBlank
+  id: N14IDLegionaryMedalRecruit
+  name: legion recruit medallion
+  description: "A silver medal worn by a Legion recruit."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/identification.rsi
+    state: medal-silver
+  - type: IdCard # #Misfits Add - display "medallion" instead of default "ID card"
+    nameLocId: n14-id-medallion-name
+    fullNameLocId: n14-id-medallion-full-name
+  - type: PresetIdCard
+    job: CaesarLegionLegionnaireRecruit # #Misfits Change: Redirected from defunct CaesarLegionRecruit
+  #Misfits Add - IdCardLegion enables this medallion to appear on the Centurion's tactical map terminal
+  - type: Tag
+    tags:
+    - IdCardLegion
+
+- type: entity
+  parent: N14IDPassportBlank
+  id: N14IDLegionaryMedalLegionnaireRecruit
+  name: legion legionnaire recruit medallion
+  description: "A silver medal awarded to a Legionnaire recruit."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/identification.rsi
+    state: medal-silver
+  - type: IdCard # #Misfits Add - display "medallion" instead of default "ID card"
+    nameLocId: n14-id-medallion-name
+    fullNameLocId: n14-id-medallion-full-name
+  - type: PresetIdCard
+    job: CaesarLegionLegionnaireRecruit
+  #Misfits Add - IdCardLegion enables this medallion to appear on the Centurion's tactical map terminal
+  - type: Tag
+    tags:
+    - IdCardLegion
+
+- type: entity
+  parent: N14IDPassportBlank
+  id: N14IDLegionaryMedalHoundmaster
+  name: legion houndmaster medallion
+  description: "A medal worn by the keepers of Caesar's hounds."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/identification.rsi
+    state: medal-silver
+  - type: IdCard # #Misfits Add - display "medallion" instead of default "ID card"
+    nameLocId: n14-id-medallion-name
+    fullNameLocId: n14-id-medallion-full-name
+  - type: PresetIdCard
+    job: CaesarLegionHoundmaster
+  #Misfits Add - IdCardLegion enables this medallion to appear on the Centurion's tactical map terminal
+  - type: Tag
+    tags:
+    - IdCardLegion
+
+#Misfits Change /Add/: Auxilia badge.
+- type: entity
+  parent: N14IDPassportBlank
+  id: N14IDLegionaryBadgeAuxilia
+  name: distinctive sign
+  description: "The sign of a Legion auxilia."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/identification.rsi
+    state: sign
+  - type: IdCard # #Misfits Add - display "medallion" instead of default "ID card"
+    nameLocId: n14-id-medallion-name
+    fullNameLocId: n14-id-medallion-full-name
+  - type: PresetIdCard
+    job: CaesarLegionAuxilia
+  #Misfits Add - IdCardLegion enables this badge to appear on the Centurion's tactical map terminal
+  - type: Tag
+    tags:
+    - IdCardLegion
+
+- type: entity
+  parent: N14IDPassportBlank
+  id: N14IDLegionaryBadgePriestessOfMars
+  name: distinctive sign
+  description: "The sign of a Priestess of Mars."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/identification.rsi
+    state: sign
+  - type: IdCard # #Misfits Add - display "medallion" instead of default "ID card"
+    nameLocId: n14-id-medallion-name
+    fullNameLocId: n14-id-medallion-full-name
+  - type: PresetIdCard
+    job: CaesarLegionPriestessOfMars
+  #Misfits Add - IdCardLegion enables this badge to appear on the Centurion's tactical map terminal
+  - type: Tag
+    tags:
+    - IdCardLegion
+
+- type: entity
+  parent: N14IDPassportBlank
+  id: N14IDLegionaryBadgeTempleGuard
+  name: distinctive sign
+  description: "The sign of a Temple Guard."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/identification.rsi
+    state: sign
+  - type: IdCard # #Misfits Add - display "medallion" instead of default "ID card"
+    nameLocId: n14-id-medallion-name
+    fullNameLocId: n14-id-medallion-full-name
+  - type: PresetIdCard
+    job: CaesarLegionTempleGuard
+  #Misfits Add - IdCardLegion enables this badge to appear on the Centurion's tactical map terminal
+  - type: Tag
+    tags:
+    - IdCardLegion
+
+#Misfits Change /Add/: Legion Slave sign so the role carries the same legion badge style with its own access data.
+- type: entity
+  parent: N14IDPassportBlank
+  id: N14IDLegionaryBadgeSlave
+  name: distinctive sign
+  description: "The sign of a Legion slave."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/identification.rsi
+    state: sign-slave
+  - type: IdCard # #Misfits Add - display "medallion" instead of default "ID card"
+    nameLocId: n14-id-medallion-name
+    fullNameLocId: n14-id-medallion-full-name
+  - type: PresetIdCard
+    job: CaesarLegionSlave
+  #Misfits Add - IdCardLegion enables this badge to appear on the Centurion's tactical map terminal
+  - type: Tag
+    tags:
+    - IdCardLegion
+
+- type: entity
+  parent: N14IDPassportBlank
+  id: N14IDLegionaryMedalSilver2
+  name: legion veteran legionnaire medallion
+  description: "A distinctive medal with the sign of the bull."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/identification.rsi
+    state: medal-silver-2
+  - type: IdCard # #Misfits Add - display "medallion" instead of default "ID card"
+    nameLocId: n14-id-medallion-name
+    fullNameLocId: n14-id-medallion-full-name
+  - type: PresetIdCard
+    job: CaesarLegionLegionnaireVeteran
+  #Misfits Add - IdCardLegion enables this medallion to appear on the Centurion's tactical map terminal
+  - type: Tag
+    tags:
+    - IdCardLegion
+
+- type: entity
+  parent: N14IDPassportBlank
+  id: N14IDLegionaryMedalVexillarius
+  name: legion vexillarius medallion
+  description: "A medal granted to one who carries the Legion's standard."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/identification.rsi
+    state: medal-silver-2
+  - type: IdCard # #Misfits Add - display "medallion" instead of default "ID card"
+    nameLocId: n14-id-medallion-name
+    fullNameLocId: n14-id-medallion-full-name
+  - type: PresetIdCard
+    job: CaesarLegionVexillarius
+  #Misfits Add - IdCardLegion enables this medallion to appear on the Centurion's tactical map terminal
+  - type: Tag
+    tags:
+    - IdCardLegion
+
+- type: entity
+  parent: N14IDPassportBlank
+  id: N14IDLegionaryMedalSilver3
+  name: legion decanus medallion
+  description: "A distinctive medal with the sign of the bull."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/identification.rsi
+    state: medal-silver-3
+  - type: IdCard # #Misfits Add - display "medallion" instead of default "ID card"
+    nameLocId: n14-id-medallion-name
+    fullNameLocId: n14-id-medallion-full-name
+  - type: PresetIdCard
+    job: CaesarLegionDean
+  #Misfits Add - IdCardLegion enables this medallion to appear on the Centurion's tactical map terminal
+  - type: Tag
+    tags:
+    - IdCardLegion
+
+- type: entity
+  parent: N14IDPassportBlank
+  id: N14IDLegionaryMedalForgemaster
+  name: legion forgemaster medallion
+  description: "A Silver Medallion bearing the symbol of the Legion Forgemaster."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/identification.rsi
+    state: medal-silver-3
+  - type: IdCard # #Misfits Add - display "medallion" instead of default "ID card"
+    nameLocId: n14-id-medallion-name
+    fullNameLocId: n14-id-medallion-full-name
+  - type: PresetIdCard
+    job: CaesarLegionForgemaster
+  #Misfits Add - IdCardLegion enables this medallion to appear on the Centurion's tactical map terminal
+  - type: Tag
+    tags:
+    - IdCardLegion
+
+- type: entity
+  parent: N14IDPassportBlank
+  id: N14IDLegionaryMedalExplorer
+  name: legion explorer medallion
+  description: "A medal worn by a Legion Explorer."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/identification.rsi
+    state: medal-silver-3
+  - type: IdCard # #Misfits Add - display "medallion" instead of default "ID card"
+    nameLocId: n14-id-medallion-name
+    fullNameLocId: n14-id-medallion-full-name
+  - type: PresetIdCard
+    job: CaesarLegionExplorer
+  #Misfits Add - IdCardLegion enables this medallion to appear on the Centurion's tactical map terminal
+  - type: Tag
+    tags:
+    - IdCardLegion
+
+- type: entity
+  parent: N14IDPassportBlank
+  id: N14IDLegionaryMedalOptio
+  name: legion optio medallion
+  description: "A medal worn by a Legion Optio."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/identification.rsi
+    state: medal-silver-3
+  - type: IdCard # #Misfits Add - display "medallion" instead of default "ID card"
+    nameLocId: n14-id-medallion-name
+    fullNameLocId: n14-id-medallion-full-name
+  - type: PresetIdCard
+    job: CaesarLegionOptio
+  #Misfits Add - IdCardLegion enables this medallion to appear on the Centurion's tactical map terminal
+  - type: Tag
+    tags:
+    - IdCardLegion
+
+- type: entity
+  parent: N14IDPassportBlank
+  id: N14IDLegionaryMedalFrumentarii
+  name: legion frumentarii medallion
+  description: "A plain medal carried by the Legion's Frumentarii."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/identification.rsi
+    state: medal-silver-3
+  - type: IdCard # #Misfits Add - display "medallion" instead of default "ID card"
+    nameLocId: n14-id-medallion-name
+    fullNameLocId: n14-id-medallion-full-name
+  - type: PresetIdCard
+    job: CaesarLegionFrumentarii
+  #Misfits Add - IdCardLegion enables this medallion to appear on the Centurion's tactical map terminal
+  - type: Tag
+    tags:
+    - IdCardLegion
+
+- type: entity
+  parent: N14IDPassportBlank
+  id: N14IDLegionaryMedalPrimeDecanus
+  name: legion prime decanus medallion
+  description: "A medal marking the rank of a Prime Decanus."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/identification.rsi
+    state: medal-silver-3
+  - type: IdCard # #Misfits Add - display "medallion" instead of default "ID card"
+    nameLocId: n14-id-medallion-name
+    fullNameLocId: n14-id-medallion-full-name
+  - type: PresetIdCard
+    job: CaesarLegionDean
+  #Misfits Add - IdCardLegion enables this medallion to appear on the Centurion's tactical map terminal
+  - type: Tag
+    tags:
+    - IdCardLegion
+
+- type: entity
+  parent: N14IDPassportBlank
+  id: N14IDLegionaryMedalVeteranDecanus
+  name: legion veteran decanus medallion
+  description: "A distinctive medal carried by a veteran decanus."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/identification.rsi
+    state: medal-silver-3
+  - type: IdCard # #Misfits Add - display "medallion" instead of default "ID card"
+    nameLocId: n14-id-medallion-name
+    fullNameLocId: n14-id-medallion-full-name
+  - type: PresetIdCard
+    job: CaesarLegionVeteranDecanus
+  #Misfits Add - IdCardLegion enables this medallion to appear on the Centurion's tactical map terminal
+  - type: Tag
+    tags:
+    - IdCardLegion
+
+- type: entity
+  parent: N14IDPassportBlank
+  id: N14IDLegionaryMedalGold
+  name: legion centurion medallion
+  description: "A distinctive medal with the sign of the bull."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/identification.rsi
+    state: medal-gold
+  - type: IdCard # #Misfits Add - display "medallion" instead of default "ID card"
+    nameLocId: n14-id-medallion-name
+    fullNameLocId: n14-id-medallion-full-name
+  - type: PresetIdCard
+    job: CaesarLegionCenturion
+  #Misfits Add - IdCardLegion enables this medallion to appear on the Centurion's tactical map terminal
+  - type: Tag
+    tags:
+    - IdCardLegion
+
+### Frumentaria
+
+- type: entity
+  id: AgentPreset
+  abstract: true
+  components:
+  - type: AgentIDCard
+  - type: ActivatableUI
+    key: enum.AgentIDCardUiKey.Key
+    inHandsOnly: true
+#  - type: UserInterface
+#    interfaces:
+#      - key: enum.AgentIDCardUiKey.Key
+#        type: AgentIDCardBoundUserInterface
+
+- type: entity
+  parent: [ N14IDPassportBlank, AgentPreset ]
+  id: N14IDNCRDogtagAgent
+  name: soldier's dogtags
+  description: An ID dogtag worn by members of the NCR.
+  suffix: Soldier, Cadet, Agent
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Objects/Misc/identification.rsi
+    state: ncrdogtag
+  - type: IdCard # #Misfits Add - display "dogtags" instead of default "ID card"
+    nameLocId: n14-id-dogtag-name
+    fullNameLocId: n14-id-dogtag-full-name
+  - type: PresetIdCard
+    job: NCRSoldier
+
+- type: entity
+  parent: [ N14IDPassportBlank, AgentPreset ]
+  id: N14IDBrotherhoodHolotagAgent
+  name: squire's holotags
+  description: An ID holotag worn by the Brotherhood of Steel.
+  suffix: Squire, Agent
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Objects/Misc/identification.rsi
+    state: bos_holotag
+  - type: IdCard # #Misfits Add - display "holotags" instead of default "ID card"
+    nameLocId: n14-id-holotag-name
+    fullNameLocId: n14-id-holotag-full-name
+  - type: PresetIdCard
+    job: BoSMidSquire
+
+#Misfits Change /Comment-out/: Washington BoS agent holotag removed — job no longer exists.
+#- type: entity
+#  parent: [ N14IDPassportBlank, AgentPreset ]
+#  id: N14IDWashingtonBrotherhoodHolotagAgent
+#  name: initiate's holotags
+#  description: An ID holotag worn by the Brotherhood of Steel.
+#  suffix: Recruit, Agent
+#  components:
+#  - type: Sprite
+#    sprite: _Nuclear14/Objects/Misc/identification.rsi
+#    state: bos_holotag
+#  - type: IdCard # #Misfits Add - display "holotags" instead of default "ID card"
+#    nameLocId: n14-id-holotag-name
+#    fullNameLocId: n14-id-holotag-full-name
+#  - type: PresetIdCard
+#    job: BoSWashingtonInitiate
+
+#Misfits Change /Comment-out/: Washington BoS holotags removed — will create new prototypes.
+##MARK: Washington BoS
+#
+#- type: entity
+#  parent: N14IDPassportBlank
+#  id: N14IDWashingtonBrotherhoodHolotagRecruit
+#  name: initiate's holotags
+#  description: An ID holotag worn by a Brotherhood initiate.
+#  suffix: Recruit
+#  components:
+#  - type: Sprite
+#    sprite: _Nuclear14/Objects/Misc/identification.rsi
+#    state: bos_holotag
+#  - type: IdCard # #Misfits Add - display "holotags" instead of default "ID card"
+#    nameLocId: n14-id-holotag-name
+#    fullNameLocId: n14-id-holotag-full-name
+#  - type: PresetIdCard
+#    job: BoSWashingtonInitiate
+#
+#- type: entity
+#  parent: N14IDPassportBlank
+#  id: N14IDWashingtonBrotherhoodHolotagSoldier
+#  name: knight's holotags
+#  description: An ID holotag worn by a Brotherhood knight.
+#  suffix: Soldier
+#  components:
+#  - type: Sprite
+#    sprite: _Nuclear14/Objects/Misc/identification.rsi
+#    state: bos_holotag
+#  - type: IdCard # #Misfits Add - display "holotags" instead of default "ID card"
+#    nameLocId: n14-id-holotag-name
+#    fullNameLocId: n14-id-holotag-full-name
+#  - type: PresetIdCard
+#    job: BoSWashingtonKnight
+#
+#- type: entity
+#  parent: N14IDPassportBlank
+#  id: N14IDWashingtonBrotherhoodHolotagResearcher
+#  name: scribe's holotags
+#  description: An ID holotag worn by a Brotherhood scribe.
+#  suffix: Researcher
+#  components:
+#  - type: Sprite
+#    sprite: _Nuclear14/Objects/Misc/identification.rsi
+#    state: bos_holotag
+#  - type: IdCard # #Misfits Add - display "holotags" instead of default "ID card"
+#    nameLocId: n14-id-holotag-name
+#    fullNameLocId: n14-id-holotag-full-name
+#  - type: PresetIdCard
+#    job: BoSWashingtonScribe
+#
+#- type: entity
+#  parent: N14IDPassportBlank
+#  id: N14IDWashingtonBrotherhoodHolotagCaptain
+#  name: paladin's holotags
+#  description: An ID holotag worn by a Brotherhood paladin.
+#  suffix: Captain
+#  components:
+#  - type: Sprite
+#    sprite: _Nuclear14/Objects/Misc/identification.rsi
+#    state: bos_holotag
+#  - type: IdCard # #Misfits Add - display "holotags" instead of default "ID card"
+#    nameLocId: n14-id-holotag-name
+#    fullNameLocId: n14-id-holotag-full-name
+#  - type: PresetIdCard
+#    job: BoSWashingtonPaladin
+#
+#- type: entity
+#  parent: N14IDPassportBlank
+#  id: N14IDWashingtonBrotherhoodHolotagCommander
+#  name: head knight's holotags
+#  description: An ID holotag worn by the Head Knight of the Brotherhood of Steel.
+#  suffix: Commander
+#  components:
+#  - type: Sprite
+#    sprite: _Nuclear14/Objects/Misc/identification.rsi
+#    state: bos_holotag
+#  - type: IdCard # #Misfits Add - display "holotags" instead of default "ID card"
+#    nameLocId: n14-id-holotag-name
+#    fullNameLocId: n14-id-holotag-full-name
+#  - type: PresetIdCard
+#    job: BoSWashingtonCommander
+
+#MARK: Key
+- type: entity
+  parent: N14IDCard
+  id: N14IDKeyIronEmpty
+  name: iron key
+  description: A worn out iron key. I wonder where it goes?
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Objects/Misc/identification.rsi
+    state: iron
+
+#MARK: Brotherhood West
+- type: entity
+  parent: N14IDPassportBlank
+  id: N14IDBrotherhoodWestHolotag
+  name: head scribe's holotags
+  description: An ID holotag worn by the Head Scribe of the Brotherhood of Steel.
+  suffix: Head Scribe
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Objects/Misc/identification.rsi
+    state: bos_holotag
+  - type: IdCard # #Misfits Add - display "holotags" instead of default "ID card"
+    nameLocId: n14-id-holotag-name
+    fullNameLocId: n14-id-holotag-full-name
+  - type: PresetIdCard
+    job: BoSWestScribe
+  # #Misfits Change - enables BOS shared map (tactical table, Pip-Boy, armor HUDs)
+  - type: Tag
+    tags:
+    - IdCardBrotherhood
+  - type: ClothingAddFaction
+    faction: BrotherhoodOfSteel
+
+- type: entity
+  parent: N14IDBrotherhoodWestHolotag
+  id: N14IDBrotherhoodWestHolotagGunsmith
+  name: squire's holotags
+  description: An ID holotag worn by a Brotherhood squire.
+  suffix: Squire
+  components:
+  - type: PresetIdCard
+    job: BoSMidSquire
+
+- type: entity
+  parent: N14IDBrotherhoodWestHolotag
+  id: N14IDBrotherhoodWestHolotagKnight
+  name: senior knight's holotags
+  description: An ID holotag worn by a Brotherhood Senior Knight.
+  suffix: Senior Knight
+  components:
+  - type: PresetIdCard
+    job: BoSMidKnight
+
+- type: entity
+  parent: N14IDBrotherhoodWestHolotag
+  id: N14IDBrotherhoodWestHolotagPaladin
+  name: senior paladin's holotags
+  description: An ID holotag worn by a Brotherhood Senior Paladin.
+  suffix: Senior Paladin
+  components:
+  - type: PresetIdCard
+    job: BoSMidPaladin
+
+- type: entity
+  parent: N14IDBrotherhoodWestHolotag
+  id: N14IDBrotherhoodWestHolotagElderCommander
+  name: elder commander's holotags
+  description: An ID holotag worn by the Elder Commander of the Brotherhood of Steel.
+  suffix: Elder
+  components:
+  - type: PresetIdCard
+    job: BoSWestElderCommander

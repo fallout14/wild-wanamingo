@@ -1,0 +1,31 @@
+- type: entity
+  parent: BaseItem
+  id: N14FirearmBurstSear
+  name: burst-fire sear
+  description: A replacement fire-control component that permanently enables three-round burst fire in a compatible firearm.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: _Nuclear14/Objects/Misc/crafting_junk.rsi
+    state: burstcam
+  - type: FirearmSear
+    mode: Burst
+  - type: StaticPrice
+    price: 175
+
+- type: entity
+  parent: BaseItem
+  id: N14FirearmAutoSear
+  name: automatic sear
+  description: A rare replacement fire-control component that permanently enables fully automatic fire in a compatible firearm.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: _Nuclear14/Objects/Misc/crafting_junk.rsi
+    state: burstcam
+  - type: FirearmSear
+    mode: FullAuto
+  - type: StaticPrice
+    price: 350
