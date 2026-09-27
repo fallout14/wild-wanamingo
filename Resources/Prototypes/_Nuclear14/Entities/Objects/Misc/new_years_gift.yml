@@ -422,7 +422,7 @@
       - id: N14WeaponShotgunSawedOff
         prob: 0.5
         orGroup: Weapon
-      - id: N14WeaponSMG9mm
+      - id: N14WeaponSMG45GreaseGun
         prob: 0.5
         orGroup: Weapon
       - id: N14WeaponPistol9mm
@@ -464,7 +464,7 @@
       - id: N14WeaponSMG10mmPipe
         prob: 0.4
         orGroup: Weapon
-      - id: N14WeaponRifle762Fal
+      - id: N14WeaponRifle308Fal
         prob: 0.4
         orGroup: Weapon
       - id: N14WeaponLMGAutoRifle
@@ -488,7 +488,7 @@
       - id: N14WeaponRifle556Service
         prob: 0.4
         orGroup: Weapon
-      - id: N14WeaponRifle762M14
+      - id: N14WeaponRifle308M14
         prob: 0.4
         orGroup: Weapon
       - id: N14WeaponRifle762Canadian
@@ -506,10 +506,10 @@
       - id: N14WeaponRifle762MarksmanCanadian
         prob: 0.3
         orGroup: Weapon
-      - id: N14WeaponRifle556Carbine
+      - id: N14WeaponRifle5mmCarbine
         prob: 0.3
         orGroup: Weapon
-      - id: N14WeaponRifle762Marksman
+      - id: N14WeaponRifle556Marksman
         prob: 0.3
         orGroup: Weapon
       - id: N14WeaponSniper308TribalUpgraded
@@ -521,10 +521,10 @@
       - id: N14WeaponLMG
         prob: 0.3
         orGroup: Weapon
-      - id: N14WeaponRifle762MarksmanChinese
+      - id: N14WeaponRifle9mmMarksmanChinese
         prob: 0.3
         orGroup: Weapon
-      - id: N14WeaponRifle762Chinese
+      - id: N14WeaponRifle556Chinese
         prob: 0.3
         orGroup: Weapon
       - id: N14WeaponLMGBren

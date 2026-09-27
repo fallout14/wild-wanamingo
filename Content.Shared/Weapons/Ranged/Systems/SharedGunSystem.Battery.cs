@@ -1,3 +1,4 @@
+using Content.Shared._Misfits.Weapons; // #Misfits Add - GunDamageBonusComponent projectile override
 using Content.Shared.Examine;
 using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Events;
@@ -70,7 +71,7 @@ public abstract partial class SharedGunSystem
 
         for (var i = 0; i < shots; i++)
         {
-            args.Ammo.Add(GetShootable(component, args.Coordinates));
+            args.Ammo.Add(GetShootable(uid, component, args.Coordinates));
             component.Shots--;
         }
 
@@ -100,13 +101,20 @@ public abstract partial class SharedGunSystem
         Appearance.SetData(uid, AmmoVisuals.AmmoMax, component.Capacity, appearance);
     }
 
-    private (EntityUid? Entity, IShootable) GetShootable(BatteryAmmoProviderComponent component, EntityCoordinates coordinates)
+    private (EntityUid? Entity, IShootable) GetShootable(EntityUid uid, BatteryAmmoProviderComponent component, EntityCoordinates coordinates)
     {
         switch (component)
         {
             case ProjectileBatteryAmmoProviderComponent proj:
                 var ent = Spawn(proj.Prototype, coordinates);
                 return (ent, EnsureShootable(ent));
+            // #Misfits Add - a gun with ProjectileProtoOverride (plasma weapons) turns a hitscan cell's charge into projectiles
+            case HitscanBatteryAmmoProviderComponent when
+                Containers.TryGetContainingContainer((uid, null, null), out var container) &&
+                TryComp<GunDamageBonusComponent>(container.Owner, out var gunBonus) &&
+                gunBonus.ProjectileProtoOverride is { } overrideProto:
+                var projectile = Spawn(overrideProto, coordinates);
+                return (projectile, EnsureShootable(projectile));
             case HitscanBatteryAmmoProviderComponent hitscan:
                 return (null, ProtoManager.Index<HitscanPrototype>(hitscan.Prototype));
             default:

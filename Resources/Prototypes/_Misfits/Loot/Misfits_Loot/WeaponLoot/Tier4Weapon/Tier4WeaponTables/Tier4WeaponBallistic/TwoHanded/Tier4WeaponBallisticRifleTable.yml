@@ -5,7 +5,7 @@
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponRifle556Carbine
+      id: N14WeaponRifle5mmCarbine
       weight: 4
     - !type:EntSelector
       id: N14WeaponRifle556R91
@@ -17,20 +17,17 @@
       id: N14WeaponRifle556EM2
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle762Fal
+      id: N14WeaponRifle308Fal
       weight: 4
     - !type:EntSelector
       id: N14WeaponRifle762Canadian
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle762Chinese
+      id: N14WeaponRifle556Chinese
       weight: 4
       #AK 5.45
     - !type:EntSelector
       id: N14WeaponRifleAk112 #BOS??
-      weight: 4
-    - !type:EntSelector
-      id: N14WeaponRifleAk112pn # extended mag
       weight: 4
 
 
@@ -64,7 +61,7 @@
       id: N14WeaponRifle308SniperRifle
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle762Rangemaster # bayonet
+      id: N14WeaponRifle556Rangemaster # bayonet
       weight: 4
     - !type:EntSelector
       id: N14WeaponRifle762SKS
@@ -89,7 +86,4 @@
       weight: 4
     - !type:EntSelector
       id: N14WeaponRifle308Battle
-      weight: 4
-    - !type:EntSelector
-      id: N14WeaponRifleM1Garand
       weight: 4

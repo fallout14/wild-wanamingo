@@ -58,7 +58,7 @@
     items:
       - id: N14ClothingOuterNCRVestDesert # Forge-Change
       - id: ClothingBeltNCRPouches
-      - id: N14WeaponSMG9mm
+      - id: N14WeaponSMG45GreaseGun
       - id: Magazine45SubMachineGun
         amount: 4
       - id: N14BoxCardboardMREBoxCFilled
@@ -286,7 +286,7 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponSMG9mm
+      - id: N14WeaponSMG45GreaseGun
       - id: Magazine45SubMachineGun
       - id: ClothingBeltNCRShotgunner
       - id: N14WeaponShotgunShort
@@ -389,7 +389,7 @@
       - id: N14SmellingSalts # #Misfits Change - N14 field revival item replaces upstream sterile wipes
         amount: 2
       - id: N14HandheldHealthAnalyzer # #Misfits Add - NCR medical doctors should spawn with health analyzer
-      - id: N14WeaponSMG9mm
+      - id: N14WeaponSMG45GreaseGun
       - id: Magazine45SubMachineGun
         amount: 3
       - id: N14Traumapack # #Misfits Change - N14 brute treatment replaces upstream Brutepack
@@ -572,7 +572,7 @@
     items:
       - id: N14ClothingHeadHatNCRHelmetMetalDesert # Forge-Change
       - id: ClothingBeltNCR
-      - id: N14WeaponRifle556Carbine
+      - id: N14WeaponRifle5mmCarbine
       - id: N14MagazineCarbine5mm
         amount: 3
       - id: N14WeaponPistol9mm
@@ -742,7 +742,7 @@
     items:
       - id: MisfitsNCROfficerArmor
       - id: ClothingBeltRevolverfilled
-      - id: N14WeaponRifle556Carbine
+      - id: N14WeaponRifle5mmCarbine
       - id: N14MagazineCarbine5mm
         amount: 3
       - id: N14BoxCardboardMREBoxCFilled
@@ -824,7 +824,7 @@
   - type: SpawnItemsOnUse
     items:
       - id: ClothingBeltNCR
-      - id: N14WeaponRifle556Carbine
+      - id: N14WeaponRifle5mmCarbine
       - id: N14MagazineCarbine5mm
         amount: 4
       - id: MagazineBox556
@@ -847,7 +847,7 @@
   - type: SpawnItemsOnUse
     items:
       - id: ClothingBeltNCR
-      - id: N14WeaponRifle762Marksman
+      - id: N14WeaponRifle556Marksman
       - id: Magazine556Rifle
         amount: 4
       - id: MagazineBox556
@@ -1017,7 +1017,7 @@
   - type: SpawnItemsOnUse
     items:
       - id: ClothingBeltNCR
-      - id: N14WeaponRifle556Carbine
+      - id: N14WeaponRifle5mmCarbine
       - id: N14MagazineCarbine5mm
         amount: 4
       - id: MagazineBox556
@@ -1041,7 +1041,7 @@
   - type: SpawnItemsOnUse
     items:
       - id: ClothingBeltNCR
-      - id: N14WeaponRifle762Marksman
+      - id: N14WeaponRifle556Marksman
       - id: Magazine556Rifle
         amount: 4
       - id: MagazineBox556
@@ -1086,7 +1086,7 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponRifle556CarbineOld
+      - id: N14WeaponRifle10mmSkirmisher
       - id: N14MagazineSMG10mm
         amount: 3
       - id: N14WeaponLaserPistol
@@ -1131,7 +1131,7 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponRifle556Carbine
+      - id: N14WeaponRifle5mmCarbine
       - id: N14MagazineCarbine5mm
         amount: 3
       - id: N14WeaponPistol12mm
@@ -1205,7 +1205,7 @@
   #Misfits Change /Tweak/: Added stimpak to knight ballistic kit.
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponRifle556CarbineOld
+      - id: N14WeaponRifle10mmSkirmisher
       - id: N14MagazineSMG10mm
         amount: 3
       - id: N14WeaponLaserPistol
@@ -1352,7 +1352,7 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponRifle556Carbine
+      - id: N14WeaponRifle5mmCarbine
       - id: N14MagazineCarbine5mm
         amount: 3
       - id: N14WeaponLaserPistol
@@ -1444,7 +1444,7 @@
 #    size: Huge
 #  - type: SpawnItemsOnUse
 #    items:
-#      - id: N14WeaponRifle556CarbineOld
+#      - id: N14WeaponRifle10mmSkirmisher
 #      - id: Magazine556Rifle
 #        amount: 3
 #      - id: N14WeaponLaserPistol
@@ -1487,7 +1487,7 @@
 #    size: Huge
 #  - type: SpawnItemsOnUse
 #    items:
-#      - id: N14WeaponRifle556Carbine
+#      - id: N14WeaponRifle5mmCarbine
 #      - id: N14MagazineCarbine5mm
 #        amount: 3
 #      - id: N14WeaponLaserPistol
@@ -1625,7 +1625,7 @@
 #    size: Huge
 #  - type: SpawnItemsOnUse
 #    items:
-#      - id: N14WeaponRifle556Carbine
+#      - id: N14WeaponRifle5mmCarbine
 #      - id: N14MagazineCarbine5mm
 #        amount: 3
 #      - id: N14WeaponLaserPistol
@@ -1877,7 +1877,7 @@
     items:
       - id: N14ClothingHeadTownGuardBrodieVisor
       - id: N14ClothingOuterTownGuardRiot
-      - id: N14WeaponRifle762Fal
+      - id: N14WeaponRifle308Fal
       - id: Magazine762AmmoShort
         amount: 3
       - id: N14WeaponRevolver45-70Hunter

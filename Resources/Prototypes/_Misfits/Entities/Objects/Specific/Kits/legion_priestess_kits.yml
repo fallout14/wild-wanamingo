@@ -115,7 +115,7 @@
       - id: N14FoodTinK
         amount: 2
       - id: N14JunkCeramicFlask
-      - id: N14WeaponRifleSKS #
+      - id: N14WeaponRifle308SVT40 #
       - id: MagazineBox308
         amount: 1
     sound:

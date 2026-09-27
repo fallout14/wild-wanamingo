@@ -616,7 +616,11 @@
   - type: Item
     sprite: _Nuclear14/Objects/Weapons/Guns/Pistols/laserdeserteagle.rsi
   - type: Gun
-    fireRate: 3
+    fireRate: 2.5 # #Misfits Tweak - was 3; the laser dot buys accuracy, not speed
+    minAngle: 0
+    maxAngle: 3
+    angleIncrease: 1
+    angleDecay: 6
     soundGunshot:
       collection: N14PistolDesertEagleGunshot
   - type: ItemSlots
@@ -780,10 +784,10 @@
     price: 500
 
 - type: entity
-  name: That Gun
+  name: .223 pistol
   parent: N14WeaponRevolverBase
-  id: N14WeaponPistolThatGun
-  description: A distinctive five-shot revolver chambered for interchangeable .223 and 5.56mm ammunition. Its tuned action gives each shot extra punch.
+  id: N14WeaponPistol223
+  description: A distinctive five-shot revolver chambered for .223, and will also take 5.56mm. Its tuned action gives each shot extra punch.
   components:
   - type: Clothing
     sprite: _Nuclear14/Objects/Weapons/Guns/Pistols/thatgun.rsi
@@ -818,7 +822,7 @@
     whitelist:
       tags:
         - N14Cartridge556Rifle
-    proto: N14Cartridge556FMJ
+    proto: N14Cartridge556Rifle # .223
     capacity: 5
     chambers: [true, true, true, true, true]
     ammoSlots: [null, null, null, null, null]

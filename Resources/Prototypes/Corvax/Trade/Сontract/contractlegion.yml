@@ -722,7 +722,7 @@
   description: "A group of rogue Brotherhood of Steel knights are looking to go against orders, and honor their lost brothers of the Mojave Chapter by baptising some NCR recruits in machine gun fire."
   difficulty: Auxiliary
   targets:
-  - id: N14WeaponRifle556Carbine
+  - id: N14WeaponRifle5mmCarbine
     required: { min: 1, max: 2 }
   rewards:
   - type: Currency

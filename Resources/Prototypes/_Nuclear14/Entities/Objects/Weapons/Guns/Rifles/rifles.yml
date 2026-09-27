@@ -94,7 +94,7 @@
 - type: entity
   name: chinese assault rifle
   parent: N14WeaponRifleBase
-  id: N14WeaponRifle762Chinese
+  id: N14WeaponRifle556Chinese
   description: An old foreign assault rifle with strange symbols on it, it is chambered in 5.56mm ammunition.
   components:
   - type: GunDamageModifier
@@ -146,7 +146,7 @@
 - type: entity
   name: assault carbine
   parent: N14WeaponRifleBase
-  id: N14WeaponRifle556Carbine
+  id: N14WeaponRifle5mmCarbine
   description: A sleek black compact assault rifle, uses 5mm ammo.
   components:
   - type: FirearmAttachmentHost
@@ -232,7 +232,7 @@
 - type: entity
   name: marksman carbine
   parent: N14WeaponRifleBase
-  id: N14WeaponRifle762Marksman
+  id: N14WeaponRifle556Marksman
   description: A heavy semiautomatic rifle with a scope, uses 5.56 ammo.
   components:
   - type: FirearmAttachmentHost
@@ -613,7 +613,7 @@
 - type: entity
   name: skirmisher carbine
   parent: N14WeaponRifleBase
-  id: N14WeaponRifle556CarbineOld
+  id: N14WeaponRifle10mmSkirmisher
   description: A compact pre-war M1 carbine with a fixed stock, rechambered for detachable 10mm magazines. A handy personal defense weapon for skirmishers.
   components:
   - type: GunDamageModifier
@@ -732,7 +732,7 @@
   name: EM2 rifle
   parent: N14WeaponRifleBase
   id: N14WeaponRifle556EM2
-  description: A long bullpup assault rifle, uses .303 British ammo.
+  description: A long bullpup assault rifle, uses 5.56 ammo.
   components:
   - type: Clothing
     sprite: _Nuclear14/Objects/Weapons/Guns/Rifles/em2.rsi
@@ -763,28 +763,28 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14Magazine303EM2
+        startingItem: LongMagazine556Rifle # #Misfits Change - back to 5.56 (was temporarily .303)
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14Magazine303EM2
+            - LongMagazine556Rifle
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge303
+        startingItem: N14Cartridge556Rifle
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge303Rifle
+            - N14Cartridge556Rifle
   - type: StaticPrice
     price: 150
 
 - type: entity
   name: FAL rifle
   parent: N14WeaponRifleBase
-  id: N14WeaponRifle762Fal
-  description: A pre-war battle rifle chambered in 7.62mm, strong and reliable. its said this gun once won the title of "the right arm of the free world", but theres not much left of the world to confirm it.
+  id: N14WeaponRifle308Fal
+  description: A pre-war battle rifle chambered in .308, strong and reliable. It was once called "the right arm of the free world", but there is not much left of the world to confirm it.
   components:
   - type: Clothing
     sprite: _Nuclear14/Objects/Weapons/Guns/Rifles/fal.rsi
@@ -801,41 +801,42 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
     minAngle: 24
-    maxAngle: 45
-    angleIncrease: 4
+    maxAngle: 50
+    angleIncrease: 6 # #Misfits Tweak - full-power .308 on full auto kicks hard
     angleDecay: 16
     soundGunshot:
       collection: N14MarksmanGunshot
-    fireRate: 4
+    fireRate: 3.5
     selectedMode: FullAuto
     availableModes:
     - FullAuto
+    - SemiAuto
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine762AmmoShort
+        startingItem: Magazine308Rifle # #Misfits Change - rechambered to .308
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14Magazine762Short
+            - N14Magazine308Rifle
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge762Rifle
+        startingItem: N14Cartridge308Rifle
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge762Rifle
+            - N14Cartridge308Rifle
   - type: StaticPrice
     price: 175
 
 - type: entity
   name: M14 rifle
   parent: N14WeaponRifleBase
-  id: N14WeaponRifle762M14
-  description: A pre-war battle rifle chambered in 7.62mm, build to replace the old M1 garand of the US military, it didnt last for long and got remplaced by the R-91 after a few years of service.
+  id: N14WeaponRifle308M14
+  description: A pre-war designated marksman rifle chambered in .308. Built to replace the M1 Garand, it was soon superseded by the R91 in general service, but it stayed on as a precise semi-automatic marksman's rifle.
   components:
   - type: FirearmAttachmentHost
     enableOpticSlot: true
@@ -877,13 +878,13 @@
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
-    minAngle: 24
-    maxAngle: 45
+    minAngle: 22
+    maxAngle: 40 # #Misfits Tweak - DMR: tighter than the FAL, near-perfect when wielded
     angleIncrease: 4
     angleDecay: 16
     soundGunshot:
       collection: N14MarksmanGunshot
-    fireRate: 3
+    fireRate: 2.5
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -891,22 +892,26 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine762AmmoShort
+        startingItem: Magazine308Rifle # #Misfits Change - rechambered to .308
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - N14Magazine762Short
+            - N14Magazine308Rifle
       gun_chamber:
         name: Chamber
-        startingItem: N14Cartridge762Rifle
+        startingItem: N14Cartridge308Rifle
         priority: 1
         whitelist:
           tags:
-            - N14Cartridge762Rifle
+            - N14Cartridge308Rifle
   - type: StaticPrice
     price: 175
+  - type: GunDamageModifier
+    damage: # #Misfits Tweak - DMR: .308 38 + 5 = 43
+      types:
+        Piercing: 5
 
 - type: entity
   name: F2 marksman rifle
@@ -965,8 +970,8 @@
 - type: entity
   name: chinese marksman rifle
   parent: N14WeaponRifleBase
-  id: N14WeaponRifle762MarksmanChinese
-  description: A pre-war Chinese automatic marksman rifle with an integral suppressor and a 24-round 9mm magazine. Quiet and accurate, its rounds lose stopping power at range.
+  id: N14WeaponRifle9mmMarksmanChinese
+  description: 'A pre-war Chinese suppressed marksman rifle in the mold of the VSS Vintorez. Fires a heavy subsonic 9mm load from a 24-round magazine: hits hard at close and medium range, but the rounds lose their punch quickly beyond that.'
   components:
   - type: FirearmAttachmentHost
     showMuzzleVisual: false
@@ -979,9 +984,9 @@
       ejectOnUse: false
       disableEject: true
   - type: GunDamageModifier
-    damage:
+    damage: # #Misfits Tweak - VSS-style heavy subsonic 9mm load; 9mm 13 + 12 = 25 (4-hit crit)
       types:
-        Piercing: 11
+        Piercing: 12
   - type: Clothing
     sprite: _Nuclear14/Objects/Weapons/Guns/Rifles/chinesemarksman.rsi
     quickEquip: false
@@ -1005,7 +1010,7 @@
     angleDecay: 16
     soundGunshot:
       collection: N14MarksmanGunshot
-    fireRate: 5
+    fireRate: 4 # #Misfits Tweak - was 5
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -1038,6 +1043,10 @@
       offset: 15
       allowMovement: false
       doAfter: 0.8
+  - type: GunDamageFalloffOverride
+    falloffStartTiles: 7 # full damage out to medium range
+    maxFalloffTiles: 14
+    minDamageMultiplier: 0.35 # subsonic round bleeds energy fast past that
 
 - type: entity
   name: SKS chinese carbine
@@ -1296,8 +1305,7 @@
   name: butchered service rifle
   parent: N14WeaponRifleBase
   id: N14WeaponRifle556Butchered
-  description: A cheaply mass-produced post-war rifle made by the NCR, this one has been tortured horribly and converted into a "carbine", chambered in 5.56 ammo.
-  suffix: Deprecated
+  description: A cheaply mass-produced NCR service rifle that has been hacked down into a crude full-auto "carbine". Cheap, wild and unreliable, but it throws a lot of 5.56.
   components:
   - type: Clothing
     sprite: _Nuclear14/Objects/Weapons/Guns/Rifles/butcheredrifle.rsi
@@ -1348,7 +1356,7 @@
           tags:
             - N14Cartridge556Rifle
   - type: StaticPrice
-    price: 75
+    price: 40
 
 # ============================================================
 # Misfits Add — M1 Garand family
@@ -1375,6 +1383,8 @@
       collection: N14GarandGunshot
       params:
         volume: -4
+    minAngle: 20
+    maxAngle: 50
   - type: Clothing
     sprite: _Nuclear14/Objects/Weapons/Guns/Snipers/hunting.rsi # #Misfits Tweak: hunting rifle RSI back-slot placeholder, same as base Garand
     quickEquip: false
@@ -1390,6 +1400,10 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: StaticPrice
     price: 900
+  - type: GunDamageModifier
+    damage: # #Misfits Tweak - unique Garand: .308 38 + 4 = 42
+      types:
+        Piercing: 4
 
 # Pawolski's Retribution — UNIQUE, NCR heirloom.
 - type: entity
@@ -1406,6 +1420,8 @@
       collection: N14GarandGunshot
       params:
         volume: -4
+    minAngle: 20
+    maxAngle: 50
   - type: Clothing
     sprite: _Nuclear14/Objects/Weapons/Guns/Snipers/hunting.rsi # #Misfits Tweak: hunting rifle RSI back-slot placeholder, same as base Garand
     quickEquip: false
@@ -1421,6 +1437,10 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: StaticPrice
     price: 850
+  - type: GunDamageModifier
+    damage: # #Misfits Tweak - unique NCR Garand: .308 38 + 4 = 42
+      types:
+        Piercing: 4
 
 # Republic's Pride — UNIQUE, scoped M1C variant issued to NCR Scout Captains.
 - type: entity
@@ -1541,7 +1561,7 @@
 - type: entity
   name: SVT-40
   parent: BaseWeaponSniper
-  id: N14WeaponRifleSKS
+  id: N14WeaponRifle308SVT40
   description: An old hunting rifle taken from discovered stockpiles and refurbished in Legion workshops. The standard heavy rifle of the Legion, still rare. An SVT-40 rebuilt for .308 ammunition, semi-auto only, with a fixed internal 10-round magazine and a mount for an optional scope.
   components:
   - type: Item
@@ -1598,7 +1618,7 @@
     maxAngle: 60
     angleIncrease: 4
     angleDecay: 16
-    fireRate: 3
+    fireRate: 2.5 # #Misfits Tweak - DMR pace, was 3
     soundGunshot:
       collection: N14GarandGunshot
     selectedMode: SemiAuto
@@ -1612,6 +1632,10 @@
     proto: N14Cartridge308Rifle
   - type: StaticPrice
     price: 300
+  - type: GunDamageModifier
+    damage: # #Misfits Tweak - DMR: .308 38 + 5 = 43
+      types:
+        Piercing: 5
 
 # #Misfits Add — Infiltrator (suppressed R91 variant)
 # Ported from Fortune13/LoneStar (https://github.com/Cythisiax/LoneStar/), a SS13 Fallout fork.
@@ -1620,18 +1644,35 @@
   name: Infiltrator
   parent: N14WeaponRifle556R91
   id: N14WeaponRifleInfiltrator
-  description: A heavily modified R91 assault rifle with an integrated suppressor and polymer furniture. No official designation — whoever built it just started calling it the Infiltrator. Runs quiet and runs hot.
+  description: A heavily modified R91 assault rifle with an integrated suppressor, a fixed scope and polymer furniture. It has no official designation; whoever built it just started calling it the Infiltrator.
   components:
   - type: Gun
-    fireRate: 8
-    minAngle: 3
-    maxAngle: 20
+    fireRate: 5 # #Misfits Tweak - R91 rate; was 8 with a wield bonus that zeroed spread
     angleIncrease: 3
     angleDecay: 16
-    selectedMode: Fullauto
+    selectedMode: FullAuto
     availableModes:
-    - Fullauto
+    - FullAuto
+    - SemiAuto
     soundGunshot:
       collection: N14RifleR91Gunshot
   - type: StaticPrice
     price: 500
+  - type: FirearmAttachmentHost
+    showMuzzleVisual: false
+    muzzleSlot:
+      name: Integral suppressor
+      startingItem: N14FirearmSuppressor
+      locked: true
+      insertOnInteract: false
+      ejectOnInteract: false
+      ejectOnUse: false
+      disableEject: true
+  - type: Scope
+    requireWielding: true
+    zoomLevels:
+    - name: 4x
+      zoom: 1.0
+      offset: 15
+      allowMovement: false
+      doAfter: 0.8

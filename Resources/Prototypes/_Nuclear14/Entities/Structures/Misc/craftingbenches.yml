@@ -193,12 +193,9 @@
     - N14MagazineBox556AP
     - N14Cartridge223JHP
     - N14MagazineBox223JHP
-    - N14Cartridge223Match
-    - N14MagazineBox223Match
     - N14Cartridge303
     - N14MagazineBox303
     - N14Magazine303Bren
-    - N14Magazine303EM2
     - N14SpeedLoader303
     - Magazine556Rifle
     - Magazine556Rifle30 # Forge-add
@@ -226,7 +223,6 @@
     - MagazineBox12
     - N14ShellShotgun12
     - N14MagazineShotgun12
-    - N14MagazineShotgun12Blowback
     - MagazineBox12gauge
     - N14ShellShotgun20
     - N14MagazineShotgun20
@@ -235,10 +231,16 @@
     - MagazineBox22
     - SpeedLoader44
     - MagazineBox44
+    - N14SpeedLoader357
+    - N14SpeedLoaderTube357
+    - N14MagazinePistol357Automag
+    - N14AmmoBox38
     - N14MagazinePistol44
     - N14MagazinePistol45
     - Magazine45SubMachineGun
     - MagazineBox45
+    - N14SpeedLoader45
+    - N14SpeedLoaderTube45
     - Magazine308Rifle
     - Magazine308RifleLong
     - ClipMagazine308Rifle
@@ -252,7 +254,7 @@
     - MagazineBox50
     # Forge-Change-Start
     # 5.45
-    - MagazineBox545
+    - N14MagazineBox5mm
     - Magazine545Rifle
     - MagazineDrum545Rifle
     # Forge-Change-End

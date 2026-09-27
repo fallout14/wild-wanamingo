@@ -6,5 +6,5 @@
       id: N14WeaponSMG10mmPipe
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSMG9mm
+      id: N14WeaponSMG45GreaseGun
       weight: 7

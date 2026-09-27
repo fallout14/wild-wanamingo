@@ -8,3 +8,9 @@
     - !type:EntSelector
       id: N14WeaponRevolver10mm
       weight: 7
+    - !type:EntSelector
+      id: N14WeaponRevolver357SingleAction # #Misfits Add - .357 single action
+      weight: 6
+    - !type:EntSelector
+      id: N14WeaponRevolver45SingleAction # #Misfits Add - .45 single action
+      weight: 6

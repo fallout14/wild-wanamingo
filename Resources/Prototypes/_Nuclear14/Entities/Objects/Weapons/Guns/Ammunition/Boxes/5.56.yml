@@ -26,7 +26,7 @@
 - type: entity
   parent: BaseMagazineBox556Rifle
   id: MagazineBox556
-  name: ammunition box (5.56mm)
+  name: ammunition box (.223)
   components:
   - type: BallisticAmmoProvider
     proto: N14Cartridge556Rifle

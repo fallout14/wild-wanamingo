@@ -166,27 +166,6 @@
     Cardboard: 100
 
 - type: latheRecipe
-  id: N14Cartridge223Match
-  result: N14Cartridge223Match
-  category: N14Ammo
-  completetime: 2
-  materials:
-    Lead: 2
-    Steel: 4
-    N14Gunpowder: 2
-
-- type: latheRecipe
-  id: N14MagazineBox223Match
-  result: N14MagazineBox223Match
-  category: N14AmmoBox
-  completetime: 5
-  materials:
-    Lead: 150
-    Steel: 300
-    N14Gunpowder: 150
-    Cardboard: 100
-
-- type: latheRecipe
   id: N14Cartridge303
   result: N14Cartridge303
   category: N14Ammo

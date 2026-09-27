@@ -24,7 +24,7 @@
       id: N14WeaponPistol12mm
       weight: 7
     - !type:EntSelector
-      id: N14WeaponPistolThatGun
+      id: N14WeaponPistol223
       weight: 7
     - !type:EntSelector
       id: N14WeaponLaserdotDesertEagle44 # laser sight deagle
@@ -35,3 +35,6 @@
     - !type:EntSelector
       id: N14WeaponPistol9mmSpy #stealth
       weight: 7
+    - !type:EntSelector
+      id: N14WeaponPistol357Automag # #Misfits Add - .357 automag
+      weight: 4

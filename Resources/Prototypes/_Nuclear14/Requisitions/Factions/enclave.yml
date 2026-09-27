@@ -455,7 +455,7 @@
     reward: 50
   - type: StorageFill
     contents:
-    - id: N14WeaponLaserRifleWattz3000
+    - id: N14WeaponLaserRifleWattz2000Extended
       amount: 2
     - id: N14MicrofusionCell
       amount: 6
@@ -529,7 +529,7 @@
     contents:
     - id: N14WeaponPlasmaRifleUrban
       amount: 2
-    - id: N14PlasmaCartridge
+    - id: N14MicrofusionCellGreen
       amount: 6
 
 - type: entity
@@ -547,7 +547,7 @@
     contents:
     - id: N14WeaponPlasmaRifleAuto
       amount: 2
-    - id: N14PlasmaCartridge
+    - id: N14MicrofusionCellGreen
       amount: 6
 
 - type: entity
@@ -565,7 +565,7 @@
     contents:
     - id: N14WeaponPlasmaPistol
       amount: 2
-    - id: N14PlasmaCartridge
+    - id: N14PowerCellSmall
       amount: 4
 
 - type: entity
@@ -583,7 +583,7 @@
     contents:
     - id: N14WeaponPlasmaDefender
       amount: 2
-    - id: N14PlasmaCartridge
+    - id: N14PowerCellSmall
       amount: 4
 
 - type: entity
@@ -620,7 +620,7 @@
     contents:
     - id: N14WeaponPlasmaRifle
       amount: 2
-    - id: N14PlasmaCartridge
+    - id: N14MicrofusionCellGreen
       amount: 6
 
 - type: entity

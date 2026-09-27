@@ -177,7 +177,7 @@
 # Wattz 3000 laser rifle - 130 steel. Feeds on N14MicrofusionCell.
 - type: latheRecipe
   id: N14BPEnclaveWeaponLaserRifleWattz3000
-  result: N14WeaponLaserRifleWattz3000
+  result: N14WeaponLaserRifleWattz2000Extended
   category: N14BlueprintEnclaveWeapons
   completetime: 30
   requiresBlueprint: true

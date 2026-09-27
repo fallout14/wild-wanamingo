@@ -183,7 +183,7 @@
 # #Misfits Add - mediocre kinetic surplus rifles (T2)
 - type: latheRecipe
   id: N14BPBoSWeaponRifle762M14
-  result: N14WeaponRifle762M14
+  result: N14WeaponRifle308M14
   category: N14BlueprintBoSWeaponsT2
   completetime: 10
   requiresBlueprint: true
@@ -431,7 +431,7 @@
 
 - type: latheRecipe
   id: N14BPBoSWeaponLaserRifleWattz3000
-  result: N14WeaponLaserRifleWattz3000
+  result: N14WeaponLaserRifleWattz2000Extended
   category: N14BlueprintBoSWeaponsT5 # #Misfits Change - moved from T4 to T5
   completetime: 22
   requiresBlueprint: true
@@ -898,7 +898,7 @@
 
 - type: latheRecipe
   id: N14BPBoSAmmoBox545
-  result: MagazineBox545
+  result: N14MagazineBox5mm # #Misfits Change - 5.45mm deprecated
   category: N14BlueprintBoSAmmoT2
   completetime: 7
   requiresBlueprint: true
@@ -1423,7 +1423,7 @@
 
 - type: latheRecipe
   id: N14BPTownWeaponSMG9mm
-  result: N14WeaponSMG9mm
+  result: N14WeaponSMG45GreaseGun
   category: N14BlueprintTownWeaponsT2
   completetime: 8
   requiresBlueprint: true
@@ -1468,7 +1468,7 @@
 
 - type: latheRecipe
   id: N14BPTownWeaponRifle762M14
-  result: N14WeaponRifle762M14
+  result: N14WeaponRifle308M14
   category: N14BlueprintTownWeaponsT2
   completetime: 10
   requiresBlueprint: true
@@ -1481,7 +1481,7 @@
 
 - type: latheRecipe
   id: N14BPTownWeaponRifle762Rangemaster
-  result: N14WeaponRifle762Rangemaster
+  result: N14WeaponRifle556Rangemaster
   category: N14BlueprintTownWeaponsT2
   completetime: 9
   requiresBlueprint: true
@@ -1545,7 +1545,7 @@
 
 - type: latheRecipe
   id: N14BPTownWeaponSniper308Ross
-  result: N14WeaponSniper308Ross
+  result: N14WeaponSniper303Ross
   category: N14BlueprintTownWeaponsT2
   completetime: 9
   requiresBlueprint: true
@@ -1652,7 +1652,7 @@
 
 - type: latheRecipe
   id: N14BPTownWeaponSMG45
-  result: N14WeaponSMG45
+  result: N14WeaponSMG45Thompson
   category: N14BlueprintTownWeaponsT3
   completetime: 12
   requiresBlueprint: true
@@ -1700,7 +1700,7 @@
 
 - type: latheRecipe
   id: N14BPTownWeaponRifle556Carbine
-  result: N14WeaponRifle556Carbine
+  result: N14WeaponRifle5mmCarbine
   category: N14BlueprintTownWeaponsT3
   completetime: 14
   requiresBlueprint: true
@@ -2363,7 +2363,7 @@
 
 - type: latheRecipe
   id: N14BPTownAmmoBox545
-  result: MagazineBox545
+  result: N14MagazineBox5mm # #Misfits Change - 5.45mm deprecated
   category: N14BlueprintTownAmmoT2
   completetime: 7
   requiresBlueprint: true

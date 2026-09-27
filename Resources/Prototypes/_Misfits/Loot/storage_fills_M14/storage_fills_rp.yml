@@ -534,19 +534,19 @@
           prob: 0.1
           orGroup: Weapon
         # Forge-Change-Start
-        #- id: N14WeaponRifle556Carbine
+        #- id: N14WeaponRifle5mmCarbine
         #  prob: 0.04
         #  orGroup: Weapon
-        #- id: N14WeaponRifle762Chinese
+        #- id: N14WeaponRifle556Chinese
         #  prob: 0.02
         #  orGroup: Weapon
-        #- id: N14WeaponRifle762Marksman
+        #- id: N14WeaponRifle556Marksman
         #  prob: 0.04
         #  orGroup: Weapon
-        - id: N14WeaponRifle556CarbineOld
+        - id: N14WeaponRifle10mmSkirmisher
           prob: 0.04
           orGroup: Weapon
-        - id: N14WeaponRifle762M14
+        - id: N14WeaponRifle308M14
           prob: 0.03
           orGroup: Weapon
         # Forge-Change-End
@@ -597,7 +597,7 @@
         #- id: N14WeaponDesertEagle44 # Forge-Change
         #  prob: 0.025
         #  orGroup: Weapon
-        - id: N14WeaponSMG45
+        - id: N14WeaponSMG45Thompson
           prob: 0.05
           orGroup: Weapon
         - id: N14FireAxe
@@ -2246,13 +2246,13 @@
         - id: N14WeaponRevolver357Detective
           prob: 0.04
           orGroup: Weapon
-        - id: N14WeaponRifle556Carbine
+        - id: N14WeaponRifle5mmCarbine
           prob: 0.07
           orGroup: Weapon
-        - id: N14WeaponRifle762Chinese
+        - id: N14WeaponRifle556Chinese
           prob: 0.05
           orGroup: Weapon
-        - id: N14WeaponRifle762Marksman
+        - id: N14WeaponRifle556Marksman
           prob: 0.07
           orGroup: Weapon
         - id: N14WeaponShotgunDoubleBarrel
@@ -2309,10 +2309,10 @@
         - id: N14WeaponRifle308Battle
           prob: 0.07
           orGroup: Weapon
-        - id: N14WeaponRifle556CarbineOld
+        - id: N14WeaponRifle10mmSkirmisher
           prob: 0.05
           orGroup: Weapon
-        - id: N14WeaponSMG45
+        - id: N14WeaponSMG45Thompson
           prob: 0.07
           orGroup: Weapon
         - id: N14WeaponSniper556VarmintRifle
@@ -2511,7 +2511,7 @@
         - id: N14WeaponSMG10mmChinese
           prob: 0.05
           orGroup: Weapon
-        - id: N14WeaponRifle762M14
+        - id: N14WeaponRifle308M14
           prob: 0.04
           orGroup: Weapon
         - id: N14WeaponRifle556R91

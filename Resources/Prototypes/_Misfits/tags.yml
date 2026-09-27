@@ -96,3 +96,19 @@
 # Misfits Add - identifies the medical ethanol bottle for crafting.
 - type: Tag
   id: MisfitsEthanolBottle
+
+# #Misfits Add - speed loader / subcaliber tags
+- type: Tag
+  id: SpeedLoader45
+
+- type: Tag
+  id: SpeedLoaderTube357
+
+- type: Tag
+  id: SpeedLoaderTube45
+
+- type: Tag
+  id: N14CartridgePistol38
+
+- type: Tag
+  id: N14MagazinePistol357

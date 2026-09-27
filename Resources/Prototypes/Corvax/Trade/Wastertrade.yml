@@ -186,7 +186,7 @@
   - proto: N14WeaponLMGchinese
     price: 3600
     count: 2
-  - proto: N14WeaponRifle762MarksmanChinese
+  - proto: N14WeaponRifle9mmMarksmanChinese
     price: 550
     count: 5
   - proto: N14WeaponShotgunCanadian
@@ -590,7 +590,7 @@
     price: 63
   - proto: N14WeaponLMGchinese
     price: 1800
-  - proto: N14WeaponRifle762MarksmanChinese
+  - proto: N14WeaponRifle9mmMarksmanChinese
     price: 275
   - proto: N14WeaponShotgunChinese
     price: 225
@@ -634,7 +634,7 @@
     price: 20
   - proto: N14WeaponSniper556TribalUpgraded
     price: 55
-  - proto: N14WeaponSniper308Ross
+  - proto: N14WeaponSniper303Ross
     price: 75
   - proto: N14WeaponSniper45-70BrushGun
     price: 55
@@ -660,25 +660,25 @@
     price: 85
   - proto: N14WeaponRifle556ServiceScoped
     price: 102
-  - proto: N14WeaponRifle762M14
+  - proto: N14WeaponRifle308M14
     price: 110
   - proto: N14WeaponRifle556R91
     price: 120
-  - proto: N14WeaponRifle762Chinese
+  - proto: N14WeaponRifle556Chinese
     price: 200
-  - proto: N14WeaponRifle556CarbineOld
+  - proto: N14WeaponRifle10mmSkirmisher
     price: 125
   - proto: N14WeaponRifleAk112
     price: 130
-  - proto: N14WeaponRifle556Carbine
+  - proto: N14WeaponRifle5mmCarbine
     price: 248
   - proto: N14WeaponSniper308Canadian
     price: 165
   - proto: N14WeaponRifle556EM2
     price: 135
-  - proto: N14WeaponRifle762Marksman
+  - proto: N14WeaponRifle556Marksman
     price: 275
-  - proto: N14WeaponRifle762Fal
+  - proto: N14WeaponRifle308Fal
     price: 193
   - proto: N14WeaponRifle762Canadian
     price: 330
@@ -714,7 +714,7 @@
     price: 550
   - proto: N14WeaponSMGAmerican180
     price: 30
-  - proto: N14WeaponSMG9mm
+  - proto: N14WeaponSMG45GreaseGun
     price: 72
   - proto: N14WeaponSMG10mm
     price: 110
@@ -724,7 +724,7 @@
     price: 165
   - proto: N14WeaponSMGPPSh41
     price: 100
-  - proto: N14WeaponSMG45
+  - proto: N14WeaponSMG45Thompson
     price: 83
   - proto: N14WeaponSMG9mmCanadian
     price: 110

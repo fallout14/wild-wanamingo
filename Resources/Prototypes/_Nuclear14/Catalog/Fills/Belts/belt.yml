@@ -18,9 +18,9 @@
     - type: StorageFill
       contents:
         - id: N14WeaponRevolverWebley
-        - id: SpeedLoader44
-        - id: SpeedLoader44
-        - id: SpeedLoader44
+        - id: N14SpeedLoader45
+        - id: N14SpeedLoader45
+        - id: N14SpeedLoader45
 
 - type: entity
   categories: [ HideSpawnMenu ]

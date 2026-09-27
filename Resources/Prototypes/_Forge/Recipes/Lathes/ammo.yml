@@ -1,7 +1,7 @@
-# 5.45
+# 5mm (5.45mm is deprecated)
 - type: latheRecipe
-  id: MagazineBox545
-  result: MagazineBox545
+  id: N14MagazineBox5mm
+  result: N14MagazineBox5mm
   category: N14AmmoBox
   completetime: 5
   materials:

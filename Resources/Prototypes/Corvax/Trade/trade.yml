@@ -126,11 +126,11 @@
     price: 4
   - proto: N14WeaponShotgunCanadian
     price: 4
-  - proto: N14WeaponRifle556Carbine
+  - proto: N14WeaponRifle5mmCarbine
     price: 2
-  - proto: N14WeaponRifle762Chinese
+  - proto: N14WeaponRifle556Chinese
     price: 3
-  - proto: N14WeaponRifle762Marksman
+  - proto: N14WeaponRifle556Marksman
     price: 4
   - proto: N14WeaponLaserRiflePrototypeAER14
     price: 5
@@ -138,7 +138,7 @@
     price: 6
   - proto: N14WeaponPlasmaRifle
     price: 7
-  - proto: N14WeaponRifle762MarksmanChinese
+  - proto: N14WeaponRifle9mmMarksmanChinese
     price: 4
   - proto: N14WeaponLMG
     price: 8
@@ -247,11 +247,11 @@
     price: 2
   - proto: N14WeaponShotgunCanadian
     price: 2
-  - proto: N14WeaponRifle556Carbine
+  - proto: N14WeaponRifle5mmCarbine
     price: 1
-  - proto: N14WeaponRifle762Chinese
+  - proto: N14WeaponRifle556Chinese
     price: 1
-  - proto: N14WeaponRifle762Marksman
+  - proto: N14WeaponRifle556Marksman
     price: 2
   - proto: N14WeaponLaserRiflePrototypeAER14
     price: 2
@@ -259,7 +259,7 @@
     price: 3
   - proto: N14WeaponPlasmaRifle
     price: 3
-  - proto: N14WeaponRifle762MarksmanChinese
+  - proto: N14WeaponRifle9mmMarksmanChinese
     price: 2
   - proto: N14WeaponLMG
     price: 3
@@ -366,9 +366,9 @@
   id: CaravanBuy2_SMGs
   name: "Submachine Guns"
   entries:
-  - proto: N14WeaponSMG9mm
+  - proto: N14WeaponSMG45GreaseGun
     price: 130
-  - proto: N14WeaponSMG45
+  - proto: N14WeaponSMG45Thompson
     price: 150
   - proto: N14WeaponSMG12mmPipe
     price: 125
@@ -424,11 +424,11 @@
     price: 150
   - proto: N14WeaponRifle556Service
     price: 150
-  - proto: N14WeaponRifle762M14
+  - proto: N14WeaponRifle308M14
     price: 200
   - proto: N14WeaponRifle556R91
     price: 210
-  - proto: N14WeaponRifle556CarbineOld
+  - proto: N14WeaponRifle10mmSkirmisher
     price: 220
   - proto: N14WeaponRifleAk112
     price: 300
@@ -437,9 +437,9 @@
     price: 240
   - proto: N14WeaponSniper308Canadian
     price: 300
-  - proto: N14WeaponRifle762Fal
+  - proto: N14WeaponRifle308Fal
     price: 350
-  - proto: N14WeaponRifle556Carbine
+  - proto: N14WeaponRifle5mmCarbine
     price: 400
     count: 8
   - proto: N14WeaponRifle762MarksmanCanadian
@@ -484,7 +484,7 @@
     price: 100
   - proto: N14WeaponSniperHunting
     price: 125
-  - proto: N14WeaponSniper308Ross
+  - proto: N14WeaponSniper303Ross
     price: 125
   - proto: N14WeaponSniper308Tribal
     price: 200
@@ -941,7 +941,7 @@
     price: 83
   - proto: N14WeaponSMG12mmPipe
     price: 69
-  - proto: N14WeaponSMG9mm
+  - proto: N14WeaponSMG45GreaseGun
     price: 72
   - proto: N14WeaponSMG10mm
     price: 110
@@ -951,7 +951,7 @@
     price: 165
   - proto: N14WeaponSMGPPSh41
     price: 100
-  - proto: N14WeaponSMG45
+  - proto: N14WeaponSMG45Thompson
     price: 83
   - proto: N14WeaponSMG9mmCanadian
     price: 110
@@ -1013,27 +1013,27 @@
     price: 85
   - proto: N14WeaponRifle556ServiceScoped
     price: 102
-  - proto: N14WeaponRifle762M14
+  - proto: N14WeaponRifle308M14
     price: 110
   - proto: N14WeaponRifle556R91
     price: 120
-  - proto: N14WeaponRifle762Chinese
+  - proto: N14WeaponRifle556Chinese
     price: 200
-  - proto: N14WeaponRifle556CarbineOld
+  - proto: N14WeaponRifle10mmSkirmisher
     price: 125
   - proto: N14WeaponRifleAk112
     price: 130
-  - proto: N14WeaponRifle556Carbine
+  - proto: N14WeaponRifle5mmCarbine
     price: 248
   - proto: N14WeaponSniper308Canadian
     price: 165
   - proto: N14WeaponRifle556EM2
     price: 135
-  - proto: N14WeaponRifle762Marksman
+  - proto: N14WeaponRifle556Marksman
     price: 275
-  - proto: N14WeaponRifle762Fal
+  - proto: N14WeaponRifle308Fal
     price: 193
-  - proto: N14WeaponRifle762MarksmanChinese
+  - proto: N14WeaponRifle9mmMarksmanChinese
     price: 330
   - proto: N14WeaponRifle762Canadian
     price: 330
@@ -1069,7 +1069,7 @@
     price: 55
   - proto: N14WeaponSniperHunting
     price: 80
-  - proto: N14WeaponSniper308Ross
+  - proto: N14WeaponSniper303Ross
     price: 75
   - proto: N14WeaponSniper50Pipe
     price: 45

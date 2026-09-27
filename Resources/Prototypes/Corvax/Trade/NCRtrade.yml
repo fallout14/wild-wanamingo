@@ -110,12 +110,12 @@
     price: 280
   - proto: N14WeaponRifle308Battle
     price: 320
-  - proto: N14WeaponRifle762Fal
+  - proto: N14WeaponRifle308Fal
     price: 950
-  - proto: N14WeaponRifle556Carbine
+  - proto: N14WeaponRifle5mmCarbine
     price: 800
     count: 8
-  - proto: N14WeaponRifle762Marksman
+  - proto: N14WeaponRifle556Marksman
     price: 1200
     count: 5
   - proto: N14WeaponRifle556Service
@@ -129,7 +129,7 @@
   id: NCRBuy2_Smgs
   name: "SMGs"
   entries:
-  - proto: N14WeaponSMG45
+  - proto: N14WeaponSMG45Thompson
     price: 700
   - proto: N14WeaponSMG12mmAdvanced
     price: 450
@@ -564,11 +564,11 @@
     price: 140
   - proto: N14WeaponRifle308Battle
     price: 160
-  - proto: N14WeaponRifle762Fal
+  - proto: N14WeaponRifle308Fal
     price: 350
-  - proto: N14WeaponRifle556Carbine
+  - proto: N14WeaponRifle5mmCarbine
     price: 400
-  - proto: N14WeaponRifle762Marksman
+  - proto: N14WeaponRifle556Marksman
     price: 425
   - proto: N14WeaponRifle556Service
     price: 150
@@ -588,7 +588,7 @@
     price: 90
   - proto: N14WeaponSniper556TribalUpgraded
     price: 110
-  - proto: N14WeaponSniper308Ross
+  - proto: N14WeaponSniper303Ross
     price: 150
   - proto: N14WeaponSniperCowboyRepeater
     price: 110
@@ -602,7 +602,7 @@
     price: 500
   - proto: N14WeaponRifle556ServiceScoped
     price: 200
-  - proto: N14WeaponRifle762M14
+  - proto: N14WeaponRifle308M14
     price: 220
   - proto: N14WeaponRifle556EM2
     price: 260
@@ -612,7 +612,7 @@
     price: 440
   - proto: N14WeaponLMGAutoRifle
     price: 700
-  - proto: N14WeaponRifle556CarbineOld
+  - proto: N14WeaponRifle10mmSkirmisher
     price: 240
 
 - type: storeCategoryStructured
@@ -656,7 +656,7 @@
   id: NCRSell2_SMGs
   name: "SMGs"
   entries:
-  - proto: N14WeaponSMG45
+  - proto: N14WeaponSMG45Thompson
     price: 150
   - proto: N14WeaponSMG10mm
     price: 250
@@ -678,7 +678,7 @@
     price: 1650
   - proto: N14WeaponSMGAmerican180
     price: 60
-  - proto: N14WeaponSMG9mm
+  - proto: N14WeaponSMG45GreaseGun
     price: 140
   - proto: N14WeaponSMG9mminfiltrator
     price: 260

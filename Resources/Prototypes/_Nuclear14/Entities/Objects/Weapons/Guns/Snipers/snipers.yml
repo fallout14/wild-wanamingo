@@ -46,6 +46,10 @@
     backStrength: 3
   - type: StaticPrice
     price: 75
+  - type: GunDamageModifier
+    damage: # #Misfits Tweak - sniper role: .308 38 + 10 = 48
+      types:
+        Piercing: 10
   # #Misfits Add — scope attachment slot; inherited by all lever-action carbines
   # - type: ItemSlots
   #   slots:
@@ -266,17 +270,17 @@
       allowMovement: false
       doAfter: 1.0
 
+# #Misfits Change - renamed to trail carbine and rechambered from .44 to .357 magnum (accepts .38 special)
 - type: entity
-  name: lever action carbine
+  name: trail carbine
   parent: N14WeaponSniperHunting
-  id: N14WeaponSniper44LeverCarbine
-  description: A short lever action carbine. Uses .44 ammo.
-  suffix: Deprecated
+  id: N14WeaponSniper357TrailCarbine
+  description: A short, entry-level lever action carbine. Uses .357 magnum ammo, and will also chamber .38 special.
   components:
   - type: Clothing
-    sprite: _Nuclear14/Objects/Weapons/Guns/Snipers/levercarbine.rsi
+    sprite: _Misfits/Objects/Weapons/Guns/Snipers/trailcarbine.rsi
   - type: Sprite
-    sprite: _Nuclear14/Objects/Weapons/Guns/Snipers/levercarbine.rsi
+    sprite: _Misfits/Objects/Weapons/Guns/Snipers/trailcarbine.rsi
   - type: Item # Forge-Change
     size: Large # Forge-Change
   - type: Wieldable
@@ -294,30 +298,36 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - N14Cartridge44Magnum
-    capacity: 12
-    proto: N14Cartridge44Magnum
+      - N14CartridgePistol357
+      - SpeedLoaderTube357
+    capacity: 10 # #Misfits Tweak - entry-level, was 12
+    proto: N14CartridgePistol357
   - type: FollowDistance
     backStrength: 3
-  - type: Construction
-    graph: LeverCarbineSawed
-    node: start
+  # #Misfits Remove - LeverCarbineSawed graph produced the .44 short carbine, which would change caliber
   - type: StaticPrice
     price: 75
+  - type: GunDamageModifier
+    damage: # #Misfits Tweak - do not inherit the hunting rifle's sniper bonus
+      types:
+        Piercing: 0
 
 - type: entity
   name: lever action rifle
   parent: N14WeaponSniperHunting
-  id: N14WeaponSniper308LeverRifle
-  description: A long lever action repeater rifle. Uses 10mm ammo.
-  suffix: Deprecated
+  id: N14WeaponSniper10mmLeverRifle
+  description: A long lever action repeater rifle. Its long barrel gets a little more out of each round. Uses 10mm ammo.
   components:
   - type: Clothing
     sprite: _Nuclear14/Objects/Weapons/Guns/Snipers/leverrifle.rsi
   - type: Sprite
     sprite: _Nuclear14/Objects/Weapons/Guns/Snipers/leverrifle.rsi
+  - type: GunDamageModifier
+    damage: # #Misfits Tweak - long barrel: 10mm 15 + 7 = 22, on par with the cowboy repeater
+      types:
+        Piercing: 7
   - type: Gun
-    fireRate: 1.2
+    fireRate: 2.5 # #Misfits Tweak - mid-tier lever action, was 1.2
     soundGunshot:
       collection: N14LeverRifleGunshot
   - type: FollowDistance
@@ -361,6 +371,10 @@
   - type: FirearmAttachmentHost
     opticVisualState: leveraction_scope
     opticVisualOffset: 0.25, 0.46875
+  - type: GunDamageModifier
+    damage: # #Misfits Tweak - do not inherit the hunting rifle's sniper bonus
+      types:
+        Piercing: 0
 
 - type: entity
   name: pipe rifle
@@ -386,6 +400,10 @@
     backStrength: 3
   - type: StaticPrice
     price: 25
+  - type: GunDamageModifier
+    damage: # #Misfits Tweak - do not inherit the hunting rifle's sniper bonus
+      types:
+        Piercing: 0
 
 - type: entity
   name: varmint rifle
@@ -508,6 +526,10 @@
     node: levercarbinesawed
   - type: StaticPrice
     price: 75
+  - type: GunDamageModifier
+    damage: # #Misfits Tweak - do not inherit the hunting rifle's sniper bonus
+      types:
+        Piercing: 0
 
 - type: entity
   name: .50 pipe rifle
@@ -574,6 +596,10 @@
   - type: FirearmAttachmentHost
     opticVisualState: leveraction_scope
     opticVisualOffset: 0.21875, 0.46875
+  - type: GunDamageModifier
+    damage: # #Misfits Tweak - do not inherit the hunting rifle's sniper bonus
+      types:
+        Piercing: 0
 
 - type: entity
   name: master huntstick
@@ -657,11 +683,15 @@
       offset: 21
       allowMovement: false
       doAfter: 1.0
+  - type: GunDamageModifier
+    damage: # #Misfits Tweak - do not inherit the hunting rifle's sniper bonus
+      types:
+        Piercing: 0
 
 - type: entity
   name: ross rifle
   parent: N14WeaponSniperHunting
-  id: N14WeaponSniper308Ross
+  id: N14WeaponSniper303Ross
   description: A well-preserved bolt action canadian service rifle. Uses .303 British ammo.
   components:
   - type: FirearmAttachmentHost
@@ -702,6 +732,10 @@
     backStrength: 3 # Forge-Change
   - type: StaticPrice
     price: 50 # Forge-Change
+  - type: GunDamageModifier
+    damage: # #Misfits Tweak - do not inherit the hunting rifle's sniper bonus
+      types:
+        Piercing: 0
 
 # Forge-add-start
 - type: entity
@@ -818,6 +852,7 @@
     whitelist:
       tags:
       - N14CartridgePistol357
+      - SpeedLoaderTube357 # #Misfits Add
     capacity: 12
     proto: N14CartridgePistol357
   - type: FollowDistance
@@ -827,6 +862,10 @@
   - type: FirearmAttachmentHost
     opticVisualState: leveraction_scope
     opticVisualOffset: 0.25, 0.46875
+  - type: GunDamageModifier
+    damage: # #Misfits Tweak - do not inherit the hunting rifle's sniper bonus
+      types:
+        Piercing: 0
 
 - type: entity
   name: Paciencia
@@ -864,6 +903,10 @@
     backStrength: 4
   - type: StaticPrice
     price: 700
+  - type: GunDamageModifier
+    damage: # #Misfits Tweak - potent three-shot hunting rifle: .308 38 + 20 = 58 (2-hit crit)
+      types:
+        Piercing: 20
 
 - type: entity
   name: Ratslayer
@@ -972,8 +1015,8 @@
 - type: entity
   name: Colt Rangemaster
   parent: N14WeaponRifleBase
-  id: N14WeaponRifle762Rangemaster
-  description: A semi-automatic 5.56mm hunting rifle with a long barrel and a mount for an optional scope. Issued to NCR designated marksmen who needed reach without the weight of a full sniper platform. Accepts detachable 25-round 5.56mm magazines.
+  id: N14WeaponRifle556Rangemaster
+  description: 'A Colt Rangemaster semi-automatic hunting rifle in .223 with a long barrel and a mount for an optional scope. The classic wasteland hunting rifle: slow and deliberate, but it reaches out and holds its punch at range.'
   components:
   - type: MagazineVisuals
     fullSprite: false
@@ -982,9 +1025,9 @@
     zeroVisible: true
   - type: Appearance
   - type: GunDamageModifier
-    damage:
+    damage: # #Misfits Tweak - hunting rifle: .223 20 + 10 = 30 (4-hit crit)
       types:
-        Piercing: 2
+        Piercing: 10
   - type: FirearmAttachmentHost
     enableOpticSlot: true
     opticVisualState: rangemaster_scope
@@ -1022,7 +1065,7 @@
     maxAngle: 80
     angleIncrease: 4
     angleDecay: 16
-    fireRate: 2.5
+    fireRate: 1.8 # #Misfits Tweak - was 2.5
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -1050,3 +1093,7 @@
     backStrength: 4
   - type: StaticPrice
     price: 150
+  - type: GunDamageFalloffOverride
+    falloffStartTiles: 14 # long barrel holds velocity
+    maxFalloffTiles: 26
+    minDamageMultiplier: 0.8

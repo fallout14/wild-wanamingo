@@ -94,9 +94,9 @@
     price: 80
   - proto: N14WeaponRifle762SKS
     price: 45
-  - proto: N14WeaponRifle762Chinese
+  - proto: N14WeaponRifle556Chinese
     price: 100
-  - proto: N14WeaponSniper308Ross
+  - proto: N14WeaponSniper303Ross
     price: 31
   - proto: N14WeaponRifle308Battle
     price: 25
@@ -109,9 +109,9 @@
   id: LegionBuy2_Smgs
   name: "SMGs"
   entries:
-  - proto: N14WeaponSMG45
+  - proto: N14WeaponSMG45Thompson
     price: 38
-  - proto: N14WeaponSMG9mm
+  - proto: N14WeaponSMG45GreaseGun
     price: 40
   - proto: N14WeaponSMG10mmChinese
     price: 45
@@ -222,7 +222,7 @@
   - proto: 40mmGrenadeFire
     price: 55
     count: 10
-  - proto: MagazineBox545
+  - proto: N14MagazineBox5mm # #Misfits Change - 5.45mm deprecated
     price: 35
 
 - type: storeCategoryStructured
@@ -437,9 +437,9 @@
     price: 30
   - proto: N14WeaponRifle762SKS
     price: 19
-  - proto: N14WeaponRifle762Chinese
+  - proto: N14WeaponRifle556Chinese
     price: 10
-  - proto: N14WeaponSniper308Ross
+  - proto: N14WeaponSniper303Ross
     price: 35
   - proto: N14WeaponRifle308Battle
     price: 30
@@ -459,11 +459,11 @@
     price: 18
   - proto: N14WeaponRifleM1Garand
     price: 19
-  - proto: N14WeaponRifle762Fal
+  - proto: N14WeaponRifle308Fal
     price: 44
-  - proto: N14WeaponRifle556Carbine
+  - proto: N14WeaponRifle5mmCarbine
     price: 50
-  - proto: N14WeaponRifle762Marksman
+  - proto: N14WeaponRifle556Marksman
     price: 53
   - proto: N14WeaponRifle556Service
     price: 19
@@ -487,13 +487,13 @@
     price: 64
   - proto: N14WeaponRifle556ServiceScoped
     price: 25
-  - proto: N14WeaponRifle762M14
+  - proto: N14WeaponRifle308M14
     price: 28
   - proto: N14WeaponRifle762Canadian
     price: 78
   - proto: N14WeaponRifle762MarksmanCanadian
     price: 55
-  - proto: N14WeaponRifle556CarbineOld
+  - proto: N14WeaponRifle10mmSkirmisher
     price: 30
 
 - type: storeCategoryStructured
@@ -502,7 +502,7 @@
   entries:
   - proto: N14WeaponSMG10mmChinese
     price: 23
-  - proto: N14WeaponSMG45
+  - proto: N14WeaponSMG45Thompson
     price: 19
   - proto: N14WeaponSMG10mm
     price: 30
@@ -516,7 +516,7 @@
     price: 210
   - proto: N14WeaponSMGAmerican180
     price: 8
-  - proto: N14WeaponSMG9mm
+  - proto: N14WeaponSMG45GreaseGun
     price: 18
   - proto: N14WeaponSMG9mminfiltrator
     price: 32

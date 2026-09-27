@@ -1,5 +1,7 @@
 # Rifle ammunition variants. Compatibility is determined by cartridge tags, not display names.
 # Legacy .308 and 5.56 prototypes remain valid for existing maps and loadouts.
+# #Misfits Change - 5.56/.223 lineup is: .223 (base N14Cartridge556Rifle, most common), .223 JHP,
+# 5.56 (N14Cartridge556FMJ; ID kept for compatibility) and 5.56 AP. .223 Match was removed.
 
 - type: entity
   id: N14Bullet762x51FMJ
@@ -140,14 +142,14 @@
 - type: entity
   id: N14Bullet556FMJ
   parent: N14Bullet556
-  name: bullet (5.56mm FMJ)
+  name: bullet (5.56mm)
   categories: [HideSpawnMenu]
   components:
   - type: Projectile
     armorPenetration: 0
     damage:
       types:
-        Piercing: 20
+        Piercing: 22 # #Misfits Change - hotter military load than civilian .223 (20)
   - type: BallisticDamageFalloff
     falloffStartTiles: 9
     maxFalloffTiles: 18
@@ -156,8 +158,8 @@
 - type: entity
   id: N14Cartridge556FMJ
   parent: N14Cartridge556Rifle
-  name: cartridge (5.56mm FMJ)
-  description: General-purpose ammunition. Compatible with .223 firearms and magazines.
+  name: cartridge (5.56mm)
+  description: Military 5.56mm ammunition, loaded hotter than civilian .223. Compatible with .223 firearms and magazines.
   components:
   - type: CartridgeAmmo
     proto: N14Bullet556FMJ
@@ -165,8 +167,8 @@
 - type: entity
   id: N14MagazineBox556FMJ
   parent: MagazineBox556
-  name: ammunition box (5.56mm FMJ)
-  description: General-purpose ammunition. Compatible with .223 firearms and magazines.
+  name: ammunition box (5.56mm)
+  description: Military 5.56mm ammunition, loaded hotter than civilian .223. Compatible with .223 firearms and magazines.
   components:
   - type: BallisticAmmoProvider
     proto: N14Cartridge556FMJ
@@ -238,40 +240,6 @@
   components:
   - type: BallisticAmmoProvider
     proto: N14Cartridge223JHP
-
-- type: entity
-  id: N14Bullet223Match
-  parent: N14Bullet556
-  name: bullet (.223 Match)
-  categories: [HideSpawnMenu]
-  components:
-  - type: Projectile
-    armorPenetration: 0
-    damage:
-      types:
-        Piercing: 20
-  - type: BallisticDamageFalloff
-    falloffStartTiles: 12
-    maxFalloffTiles: 24
-    minDamageMultiplier: 0.75
-
-- type: entity
-  id: N14Cartridge223Match
-  parent: N14Cartridge556Rifle
-  name: cartridge (.223 Match)
-  description: Match ammunition with improved damage retention at range. Compatible with 5.56mm firearms and magazines.
-  components:
-  - type: CartridgeAmmo
-    proto: N14Bullet223Match
-
-- type: entity
-  id: N14MagazineBox223Match
-  parent: MagazineBox556
-  name: ammunition box (.223 Match)
-  description: Match ammunition with improved damage retention at range. Compatible with 5.56mm firearms and magazines.
-  components:
-  - type: BallisticAmmoProvider
-    proto: N14Cartridge223Match
 
 - type: entity
   id: N14Bullet303
@@ -352,6 +320,7 @@
 
 - type: entity
   id: N14Magazine303EM2
+  suffix: Deprecated
   parent: LongMagazine556Rifle
   name: EM2 magazine (.303 British)
   description: A 35-round .303 British magazine for the EM2 rifle.

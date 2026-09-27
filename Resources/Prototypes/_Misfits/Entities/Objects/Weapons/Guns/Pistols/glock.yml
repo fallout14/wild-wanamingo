@@ -7,6 +7,7 @@
   name: Glock 37M
   parent: N14BaseWeaponPistol
   id: N14Glock
+  suffix: Admin Only
   description: An exceedingly rare Glock chambered in .45 Magnum. Its unusual caliber and limited production make it a true collector's piece if you are pro.
   components:
   - type: Tag

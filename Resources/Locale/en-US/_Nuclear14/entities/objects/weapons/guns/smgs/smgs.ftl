@@ -8,8 +8,8 @@ ent-N14WeaponSMG10mmPipeEmpty = 10mm pipe SMG
 ent-N14WeaponSMGPPSh41 = PPSh-41
     .desc = A Soviet-era submachine gun firing 9mm from a 35-round drum at a terrifying rate of fire. Crude and reliable in equal measure — scavengers prize it for its simplicity and ease of maintenance.
 
-ent-N14WeaponSMG9mm = .45 Auto SMG
-    .desc = A pre-war .45 Auto submachine gun with a detachable magazine and a threaded muzzle for a suppressor.
+ent-N14WeaponSMG45GreaseGun = grease gun
+    .desc = An M3 "grease gun": a cheap, stamped-steel .45 ACP submachine gun with a slow, controllable rate of fire and a threaded muzzle for a suppressor.
 
 ent-N14WeaponSMG10mmSuppressed = Sleepytyme
     .desc = A unique, permanently suppressed 10mm submachine gun. Quiet, compact, and built for work after dark.

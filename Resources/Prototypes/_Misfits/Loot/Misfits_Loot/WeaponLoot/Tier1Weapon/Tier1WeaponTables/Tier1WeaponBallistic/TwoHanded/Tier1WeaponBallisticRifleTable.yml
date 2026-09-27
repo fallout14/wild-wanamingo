@@ -5,6 +5,9 @@
   table: !type:GroupSelector
     children:
     - !type:EntSelector
+      id: N14WeaponRifle556Butchered # #Misfits Add - cheap 5.56 carbine
+      weight: 4
+    - !type:EntSelector
       id: Error
 
 
@@ -18,3 +21,6 @@
     - !type:EntSelector
       id: N14WeaponSniper556VarmintRifle
       weight: 4
+    - !type:EntSelector
+      id: N14WeaponSniper357TrailCarbine # #Misfits Add - entry-level lever action
+      weight: 5

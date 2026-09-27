@@ -11,14 +11,14 @@ namespace Content.IntegrationTests.Tests._Misfits.GunSystem;
 public sealed class WeaponAttachmentRevisionTest
 {
     [TestCase("N14WeaponRifle762SKS")]
-    [TestCase("N14WeaponRifleSKS")]
+    [TestCase("N14WeaponRifle308SVT40")]
     [TestCase("N14WeaponRifle556Service")]
-    [TestCase("N14WeaponRifle556Carbine")]
+    [TestCase("N14WeaponRifle5mmCarbine")]
     [TestCase("N14WeaponRifle308Battle")]
-    [TestCase("N14WeaponRifle762M14")]
+    [TestCase("N14WeaponRifle308M14")]
     [TestCase("N14WeaponSniperHunting")]
     [TestCase("N14WeaponSniperEnfield")]
-    [TestCase("N14WeaponSniper308Ross")]
+    [TestCase("N14WeaponSniper303Ross")]
     [TestCase("N14WeaponRevolver44Magnum")]
     [TestCase("N14WeaponRevolver45-70Hunter")]
     public async Task OptionalScopeCanBeInstalled(string prototype)
@@ -38,11 +38,11 @@ public sealed class WeaponAttachmentRevisionTest
     }
 
     [TestCase("N14WeaponPistol9mm")]
-    [TestCase("N14WeaponSMG9mm")]
+    [TestCase("N14WeaponSMG45GreaseGun")]
     [TestCase("N14WeaponSMG12mmAdvancedChinese")]
     [TestCase("N14WeaponSMG12mmAdvanced")]
     [TestCase("N14WeaponPistol45Colt")]
-    [TestCase("N14WeaponRifle762M14")]
+    [TestCase("N14WeaponRifle308M14")]
     [TestCase("N14WeaponSMG10mm")]
     [TestCase("N14WeaponPistol10mm")]
     [TestCase("N14WeaponPistol12mm")]
@@ -68,13 +68,13 @@ public sealed class WeaponAttachmentRevisionTest
         await pair.Server.WaitAssertion(() =>
         {
             var em = pair.Server.ResolveDependency<IEntityManager>();
-            var gun = em.SpawnEntity("N14WeaponPistolThatGun", map.GridCoords);
+            var gun = em.SpawnEntity("N14WeaponPistol223", map.GridCoords);
             var provider = em.GetComponent<RevolverAmmoProviderComponent>(gun);
             Assert.That(provider.Capacity, Is.EqualTo(5));
             Assert.That(em.HasComponent<ChamberMagazineAmmoProviderComponent>(gun), Is.False);
             Assert.That(em.HasComponent<MagazineAmmoProviderComponent>(gun), Is.False);
             var whitelist = em.System<EntityWhitelistSystem>();
-            foreach (var cartridge in new[] { "N14Cartridge223JHP", "N14Cartridge223Match", "N14Cartridge556FMJ", "N14Cartridge556AP" })
+            foreach (var cartridge in new[] { "N14Cartridge556Rifle", "N14Cartridge223JHP", "N14Cartridge556FMJ", "N14Cartridge556AP" })
             {
                 var round = em.SpawnEntity(cartridge, map.GridCoords);
                 Assert.That(whitelist.IsWhitelistPass(provider.Whitelist, round), Is.True, cartridge);
@@ -84,8 +84,8 @@ public sealed class WeaponAttachmentRevisionTest
     }
 
     [TestCase("N14WeaponShotgunRiot", "N14MagazineShotgun12", "N14MagazineShotgun20")]
-    [TestCase("N14WeaponRifle556EM2", "N14Magazine303EM2", "LongMagazine556Rifle")]
-    [TestCase("N14WeaponSMG9mm", "Magazine45SubMachineGun", "N14MagazineSMG9mm")]
+    [TestCase("N14WeaponRifle556EM2", "LongMagazine556Rifle", "N14Magazine303EM2")]
+    [TestCase("N14WeaponSMG45GreaseGun", "Magazine45SubMachineGun", "N14MagazineSMG9mm")]
     public async Task RechamberedWeaponsRejectOldMagazines(string prototype, string correct, string wrong)
     {
         await using var pair = await PoolManager.GetServerClient();
@@ -105,12 +105,12 @@ public sealed class WeaponAttachmentRevisionTest
     }
 
     [TestCase("N14WeaponRifle308Battle", true, false)]
-    [TestCase("N14WeaponRifle762M14", true, true)]
-    [TestCase("N14WeaponRifleSKS", true, false)]
+    [TestCase("N14WeaponRifle308M14", true, true)]
+    [TestCase("N14WeaponRifle308SVT40", true, false)]
     [TestCase("N14WeaponRifle762SKS", true, false)]
-    [TestCase("N14WeaponRifle556Carbine", false, true)]
+    [TestCase("N14WeaponRifle5mmCarbine", false, true)]
     [TestCase("N14WeaponSniperEnfield", true, false)]
-    [TestCase("N14WeaponSniper308Ross", true, false)]
+    [TestCase("N14WeaponSniper303Ross", true, false)]
     [TestCase("N14WeaponRifle556Service", true, false)]
     public async Task MuzzleRestrictionsAllowScopeAlongsideAttachment(string prototype, bool bayonet, bool suppressor)
     {

@@ -12,5 +12,5 @@ ent-N14WeaponPistolM1911Custom = M1911 (Custom)
 ent-N14WeaponPistolMaria = Maria
     .desc = A customised 9mm semi-auto pistol with an extraordinarily high rate of fire. Gold-plated and engraved with the name "Maria" on the slide. Light, fast, and lethal.
 
-ent-N14WeaponPistolThatGun = That Gun
-    .desc = A distinctive five-shot revolver chambered for interchangeable .223 and 5.56mm ammunition. Its tuned action gives each shot extra punch.
+ent-N14WeaponPistol223 = .223 pistol
+    .desc = A distinctive five-shot revolver chambered for .223, and will also take 5.56mm. Its tuned action gives each shot extra punch.

@@ -22,6 +22,7 @@ using Content.Shared.Mech.Components; // Goobstation
 using Content.Shared._Misfits.CCVar;
 using Content.Shared._Misfits.Random;
 using Content.Shared._Misfits.Weapons;
+using Content.Shared._Misfits.Weapons.Components; // #Misfits Add - GunDamageFalloffOverride
 using Content.Shared._Misfits.Weapons.Ranged.Prediction;
 using Content.Shared.Popups;
 using Content.Shared.Projectiles;
@@ -559,6 +560,17 @@ public abstract partial class SharedGunSystem : EntitySystem
         if (TryComp<GunDamageModifierComponent>(gunUid, out var damageModifier))
         {
             projectile.Damage += damageModifier.Damage;
+        }
+
+        // #Misfits Add - gun-specific falloff for the rounds it fires
+        if (TryComp<GunDamageFalloffOverrideComponent>(gunUid, out var falloffOverride))
+        {
+            var falloff = EnsureComp<BallisticDamageFalloffComponent>(uid);
+            falloff.FalloffStartTiles = falloffOverride.FalloffStartTiles;
+            falloff.MaxFalloffTiles = falloffOverride.MaxFalloffTiles;
+            falloff.MinDamageMultiplier = falloffOverride.MinDamageMultiplier;
+            if (falloff.SpawnPosition == MapCoordinates.Nullspace)
+                falloff.SpawnPosition = mapCoords;
         }
         
         Projectiles.SetShooter(uid, projectile, user ?? gunUid);

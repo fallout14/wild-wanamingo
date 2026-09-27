@@ -5,10 +5,10 @@
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponRifle556Carbine
+      id: N14WeaponRifle5mmCarbine
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle556CarbineOld
+      id: N14WeaponRifle10mmSkirmisher
       weight: 4
     - !type:EntSelector
       id: N14WeaponAutoRifle556Legion
@@ -28,20 +28,17 @@
       id: N14WeaponRifle556EM2
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle762Fal
+      id: N14WeaponRifle308Fal
       weight: 4
     - !type:EntSelector
       id: N14WeaponRifle762Canadian
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle762Chinese
+      id: N14WeaponRifle556Chinese
       weight: 4
       #AK 5.45
     - !type:EntSelector
       id: N14WeaponRifleAk112 #BOS??
-      weight: 4
-    - !type:EntSelector
-      id: N14WeaponRifleAk112pn # extended mag
       weight: 4
     - !type:EntSelector
       id: N14WeaponRifleBozarGRA # BOAZARRR!!!
@@ -98,7 +95,7 @@
       id: N14WeaponSniper308Canadian
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSniper308Ross
+      id: N14WeaponSniper303Ross
       weight: 4
     - !type:EntSelector
       id: N14WeaponRifle308SniperRifle
@@ -106,19 +103,19 @@
 
 
     - !type:EntSelector
-      id: N14WeaponRifle762Rangemaster # bayonet
+      id: N14WeaponRifle556Rangemaster # bayonet
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle762Marksman
+      id: N14WeaponRifle556Marksman
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle762M14
+      id: N14WeaponRifle308M14
       weight: 4
     - !type:EntSelector
       id: N14WeaponRifle762MarksmanCanadian
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle762MarksmanChinese
+      id: N14WeaponRifle9mmMarksmanChinese
       weight: 4
     - !type:EntSelector
       id: N14WeaponRifle762SKS
@@ -162,11 +159,8 @@
       id: N14WeaponRifle308Battle
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifleM1Garand
-      weight: 4
-    - !type:EntSelector
       id: N14WeaponRifle762SKS
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifleSKS #Legion
+      id: N14WeaponRifle308SVT40 #Legion
       weight: 4

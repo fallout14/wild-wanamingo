@@ -40,7 +40,7 @@
     head: N14ClothingHeadHatBeanie
     ears: MisfitsClothingHeadsetWastelandScrap
     back: N14ClothingBackpackMilitary
-    suitstorage: N14WeaponSMG45
+    suitstorage: N14WeaponSMG45Thompson
     belt: ClothingBeltMilitary
   storage:
     back:

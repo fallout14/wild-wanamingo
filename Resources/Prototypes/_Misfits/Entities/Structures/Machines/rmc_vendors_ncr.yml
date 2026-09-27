@@ -97,6 +97,7 @@
     - name: Tier 5 - Commander / Requisition Officer allocation
       entries:
       - { id: N14WeaponRifleM1GarandRepublicsPride, category: Ballistic, tier: 5 }
+      - { id: N14WeaponRifleM1GarandPawolskis, category: Ballistic, tier: 5 } # #Misfits Add - NCR heirloom Garand
     replenishment:
     - currency: Bottlecaps
     replenishmentCosts:
@@ -127,26 +128,26 @@
       N14WeaponRifle556R91: { category: Ballistic }
       N14WeaponRifle556Service: { category: Ballistic, tier: 1 }
       N14WeaponRifle556ServiceScoped: { category: Ballistic }
-      N14WeaponRifle762M14: { category: Ballistic }
-      N14WeaponRifle762Rangemaster: { category: Ballistic }
+      N14WeaponRifle308M14: { category: Ballistic }
+      N14WeaponRifle556Rangemaster: { category: Ballistic }
       N14WeaponShotgunAuto: { category: Ballistic, tier: 1 }
       N14WeaponShotgunRiot: { category: Ballistic }
       N14WeaponShotgunTrench: { category: Ballistic }
       N14WeaponSMG10mm: { category: Ballistic }
       N14WeaponSMG10mmChinese: { category: Ballistic }
       N14WeaponSMG12mmAdvanced: { category: Ballistic, tier: 1 }
-      N14WeaponSMG45: { category: Ballistic }
-      N14WeaponSMG9mm: { category: Ballistic, tier: 1 }
+      N14WeaponSMG45Thompson: { category: Ballistic }
+      N14WeaponSMG45GreaseGun: { category: Ballistic, tier: 1 }
       N14WeaponSMGPPSh41: { category: Ballistic }
       N14WeaponSniper45-70BrushGun: { category: Ballistic }
       N14WeaponDesertEagle44: { category: Ballistic }
       N14WeaponRevolver45-70Hunter: { category: Ballistic }
       N14WeaponRevolver45-70RangerSequoia: { enabled: false }
       N14WeaponRifle308Battle: { category: Ballistic }
-      N14WeaponRifle556Carbine: { category: Ballistic, tier: 2 }
+      N14WeaponRifle5mmCarbine: { category: Ballistic, tier: 2 }
       N14WeaponRifle556Scout: { category: Ballistic }
-      N14WeaponRifle762Fal: { category: Ballistic }
-      N14WeaponRifle762Marksman: { category: Ballistic }
+      N14WeaponRifle308Fal: { category: Ballistic }
+      N14WeaponRifle556Marksman: { category: Ballistic }
       N14WeaponShotgunChinese: { category: Ballistic }
       N14WeaponLMG: { category: Ballistic, tier: 2 }
       N14WeaponLMGAutoRifle: { category: Ballistic, tier: 2 }

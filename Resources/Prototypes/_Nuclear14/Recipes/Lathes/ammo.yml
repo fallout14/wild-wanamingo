@@ -634,13 +634,64 @@
     Steel: 148
     N14Gunpowder: 48
 
+# #Misfits Add - .357 / .38 special / .45 ACP speed loaders and tubes
 - type: latheRecipe
-  id: N14MagazineShotgun12Blowback
-  result: N14MagazineShotgun12Blowback
+  id: N14SpeedLoader357
+  result: N14SpeedLoader357
   category: N14AmmoMagazine
   completetime: 5
   materials:
-    Lead: 24
+    Lead: 10
+    Steel: 25
+    N14Gunpowder: 10
+
+- type: latheRecipe
+  id: N14MagazinePistol357Automag
+  result: N14MagazinePistol357Automag
+  category: N14AmmoMagazine
+  completetime: 5
+  materials:
+    Lead: 18
+    Steel: 30
+    N14Gunpowder: 14
+
+- type: latheRecipe
+  id: N14SpeedLoaderTube357
+  result: N14SpeedLoaderTube357
+  category: N14AmmoMagazine
+  completetime: 5
+  materials:
+    Lead: 20
+    Steel: 35
+    N14Gunpowder: 20
+
+- type: latheRecipe
+  id: N14AmmoBox38
+  result: N14AmmoBox38
+  category: N14AmmoBox
+  completetime: 5
+  materials:
+    Lead: 40
     Steel: 100
-    N14Gunpowder: 24
-    N14Paper: 36
+    N14Gunpowder: 40
+    Cardboard: 100
+
+- type: latheRecipe
+  id: N14SpeedLoader45
+  result: N14SpeedLoader45
+  category: N14AmmoMagazine
+  completetime: 5
+  materials:
+    Lead: 10
+    Steel: 25
+    N14Gunpowder: 10
+
+- type: latheRecipe
+  id: N14SpeedLoaderTube45
+  result: N14SpeedLoaderTube45
+  category: N14AmmoMagazine
+  completetime: 5
+  materials:
+    Lead: 20
+    Steel: 35
+    N14Gunpowder: 20

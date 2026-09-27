@@ -449,7 +449,7 @@
       - CaesarLegionSlave
       - NCRPrisoner
   items:
-    - N14WeaponSMG9mm
+    - N14WeaponSMG45GreaseGun
 
 - type: loadout
   id: N14WeaponSMG9mmCanadian
@@ -580,7 +580,7 @@
       - CaesarLegionSlave
       - NCRPrisoner
   items:
-    - N14WeaponSMG45
+    - N14WeaponSMG45Thompson
 
 
 
@@ -687,7 +687,7 @@
       - CaesarLegionSlave
       - NCRPrisoner
   items:
-    - N14WeaponRifle556CarbineOld
+    - N14WeaponRifle10mmSkirmisher
 
 - type: loadout
   id: N14WeaponRifle762M14
@@ -712,7 +712,7 @@
       - CaesarLegionSlave
       - NCRPrisoner
   items:
-    - N14WeaponRifle762M14
+    - N14WeaponRifle308M14
 
 - type: loadout
   id: N14WeaponRifle762SKS
@@ -767,7 +767,7 @@
       - CaesarLegionSlave
       - NCRPrisoner
   items:
-    - N14WeaponRifle762Fal
+    - N14WeaponRifle308Fal
 
 
 
@@ -824,7 +824,7 @@
       - CaesarLegionSlave
       - NCRPrisoner
   items:
-    - N14WeaponRifle762Chinese
+    - N14WeaponRifle556Chinese
 
 - type: loadout
   id: N14WeaponRifle762Marksman
@@ -849,7 +849,7 @@
       - CaesarLegionSlave
       - NCRPrisoner
   items:
-    - N14WeaponRifle762Marksman
+    - N14WeaponRifle556Marksman
 
 
 - type: loadout
@@ -875,7 +875,7 @@
       - CaesarLegionSlave
       - NCRPrisoner
   items:
-    - N14WeaponRifle556Carbine
+    - N14WeaponRifle5mmCarbine
 
 
 

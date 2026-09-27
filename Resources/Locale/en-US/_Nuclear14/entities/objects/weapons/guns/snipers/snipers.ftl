@@ -12,5 +12,5 @@ ent-N14WeaponSniperRatslayer = Ratslayer
 ent-N14WeaponRifle10mmM1Carbine = paratrooper carbine
     .desc = A lightweight semi-automatic 10mm carbine with a skeletonized folding stock and detachable magazines. Fold the stock for compact storage and reduced recoil.
 
-ent-N14WeaponRifle762Rangemaster = Rangemaster
-    .desc = A semi-automatic 5.56mm hunting rifle with a long barrel and a mount for an optional scope. Accepts detachable 25-round 5.56mm magazines.
+ent-N14WeaponRifle556Rangemaster = Colt Rangemaster
+    .desc = A Colt Rangemaster semi-automatic hunting rifle in .223 with a long barrel and a mount for an optional scope. Slow and deliberate, but it reaches out and holds its punch at range.

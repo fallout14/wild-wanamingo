@@ -9,7 +9,7 @@
       id: N14WeaponSMG12mmPipe
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSMG9mm
+      id: N14WeaponSMG45GreaseGun
       weight: 7
     - !type:EntSelector
       id: N14WeaponSMGPPSh41 #9mm
@@ -20,3 +20,6 @@
     - !type:EntSelector
       id: N14WeaponSMGAmerican180
       weight: 4
+    - !type:EntSelector
+      id: N14WeaponSMG45Reising # #Misfits Add - M50 Reising
+      weight: 5

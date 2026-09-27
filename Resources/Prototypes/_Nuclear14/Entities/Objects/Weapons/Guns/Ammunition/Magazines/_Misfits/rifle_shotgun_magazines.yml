@@ -28,21 +28,6 @@
     proto: N14CartridgePistol5
     capacity: 35
 
-- type: entity
-  id: N14MagazineShotgun12Blowback
-  parent: N14MagazineShotgun12
-  name: blowback drum (12 gauge shells)
-  components:
-  - type: Tag
-    tags:
-    - N14MagazineShotgun12
-  - type: BallisticAmmoProvider
-    whitelist:
-      tags:
-      - N14ShellShotgun12
-    proto: N14ShellShotgun12
-    capacity: 12
-
 - type: Tag
   id: N14MagazineRifle9mm
 

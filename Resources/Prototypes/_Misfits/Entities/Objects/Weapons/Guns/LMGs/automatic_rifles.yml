@@ -1,0 +1,104 @@
+# #Misfits Add - Browning Automatic Rifle family, all .308.
+# The base automatic rifle (N14WeaponLMGAutoRifle, M1918A1) lives in _Nuclear14/.../LMGs/LMGs.yml.
+# Ladder: automatic rifle (M1918A1) < heavy automatic rifle (M1918A2) < Colt Monitor.
+
+- type: entity
+  name: heavy automatic rifle
+  parent: N14WeaponLMGAutoRifle
+  id: N14WeaponLMGAutoRifleHeavy
+  description: An M1918A2 Browning Automatic Rifle. Heavier than the A1, with a bipod and a rate reducer that make its full-power .308 far easier to keep on target. It can also be fired one round at a time.
+  components:
+  - type: Clothing
+    sprite: _Misfits/Objects/Weapons/Guns/LMGs/autorifle_a2.rsi
+  - type: Sprite
+    sprite: _Misfits/Objects/Weapons/Guns/LMGs/autorifle_a2.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Huge
+    sprite: _Misfits/Objects/Weapons/Guns/LMGs/autorifle_a2.rsi
+  - type: Wieldable
+    wieldedSpeedModifier: 0.85 # heavier than the A1
+  - type: GunWieldBonus
+    minAngle: -21
+    maxAngle: -54 # bipod: wielded spread 3-6 instead of the A1's 5-10
+  - type: Gun
+    minAngle: 24
+    maxAngle: 60
+    angleIncrease: 3 # stable platform, recoil builds slowly
+    angleDecay: 18
+    fireRate: 4
+    soundGunshot:
+      collection: N14AutoRifleGunshot
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    - SemiAuto
+  - type: ClothingSpeedModifier
+    walkModifier: 0.8
+    sprintModifier: 0.8
+  - type: StaticPrice
+    price: 425
+
+- type: entity
+  name: Colt Monitor
+  parent: N14WeaponLMGAutoRifle
+  id: N14WeaponLMGAutoRifleMonitor
+  description: A Colt R80 Monitor, the lightened and shortened Browning Automatic Rifle built for law enforcement. Fast-firing and easier to carry than any other BAR, and it takes the long 40-round .308 magazines as well as standard ones.
+  components:
+  - type: Clothing
+    sprite: _Misfits/Objects/Weapons/Guns/LMGs/monitor.rsi
+  - type: Sprite
+    sprite: _Misfits/Objects/Weapons/Guns/LMGs/monitor.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Huge
+    sprite: _Misfits/Objects/Weapons/Guns/LMGs/monitor.rsi
+  - type: Wieldable
+    wieldedSpeedModifier: 0.95 # lighter than the A1/A2
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -45
+  - type: Gun
+    minAngle: 23
+    maxAngle: 55
+    angleIncrease: 5
+    angleDecay: 16
+    fireRate: 5 # high rate of fire
+    soundGunshot:
+      collection: N14AutoRifleGunshot
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    - SemiAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine308Rifle
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - N14Magazine308Rifle
+            - N14Magazine308RifleLong # the long magazines the Bren used to take
+      gun_chamber:
+        name: Chamber
+        startingItem: N14Cartridge308Rifle
+        priority: 1
+        whitelist:
+          tags:
+            - N14Cartridge308Rifle
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: StaticPrice
+    price: 550

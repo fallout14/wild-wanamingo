@@ -626,7 +626,7 @@
     - item: N14WeaponPlasmaDefender
       cost: 400
       weight: 0.18
-    - item: N14WeaponRifle556Carbine
+    - item: N14WeaponRifle5mmCarbine
       cost: 150
       weight: 0.3
     - item: N14MagazineCarbine5mm
@@ -640,7 +640,7 @@
     - item: N14WeaponShotgunAuto
       cost: 200
       weight: 0.25
-    - item: N14WeaponRifle762M14
+    - item: N14WeaponRifle308M14
       cost: 90
       weight: 0.3
     - item: N14WeaponPlasmaRifleCrude

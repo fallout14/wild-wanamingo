@@ -29,4 +29,9 @@
     - !type:EntSelector
       id: N14WeaponLMGBren # 308
       weight: 1
-
+    - !type:EntSelector
+      id: N14WeaponLMGAutoRifleHeavy # #Misfits Add - M1918A2
+      weight: 3
+    - !type:EntSelector
+      id: N14WeaponLMGAutoRifleMonitor # #Misfits Add - Colt Monitor
+      weight: 2

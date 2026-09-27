@@ -259,7 +259,7 @@
   parent: N14CrateBreakPlain
   id: N14CrateBreakPlainFilledWebley44revolver
   name: Webley revolver crate
-  description: Crate containing 3 Webley .44 revolvers
+  description: Crate containing 3 Webley .45 revolvers
   components:
   - type: StorageFill
     contents:
@@ -307,7 +307,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: N14WeaponSniper308Ross
+      - id: N14WeaponSniper303Ross
         amount: 3
 
 - type: entity

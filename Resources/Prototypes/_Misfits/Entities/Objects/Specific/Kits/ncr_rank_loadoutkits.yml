@@ -210,7 +210,7 @@
     items:
       - id: MisfitsClothingOuterNCRTrenchCoat
       - id: ClothingBeltRevolverfilled
-      - id: N14WeaponRifle556Carbine
+      - id: N14WeaponRifle5mmCarbine
       - id: N14MagazineCarbine5mm
         amount: 3
       - id: RadioHandheld
@@ -309,7 +309,7 @@
   - type: SpawnItemsOnUse
     items:
       - id: ClothingBeltNCR
-      - id: N14WeaponRifle762Marksman
+      - id: N14WeaponRifle556Marksman
       - id: Magazine556Rifle
         amount: 4
       - id: N14WeaponPistol9mm
@@ -342,7 +342,7 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponRifle556Carbine
+      - id: N14WeaponRifle5mmCarbine
       - id: N14MagazineCarbine5mm
         amount: 4
       - id: SmokeGrenade

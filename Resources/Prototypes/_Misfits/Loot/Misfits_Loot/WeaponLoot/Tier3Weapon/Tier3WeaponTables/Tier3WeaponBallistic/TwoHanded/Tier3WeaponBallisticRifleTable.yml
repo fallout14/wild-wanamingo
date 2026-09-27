@@ -5,10 +5,10 @@
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponRifle556Carbine
+      id: N14WeaponRifle5mmCarbine
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle556CarbineOld
+      id: N14WeaponRifle10mmSkirmisher
       weight: 4
     - !type:EntSelector
       id: N14WeaponRifle556Pipe
@@ -58,3 +58,6 @@
     - !type:EntSelector
       id: N14WeaponSniper44LeverShortCarbine
       weight: 4
+    - !type:EntSelector
+      id: N14WeaponSniper10mmLeverRifle # #Misfits Add - mid-tier 10mm lever action
+      weight: 5

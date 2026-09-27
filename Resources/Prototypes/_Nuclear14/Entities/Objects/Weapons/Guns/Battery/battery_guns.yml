@@ -194,12 +194,12 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14PlasmaCartridge
+        startingItem: N14PowerCellSmall # #Misfits Change - plasma weapons run on standard cells
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - N14PlasmaCartridge
+            - N14PowerCellSmall
   - type: MagazineVisuals
     magState: mag
     steps: 5
@@ -214,6 +214,10 @@
     price: 80
   - type: Cautery
     speed: 0.2
+  # #Misfits Change - fires plasma from a small energy cell; 600 / 33.3 = 18 shots, same as a plasma cartridge
+  - type: GunDamageBonus
+    projectileProtoOverride: BulletPlasma
+    fireCostMultiplier: 0.666
 
 - type: entity
   name: plasma defender
@@ -235,12 +239,12 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14PlasmaCartridge
+        startingItem: N14PowerCellSmall # #Misfits Change - plasma weapons run on standard cells
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - N14PlasmaCartridge
+            - N14PowerCellSmall
   - type: MagazineVisuals
     magState: mag
     steps: 5
@@ -255,6 +259,10 @@
     price: 100
   - type: Cautery
     speed: 0.2
+  # #Misfits Change - fires plasma from a small energy cell; 600 / 33.3 = 18 shots, same as a plasma cartridge
+  - type: GunDamageBonus
+    projectileProtoOverride: BulletPlasma
+    fireCostMultiplier: 0.666
 
 # MARK: Recharger
 
@@ -425,12 +433,12 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14PlasmaCartridge
+        startingItem: N14MicrofusionCellGreen # #Misfits Change - plasma weapons run on standard cells
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - N14PlasmaCartridge
+            - N14MicrofusionCell
   - type: MagazineVisuals
     magState: mag
     steps: 3
@@ -446,6 +454,10 @@
     backStrength: 5
   - type: StaticPrice
     price: 225
+  # #Misfits Change - fires plasma from a microfusion cell; 1200 / 66.65 = 18 shots, same as a plasma cartridge
+  - type: GunDamageBonus
+    projectileProtoOverride: BulletPlasma
+    fireCostMultiplier: 1.333
 
 - type: entity
   name: prototype AER-14 laser rifle
@@ -790,12 +802,12 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14PlasmaCartridge
+        startingItem: N14MicrofusionCellGreen # #Misfits Change - plasma weapons run on standard cells
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - N14PlasmaCartridge
+            - N14MicrofusionCell
   - type: MagazineVisuals
     magState: mag
     steps: 3
@@ -811,6 +823,10 @@
     backStrength: 5
   - type: StaticPrice
     price: 275
+  # #Misfits Change - fires plasma from a microfusion cell; 1200 / 66.65 = 18 shots, same as a plasma cartridge
+  - type: GunDamageBonus
+    projectileProtoOverride: BulletPlasma
+    fireCostMultiplier: 1.333
 
 - type: entity
   name: crude plasma rifle
@@ -843,12 +859,12 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14PlasmaCartridge
+        startingItem: N14MicrofusionCellGreen # #Misfits Change - plasma weapons run on standard cells
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - N14PlasmaCartridge
+            - N14MicrofusionCell
   - type: Gun
     fireRate: 1.5
     soundGunshot:
@@ -858,6 +874,10 @@
     - SemiAuto
   - type: StaticPrice
     price: 175
+  # #Misfits Change - fires plasma from a microfusion cell; 1200 / 66.65 = 18 shots, same as a plasma cartridge
+  - type: GunDamageBonus
+    projectileProtoOverride: BulletPlasma
+    fireCostMultiplier: 1.333
 
 - type: entity
   name: urban plasma rifle
@@ -890,12 +910,12 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14PlasmaCartridge
+        startingItem: N14MicrofusionCellGreen # #Misfits Change - plasma weapons run on standard cells
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - N14PlasmaCartridge
+            - N14MicrofusionCell
   - type: MagazineVisuals
     magState: mag
     steps: 3
@@ -911,6 +931,10 @@
     backStrength: 5
   - type: StaticPrice
     price: 225
+  # #Misfits Change - fires plasma from a microfusion cell; 1200 / 66.65 = 18 shots, same as a plasma cartridge
+  - type: GunDamageBonus
+    projectileProtoOverride: BulletPlasma
+    fireCostMultiplier: 1.333
 
 # MARK: Shotguns
 
@@ -942,12 +966,12 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14PlasmaCartridgeMultiplas # #Misfits Change - use dedicated multi-shot cartridge
+        startingItem: N14MicrofusionCellGreen # #Misfits Change - plasma weapons run on standard cells
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - N14PlasmaCartridgeMultiplas # #Misfits Change - accept only spread cartridge
+            - N14MicrofusionCell
   - type: MagazineVisuals
     magState: mag
     steps: 5
@@ -963,22 +987,26 @@
     backStrength: 6
   - type: StaticPrice
     price: 225
+  # #Misfits Change - fires plasma spread from a microfusion cell; 1200 / 200 = 6 shots, same as a multiplas cartridge
+  - type: GunDamageBonus
+    projectileProtoOverride: BulletPlasmaSpread
+    fireCostMultiplier: 4
 
 #MARK: Focused
 # (just a different looking laser rifle until we get more options)
 
 - type: entity
-  name: wattz 3000 laser rifle
-  parent: N14BaseWeaponPowerCellMedium
-  id: N14WeaponLaserRifleWattz3000
-  description: Wattz 3000 Laser Rifle. Military-grade focusing optics produce a wide, bright yellow beam with devastating damage output. The most powerful laser rifle in the Wattz line — drains cells fast but hits like a truck.
+  name: wattz 2000 laser rifle (extended capacity)
+  parent: N14WeaponLaserRifleWattz2000
+  id: N14WeaponLaserRifleWattz2000Extended
+  description: A Wattz 2000 laser rifle fitted with an extended-capacity power system. Same focused yellow beam, twice the shots per cell.
   components:
   - type: Wieldable
   - type: GunWieldBonus
     minAngle: -24
     maxAngle: -58
   - type: Sprite
-    sprite: _Nuclear14/Objects/Weapons/Guns/Battery/wattz3000.rsi
+    sprite: _Nuclear14/Objects/Weapons/Guns/Battery/wattz2000.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -986,7 +1014,7 @@
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
   - type: Clothing
-    sprite: _Nuclear14/Objects/Weapons/Guns/Battery/wattz3000.rsi
+    sprite: _Nuclear14/Objects/Weapons/Guns/Battery/wattz2000.rsi
     quickEquip: false
     slots:
     - Back
@@ -1006,7 +1034,7 @@
           tags:
             - N14MicrofusionCell
   - type: Gun
-    fireRate: 2
+    fireRate: 1.5
     soundGunshot:
       collection: N14WattzGunshot
     selectedMode: SemiAuto
@@ -1015,14 +1043,14 @@
   - type: FollowDistance
     backStrength: 4
   - type: StaticPrice
-    price: 300
-  # #Misfits Change - Yellow beam override + focusing optics: +23 heat damage (total 45), double fireCost (24 shots)
+    price: 500
+  # #Misfits Change - Wattz 2000 extended capacity: same yellow 35-damage beam, 24 shots per microfusion cell
   - type: GunDamageBonus
     hitscanProtoOverride: N14MFLaserYellow
     bonusDamage:
       types:
-        Heat: 28
-    fireCostMultiplier: 2.0
+        Heat: 18 # same 35-damage beam as the Wattz 2000
+    fireCostMultiplier: 1.0 # extended capacity: 24 shots per cell instead of 12
 
 - type: entity
   name: wattz 2000 laser rifle

@@ -43,3 +43,46 @@
     steps: 7
     zeroVisible: false
   - type: Appearance
+
+# #Misfits Add - .357 Magnum speed loader tube for tube-fed lever guns (Cowboy Repeater, Trail Carbine).
+# Uses its own tag instead of the shared SpeedLoaderInternal so it cannot load other calibers.
+- type: entity
+  id: N14BaseSpeedLoaderTube357
+  name: "speed loader tube (.357 magnum)"
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - SpeedLoaderTube357
+  - type: SpeedLoader
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - N14CartridgePistol357
+    capacity: 12
+  - type: Sprite
+    sprite: _Nuclear14/Objects/Weapons/Guns/Ammunition/Speedloaders/45_70loadertube.rsi # placeholder
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+
+- type: entity
+  id: N14SpeedLoaderTube357
+  name: "speed loader tube (.357 magnum)"
+  parent: N14BaseSpeedLoaderTube357
+  components:
+  - type: BallisticAmmoProvider
+    proto: N14CartridgePistol357
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: base-10
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: base
+    steps: 11
+    zeroVisible: false
+  - type: Appearance

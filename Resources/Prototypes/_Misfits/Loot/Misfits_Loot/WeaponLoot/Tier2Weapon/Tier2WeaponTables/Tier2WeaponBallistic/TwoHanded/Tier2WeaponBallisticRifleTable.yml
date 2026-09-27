@@ -5,7 +5,10 @@
   table: !type:GroupSelector
     children:
     - !type:EntSelector
-      id: N14WeaponRifle556CarbineOld
+      id: N14WeaponRifle556Butchered # #Misfits Add - cheap 5.56 carbine
+      weight: 4
+    - !type:EntSelector
+      id: N14WeaponRifle10mmSkirmisher
       weight: 4
     - !type:EntSelector
       id: N14WeaponRifle556Pipe
@@ -29,4 +32,9 @@
     - !type:EntSelector
       id: N14WeaponRifle556Service
       weight: 4
-
+    - !type:EntSelector
+      id: N14WeaponSniper10mmLeverRifle # #Misfits Add - mid-tier 10mm lever action
+      weight: 5
+    - !type:EntSelector
+      id: N14WeaponSniper357TrailCarbine # #Misfits Add - entry-level lever action
+      weight: 5

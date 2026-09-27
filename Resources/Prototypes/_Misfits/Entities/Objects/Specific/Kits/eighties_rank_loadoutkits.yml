@@ -441,7 +441,7 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-    - id: N14WeaponRifle556CarbineOld
+    - id: N14WeaponRifle10mmSkirmisher
     - id: N14MagazineSMG10mm
       amount: 5
     - id: N14WeaponRevolver44TribalUpgraded

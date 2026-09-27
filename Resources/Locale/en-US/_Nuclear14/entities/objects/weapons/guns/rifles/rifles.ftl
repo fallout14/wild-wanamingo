@@ -15,7 +15,7 @@ ent-N14WeaponRifleM1GarandRepublicsPride = Republic's Pride
 ent-N14WeaponRifleM1GarandRepublicsDemise = Republic's Demise
     .desc = A well-tuned scoped M1C rifle looted from a dead NCR Scout Captain by the Legion. The NCR star on the stock has been crudely replaced with a Legion bull. Chambered in .308 and fitted with a long-range optic.
 
-ent-N14WeaponRifleSKS = SVT-40
+ent-N14WeaponRifle308SVT40 = SVT-40
     .desc = A Legion-refurbished SVT-40 rebuilt for .308 ammunition. Semi-automatic, with a fixed internal 10-round magazine and a mount for an optional scope.
 
 # #Misfits Removed - GarandEnbloc308 replaced by ClipMagazine308Rifle
@@ -28,4 +28,4 @@ ent-SKSEnbloc308 = en-bloc clip (SKS, .308)
 # Infiltrator — ported from Fortune13 / LoneStar (SS13) — Misfits Add
 
 ent-N14WeaponRifleInfiltrator = Infiltrator
-    .desc = A heavily modified R91 assault rifle with an extended suppressed barrel, tightened internals, and custom trigger group. Fires 5.56mm at a ferocious rate with reduced acoustic signature. Rare and highly coveted.
+    .desc = A heavily modified R91 assault rifle with an integrated suppressor, a fixed scope and polymer furniture. It has no official designation; whoever built it just started calling it the Infiltrator.

@@ -11,7 +11,7 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponSMG9mm
+      - id: N14WeaponSMG45GreaseGun
       - id: N14WeaponPistol10mm
       - id: Magazine45SubMachineGun
         amount: 3

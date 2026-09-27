@@ -71,6 +71,10 @@ public sealed class GunDamageBonusSystem : EntitySystem
     /// </summary>
     private void ApplyFireCostMultiplier(EntityUid gunUid, EntityUid cellUid, GunDamageBonusComponent comp)
     {
+        // Already applied (startup and insertion can both fire for the same cell)
+        if (comp.OriginalFireCost != null)
+            return;
+
         if (!TryComp<HitscanBatteryAmmoProviderComponent>(cellUid, out var battery))
             return;
 
@@ -78,6 +82,7 @@ public sealed class GunDamageBonusSystem : EntitySystem
         comp.OriginalFireCost = battery.FireCost;
         battery.FireCost *= comp.FireCostMultiplier;
         Dirty(cellUid, battery);
+        RaiseLocalEvent(cellUid, new BatteryFireCostChangedEvent());
     }
 
     /// <summary>
@@ -94,5 +99,11 @@ public sealed class GunDamageBonusSystem : EntitySystem
         battery.FireCost = comp.OriginalFireCost.Value;
         comp.OriginalFireCost = null;
         Dirty(cellUid, battery);
+        RaiseLocalEvent(cellUid, new BatteryFireCostChangedEvent());
     }
 }
+
+/// <summary>
+/// Raised on a cell after its FireCost is changed so the server can recalculate shot counts.
+/// </summary>
+public sealed class BatteryFireCostChangedEvent : EntityEventArgs;

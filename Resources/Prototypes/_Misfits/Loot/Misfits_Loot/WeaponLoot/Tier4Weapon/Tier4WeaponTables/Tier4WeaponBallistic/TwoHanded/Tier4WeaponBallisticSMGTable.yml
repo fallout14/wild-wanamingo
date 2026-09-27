@@ -6,7 +6,7 @@
       id: N14WeaponSMG12mmPipe
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSMG9mm
+      id: N14WeaponSMG45GreaseGun
       weight: 7
     - !type:EntSelector
       id: N14WeaponSMGPPSh41 #9mm
@@ -18,7 +18,7 @@
       id: N14WeaponSMG10mm
       weight: 7
     - !type:EntSelector
-      id: N14WeaponSMG9mm #.45 acp
+      id: N14WeaponSMG45GreaseGun #.45 acp
       weight: 4
     - !type:EntSelector
       id: N14WeaponSMG12mmAdvanced

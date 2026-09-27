@@ -400,7 +400,7 @@
   name: blowback shotgun
   parent: N14WeaponShotgunBase
   id: N14WeaponShotgunBlowback
-  description: A select-fire combat shotgun with a detachable 12-round drum magazine, uses 12 gauge shells.
+  description: A select-fire combat shotgun fed from a detachable drum magazine, uses 12 gauge shells.
   components:
   - type: MagazineVisuals
     fullSprite: false
@@ -438,7 +438,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14MagazineShotgun12Blowback
+        startingItem: N14MagazineShotgun12
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2

@@ -2,7 +2,7 @@
   name: automatic rifle
   parent: BaseWeaponRifle
   id: N14WeaponLMGAutoRifle
-  description: A high caliber, low-capacity heavy machine gun of the pre-war, chambered in the powerful .308 ammunition.
+  description: An M1918A1 Browning Automatic Rifle. A heavy, low-capacity automatic rifle of the pre-war, chambered in the powerful .308 ammunition.
   components:
   - type: Clothing
     sprite: _Nuclear14/Objects/Weapons/Guns/LMGs/autorifle.rsi
@@ -25,9 +25,9 @@
   - type: Gun
     minAngle: 24
     maxAngle: 60
-    angleIncrease: 4
+    angleIncrease: 5
     angleDecay: 16
-    fireRate: 4
+    fireRate: 3.5 # #Misfits Tweak - was 4; the M1918A2 and Colt Monitor are the upgrades
     soundGunshot:
       collection: N14AutoRifleGunshot
     selectedMode: FullAuto

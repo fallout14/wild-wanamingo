@@ -58,7 +58,7 @@ public sealed class ManualActionTest
         await pair.CleanReturnAsync();
     }
 
-    [TestCase("N14WeaponRifle762Rangemaster")]
+    [TestCase("N14WeaponRifle556Rangemaster")]
     [TestCase("N14WeaponSniper556VarmintRifle")]
     public async Task CycleKeyChambersMagazineFedGuns(string prototype)
     {
@@ -81,7 +81,7 @@ public sealed class ManualActionTest
     }
 
     [TestCase("N14WeaponSniperHunting")]
-    [TestCase("N14WeaponSniper44LeverCarbine")]
+    [TestCase("N14WeaponSniper357TrailCarbine")]
     [TestCase("N14WeaponShotgun")]
     [TestCase("N14WeaponShotgunNeostead")]
     [TestCase("N14WeaponSniper556VarmintRifle")]
@@ -148,9 +148,9 @@ public sealed class ManualActionTest
         await pair.CleanReturnAsync();
     }
 
-    [TestCase("N14WeaponRifle762Rangemaster")]
+    [TestCase("N14WeaponRifle556Rangemaster")]
     [TestCase("N14WeaponRifle762SKS")]
-    [TestCase("N14WeaponRifleSKS")]
+    [TestCase("N14WeaponRifle308SVT40")]
     [TestCase("N14WeaponShotgunBlowback")]
     [TestCase("N14WeaponShotgunDoubleBarrel")]
     [TestCase("N14WeaponShotgunPipe")]

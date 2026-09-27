@@ -43,7 +43,7 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponRifle762Chinese
+      - id: N14WeaponRifle556Chinese
       - id: ClothingBeltRope
       - id: Magazine556Rifle
         amount: 2
@@ -100,7 +100,7 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponRifle762Marksman
+      - id: N14WeaponRifle556Marksman
       - id: N14LegionnaireShield
       - id: ClothingBeltRope
       - id: Magazine556Rifle
@@ -156,7 +156,7 @@
     items:
       - id: N14WeaponThermospear
       - id: ClothingBeltRope
-      - id: N14WeaponRifle556Carbine
+      - id: N14WeaponRifle5mmCarbine
       - id: N14MagazineCarbine5mm
         amount: 4
       - id: N14HealingPoultice #Misfits Change /Tweak/: Legion uses tribal medicine, not stimpaks
@@ -295,7 +295,7 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponRifleSKS # #Misfits Change: hunting rifle as Legion baseline primary
+      - id: N14WeaponRifle308SVT40 # #Misfits Change: hunting rifle as Legion baseline primary
       - id: MagazineBox308
         amount: 1
       - id: ClothingBeltRope
@@ -386,7 +386,7 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponRifleSKS #Misfits Change by RedBookcase: Houndmaster is a single slot role, has specialist gear
+      - id: N14WeaponRifle308SVT40 #Misfits Change by RedBookcase: Houndmaster is a single slot role, has specialist gear
       - id: MagazineBox308
         amount: 1
       - id: ClothingBeltRope
@@ -501,7 +501,7 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponSMG9mm # #Misfits Change: hunting rifle as Legion baseline primary
+      - id: N14WeaponSMG45GreaseGun # #Misfits Change: hunting rifle as Legion baseline primary
       - id: Magazine45SubMachineGun
         amount: 2
       - id: N14HandheldHealthAnalyzer # #Misfits Add - Legion Auxilia medics should spawn with health analyzer
@@ -570,7 +570,7 @@
       - id: MagazineBox50 # #Misfits Change by bill - one box? ...two box.
         amount: 2
       - id: ClothingBeltRope
-      - id: N14WeaponSMG9mm # #Misfits Change: legion smg for hunting armor.
+      - id: N14WeaponSMG45GreaseGun # #Misfits Change: legion smg for hunting armor.
       - id: Magazine45SubMachineGun
         amount: 2
       - id: N14HealingPoultice #Misfits Change /Tweak/: replaces dirty stimpak, Legion uses tribal medicine
@@ -787,7 +787,7 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponRifle762M14 # #Misfits Change by BILL CLINTON!: Small number role made to be paired with the NCR sarge or basic ranger kits.
+      - id: N14WeaponRifle308M14 # #Misfits Change by BILL CLINTON!: Small number role made to be paired with the NCR sarge or basic ranger kits.
       - id: Magazine762AmmoShort
         amount: 4
       - id: ClothingBeltRope
@@ -818,7 +818,7 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponSMG45 # #Misfits Change by BILL CLINTON!: Small number role made to be paired with the NCR sarge or basic ranger kits.
+      - id: N14WeaponSMG45Thompson # #Misfits Change by BILL CLINTON!: Small number role made to be paired with the NCR sarge or basic ranger kits.
       - id: Magazine45SubMachineGun
         amount: 4
       - id: ClothingBeltRope
@@ -880,7 +880,7 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponSMG9mm # #Misfits Change: .45 pistol Legion sidearm
+      - id: N14WeaponSMG45GreaseGun # #Misfits Change: .45 pistol Legion sidearm
       - id: Magazine45SubMachineGun
         amount: 2
       - id: N14TribalMachete
@@ -966,7 +966,7 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponSMG9mm
+      - id: N14WeaponSMG45GreaseGun
       - id: Magazine45SubMachineGun
         amount: 2
       - id: N14TribalMachete
@@ -1300,7 +1300,7 @@
 #      - id: N14WeaponLaserPistol
 #      - id: N14PowerCellSmall
 #        amount: 2
-#      - id: N14WeaponLaserRifleWattz3000
+#      - id: N14WeaponLaserRifleWattz2000Extended
 #      - id: N14PowerCellFocused
 #        amount: 3
 #      - id: N14Stimpak
@@ -1395,7 +1395,7 @@
   - type: SpawnItemsOnUse
     items:
       - id: ClothingBeltNCR
-      - id: N14WeaponSMG9mm
+      - id: N14WeaponSMG45GreaseGun
       - id: Magazine45SubMachineGun
         amount: 4
       - id: MagazineBox45
@@ -1756,7 +1756,7 @@
 #    size: Huge
 #  - type: SpawnItemsOnUse
 #    items:
-#      - id: N14WeaponRifle556Carbine
+#      - id: N14WeaponRifle5mmCarbine
 #      - id: N14ClothingBeltBoSWebbing
 #      - id: N14Stimpak
 #        amount: 2
@@ -1778,7 +1778,7 @@
 #    size: Huge
 #  - type: SpawnItemsOnUse
 #    items:
-#      - id: N14WeaponLaserRifleWattz3000
+#      - id: N14WeaponLaserRifleWattz2000Extended
 #      - id: N14ClothingBeltBoSWebbing
 #      - id: N14Stimpak
 #        amount: 2
@@ -1851,7 +1851,7 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponSMG9mm
+      - id: N14WeaponSMG45GreaseGun
       - id: N14Stimpak
         amount: 2
       - id: N14PoliceBaton
@@ -1997,7 +1997,7 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponRifleSKS
+      - id: N14WeaponRifle308SVT40
       - id: MagazineBox308
         amount: 1
       - id: ClothingBeltRope

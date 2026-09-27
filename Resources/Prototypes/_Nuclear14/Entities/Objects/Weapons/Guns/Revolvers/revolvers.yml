@@ -75,7 +75,7 @@
   name: webley revolver
   parent: N14WeaponRevolverBase
   id: N14WeaponRevolverWebley
-  description: An old trusty break-action pistol, easy to load and easy to use.
+  description: An old trusty break-action pistol, easy to load and easy to use. Uses .45 ACP ammo.
   components:
   - type: Tag
     tags:
@@ -84,12 +84,12 @@
     sprite: _Nuclear14/Objects/Weapons/Guns/Revolvers/webley_revolver.rsi
   - type: Clothing
     sprite: _Nuclear14/Objects/Weapons/Guns/Revolvers/webley_revolver.rsi
-  - type: RevolverAmmoProvider
+  - type: RevolverAmmoProvider # #Misfits Change - rechambered from .44 magnum to .45 ACP
     whitelist:
       tags:
-        - N14Cartridge44Magnum
-        - SpeedLoader44
-    proto: N14Cartridge44Magnum
+        - N14CartridgePistol45
+        - SpeedLoader45
+    proto: N14CartridgePistol45
   - type: Gun
     fireRate: 3
     soundGunshot:
@@ -231,6 +231,10 @@
     sprite: _Nuclear14/Objects/Weapons/Guns/Revolvers/wild_whisper.rsi
   - type: Clothing
     sprite: _Nuclear14/Objects/Weapons/Guns/Revolvers/wild_whisper.rsi
+  - type: GunDamageModifier # #Misfits Add - hits harder than a stock .45-70 revolver, but less than the Ranger Sequoia
+    damage:
+      types:
+        Piercing: 5
   - type: RevolverAmmoProvider
     whitelist:
       tags:
@@ -250,6 +254,10 @@
     sprite: _Nuclear14/Objects/Weapons/Guns/Revolvers/ranger_sequoia.rsi
   - type: Clothing
     sprite: _Nuclear14/Objects/Weapons/Guns/Revolvers/ranger_sequoia.rsi
+  - type: GunDamageModifier # #Misfits Add - strongest of the .45-70 revolvers
+    damage:
+      types:
+        Piercing: 10
   - type: Gun
     fireRate: 2
     resetOnHandSelected: false
@@ -487,3 +495,49 @@
       collection: N14RevolverMagnunGunshot
   - type: StaticPrice
     price: 500
+
+# #Misfits Add - Police Pistol, after the Fallout: New Vegas pocket .357.
+# Reuses the DeltaV K-38 Masterpiece sprite (WeaponRevolverK38MasterNonlethalSecurity).
+
+- type: entity
+  name: police pistol
+  parent: N14WeaponRevolverBase
+  id: N14WeaponRevolver357Police
+  description: A pre-war police service revolver cut down into a potent pocket pistol. Hits harder than its size suggests. Uses .357 magnum ammo, and will also chamber .38 special.
+  components:
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: Sprite
+    sprite: DeltaV/Objects/Weapons/Guns/Revolvers/k38master.rsi
+  - type: Clothing
+    sprite: DeltaV/Objects/Weapons/Guns/Revolvers/k38master.rsi
+    slots: # k38master.rsi only has a belt equip sprite
+    - Belt
+    - suitStorage
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - N14CartridgePistol357
+        - SpeedLoader357
+    proto: N14CartridgePistol357
+    capacity: 6
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,0,1
+    - 0,0,0,1
+  - type: GunDamageModifier
+    damage:
+      types:
+        Piercing: 4
+  - type: Gun
+    minAngle: 1
+    maxAngle: 6
+    angleIncrease: 0.5
+    angleDecay: 5
+    fireRate: 3.5
+    soundGunshot:
+      collection: N14RevolverMagnunGunshot
+  - type: StaticPrice
+    price: 150

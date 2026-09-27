@@ -1,0 +1,45 @@
+# #Misfits Add - .38 Special, a weaker subcaliber of .357 Magnum.
+# The cartridge carries the N14CartridgePistol357 tag, so it loads into every .357 gun,
+# speed loader, speed loader tube and ammo box. N14CartridgePistol38 is kept for anything
+# that should only take .38.
+
+- type: entity
+  id: N14Bullet38
+  name: bullet (.38 special)
+  parent: N14Bullet357
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 16 # .357 is 22
+
+- type: entity
+  id: N14CartridgePistol38
+  name: cartridge (.38 special)
+  parent: N14CartridgePistol357
+  description: A lighter .38 special round. Fits any .357 magnum firearm, but hits noticeably softer.
+  components:
+  - type: CartridgeAmmo
+    proto: N14Bullet38
+    soundEject:
+      collection: N14PistolCasingEject
+  - type: Tag
+    tags:
+      - Cartridge
+      - N14CartridgePistol357
+      - N14CartridgePistol38
+
+- type: entity
+  parent: BaseMagazineBox357
+  id: N14AmmoBox38
+  name: ammunition box (.38 special)
+  components:
+  - type: BallisticAmmoProvider
+    proto: N14CartridgePistol38
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]

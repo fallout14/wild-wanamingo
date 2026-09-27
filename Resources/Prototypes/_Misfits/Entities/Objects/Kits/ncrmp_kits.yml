@@ -73,7 +73,7 @@
      - id: N14PoliceBaton
      - id: Handcuffs
      - id: N14WeaponRevolverWebley
-     - id: N14SpeedLoader44Magnum
+     - id: N14SpeedLoader45
 
 - type: entity
   name: Enforcer Military Police Kit

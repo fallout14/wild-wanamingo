@@ -164,8 +164,7 @@
   name: 12.7mm SMG
   parent: N14WeaponSMGBase
   id: N14WeaponSMG12mm
-  description: A heavy submachine gun chambered in 12mm.
-  suffix: Deprecated
+  description: A heavy, crude submachine gun chambered in 12.7mm. Slow and hard to control, it is the rough predecessor of the advanced 12.7mm SMG.
   components:
   - type: Clothing
     sprite: _Nuclear14/Objects/Weapons/Guns/SMGs/12mmSMG.rsi
@@ -181,14 +180,14 @@
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
-    fireRate: 6
+    fireRate: 4 # #Misfits Tweak - entry 12.7mm SMG, was 6
     soundGunshot:
       collection: N14Pistol12mmGunshot
     selectedMode: FullAuto
     availableModes:
     - FullAuto
-    minAngle: 12
-    maxAngle: 32
+    minAngle: 14
+    maxAngle: 36
     angleIncrease: 4
     angleDecay: 16
   - type: ChamberMagazineAmmoProvider
@@ -238,7 +237,7 @@
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
-    fireRate: 4
+    fireRate: 3 # #Misfits Tweak - was 4
     soundGunshot:
       collection: N14Pistol12mmGunshot
     selectedMode: Fullauto
@@ -412,7 +411,7 @@
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
-    fireRate: 7
+    fireRate: 5 # #Misfits Tweak - was 7; 12.7mm now hits for 25
     soundGunshot:
       collection: N14Pistol12mmGunshot
     selectedMode: FullAuto
@@ -450,10 +449,10 @@
     price: 175
 
 - type: entity
-  name: .45 Auto SMG
+  name: grease gun
   parent: N14WeaponSMGBase
-  id: N14WeaponSMG9mm
-  description: A pre-war .45 Auto submachine gun with a detachable magazine and a threaded muzzle for a suppressor.
+  id: N14WeaponSMG45GreaseGun
+  description: 'An M3 "grease gun": a cheap, stamped-steel .45 ACP submachine gun with a slow, controllable rate of fire and a threaded muzzle for a suppressor.'
   components:
   - type: FirearmAttachmentHost
     muzzleSlot:
@@ -485,7 +484,7 @@
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
-    fireRate: 8.5
+    fireRate: 7.5 # #Misfits Tweak - M3 ~450 rpm
     soundGunshot:
       collection: N1445SMGGunshot
     selectedMode: Fullauto
@@ -519,7 +518,7 @@
           tags:
             - N14CartridgePistol45
   - type: StaticPrice
-    price: 50
+    price: 35
 
 - type: entity
   name: infiltrator
@@ -579,10 +578,10 @@
     price: 50
 
 - type: entity
-  name: .45 SMG
+  name: Thompson SMG
   parent: N14WeaponSMGBase
-  id: N14WeaponSMG45
-  description: A pre-war submachine gun with a wooden stock, chambered in .45.
+  id: N14WeaponSMG45Thompson
+  description: A pre-war Thompson submachine gun with a wooden stock, chambered in .45 ACP. Heavy, loud and fast-firing.
   components:
   - type: Clothing
     sprite: _Nuclear14/Objects/Weapons/Guns/SMGs/45SMG.rsi
@@ -603,7 +602,7 @@
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
-    fireRate: 7
+    fireRate: 11.5 # #Misfits Tweak - M1928A1 ~700 rpm
     soundGunshot:
       collection: N1445SMGGunshot
     selectedMode: Fullauto
@@ -720,7 +719,7 @@
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
-    fireRate: 7
+    fireRate: 5 # #Misfits Tweak - was 7; 12.7mm now hits for 25
     soundGunshot:
       collection: N14Pistol12mmGunshot
     selectedMode: FullAuto
@@ -788,7 +787,7 @@
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
-    fireRate: 7
+    fireRate: 5 # #Misfits Tweak - was 7; 12.7mm now hits for 25
     soundGunshot:
       collection: N14Pistol12mmGunshot
     selectedMode: FullAuto

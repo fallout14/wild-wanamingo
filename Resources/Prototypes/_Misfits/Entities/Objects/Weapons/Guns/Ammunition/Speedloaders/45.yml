@@ -1,0 +1,85 @@
+# #Misfits Add - .45 ACP speed loader (Webley revolver) and speed loader tube.
+# TODO: dedicated sprites; reusing 44loader.rsi and 45_70loadertube.rsi as placeholders.
+
+- type: entity
+  id: N14BaseSpeedLoader45
+  name: "speed loader (.45 ACP)"
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - SpeedLoader45
+  - type: SpeedLoader
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - N14CartridgePistol45
+    capacity: 6
+  - type: Sprite
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+
+- type: entity
+  id: N14SpeedLoader45
+  name: "speed loader (.45 ACP)"
+  parent: N14BaseSpeedLoader45
+  components:
+  - type: BallisticAmmoProvider
+    proto: N14CartridgePistol45
+  - type: Sprite
+    sprite: _Nuclear14/Objects/Weapons/Guns/Ammunition/Speedloaders/44loader.rsi
+    layers:
+      - state: base
+        map: [ "enum.GunVisualLayers.Base" ]
+      - state: base-6
+        map: [ "enum.GunVisualLayers.Mag" ]
+  - type: MagazineVisuals
+    magState: base
+    steps: 7
+    zeroVisible: false
+  - type: Appearance
+
+# Uses its own tag instead of the shared SpeedLoaderInternal so it cannot load other calibers.
+- type: entity
+  id: N14BaseSpeedLoaderTube45
+  name: "speed loader tube (.45 ACP)"
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - SpeedLoaderTube45
+  - type: SpeedLoader
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - N14CartridgePistol45
+    capacity: 10
+  - type: Sprite
+    sprite: _Nuclear14/Objects/Weapons/Guns/Ammunition/Speedloaders/45_70loadertube.rsi
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+
+- type: entity
+  id: N14SpeedLoaderTube45
+  name: "speed loader tube (.45 ACP)"
+  parent: N14BaseSpeedLoaderTube45
+  components:
+  - type: BallisticAmmoProvider
+    proto: N14CartridgePistol45
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: base-10
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: base
+    steps: 11
+    zeroVisible: false
+  - type: Appearance

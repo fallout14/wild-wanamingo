@@ -37,7 +37,7 @@
       id: N14WeaponLaserRifleWattz2000
       weight: 1
     - !type:EntSelector
-      id: N14WeaponLaserRifleWattz3000
+      id: N14WeaponLaserRifleWattz2000Extended
       weight: 1
     - !type:EntSelector
       id: N14WeaponLaserRifleRecharger

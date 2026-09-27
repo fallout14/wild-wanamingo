@@ -847,7 +847,7 @@
 
 - type: latheRecipe
   id: N14BPTribeWeaponSniper308Ross
-  result: N14WeaponSniper308Ross
+  result: N14WeaponSniper303Ross
   category: N14BlueprintTribeWeaponsT2
   completetime: 9
   requiresBlueprint: true

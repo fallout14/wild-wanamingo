@@ -316,4 +316,23 @@ N14WeaponRifleAk112pn: N14WeaponRifleAk112
 N14WeaponRifleM1Garand: N14WeaponRifle308Battle
 
 # Retired Grease Gun: the former 9mm SMG is now the .45 Auto SMG.
-N14WeaponSMGGreaseGun: N14WeaponSMG9mm
+N14WeaponSMGGreaseGun: N14WeaponSMG45GreaseGun
+
+# #Misfits Change - gun IDs renamed to match their caliber / identity
+N14WeaponSMG9mm: N14WeaponSMG45GreaseGun
+N14WeaponSMG45: N14WeaponSMG45Thompson
+N14WeaponRifle762Chinese: N14WeaponRifle556Chinese
+N14WeaponRifle762MarksmanChinese: N14WeaponRifle9mmMarksmanChinese
+N14WeaponRifle762Marksman: N14WeaponRifle556Marksman
+N14WeaponRifle762Rangemaster: N14WeaponRifle556Rangemaster
+N14WeaponRifle762Fal: N14WeaponRifle308Fal
+N14WeaponRifle762M14: N14WeaponRifle308M14
+N14WeaponRifleSKS: N14WeaponRifle308SVT40
+N14WeaponRifle556CarbineOld: N14WeaponRifle10mmSkirmisher
+N14WeaponRifle556Carbine: N14WeaponRifle5mmCarbine
+N14WeaponSniper308LeverRifle: N14WeaponSniper10mmLeverRifle
+N14WeaponSniper44LeverCarbine: N14WeaponSniper357TrailCarbine
+N14WeaponSniper308Ross: N14WeaponSniper303Ross
+N14WeaponPistolThatGun: N14WeaponPistol223
+N14WeaponLaserRifleWattz3000: N14WeaponLaserRifleWattz2000Extended
+N14WeaponRifleM7SpearScope: N14WeaponRifleM7Spear

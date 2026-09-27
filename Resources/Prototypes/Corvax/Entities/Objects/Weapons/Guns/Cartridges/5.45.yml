@@ -1,5 +1,6 @@
 - type: entity
   id: N14Cartridge545Rifle
+  suffix: Deprecated
   name: cartridge (5.45mm)
   parent: BaseCartridgeLightRifle
   components:

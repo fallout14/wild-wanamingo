@@ -129,7 +129,7 @@
 
 - type: latheRecipe
   id: BlueprintSmg9mmEighties
-  result: N14WeaponSMG9mm
+  result: N14WeaponSMG45GreaseGun
   category: N14BlueprintEightiesWeaponsT3
   requiresBlueprint: true
   applyMaterialDiscount: false
@@ -226,7 +226,7 @@
 
 - type: latheRecipe
   id: BlueprintAssaultCarbineEighties
-  result: N14WeaponRifle556Carbine
+  result: N14WeaponRifle5mmCarbine
   category: N14BlueprintEightiesWeaponsT5
   requiresBlueprint: true
   applyMaterialDiscount: false

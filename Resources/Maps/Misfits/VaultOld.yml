@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 03/29/2026 17:32:30
-  entityCount: 26514
+  entityCount: 26513
 maps:
 - 1
 grids:
@@ -182051,13 +182051,6 @@ entities:
     components:
     - type: Transform
       pos: 82.31577,24.506495
-      parent: 2
-- proto: UnknownShuttleHonki
-  entities:
-  - uid: 26353
-    components:
-    - type: Transform
-      pos: -73.596565,-45.390213
       parent: 2
 - proto: UraniumReinforcedWindowDirectional
   entities:

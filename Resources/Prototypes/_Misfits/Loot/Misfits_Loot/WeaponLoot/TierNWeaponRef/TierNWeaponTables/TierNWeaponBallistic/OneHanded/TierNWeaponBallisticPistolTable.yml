@@ -37,7 +37,7 @@
       id: N14WeaponPistol12mm
       weight: 7
     - !type:EntSelector
-      id: N14WeaponPistolThatGun
+      id: N14WeaponPistol223
       weight: 7
     - !type:EntSelector
       id: N14WeaponPistol10mmPipe

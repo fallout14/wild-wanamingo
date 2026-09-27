@@ -1,0 +1,34 @@
+# #Misfits Add - 7-round .357 magnum pistol magazine for the .357 automag.
+# Accepts .38 special too, since it carries the .357 tag.
+# TODO: dedicated sprite; reusing the .44 pistol magazine sprite for now.
+- type: entity
+  id: N14MagazinePistol357Automag
+  name: automag magazine (.357)
+  parent: BaseItem
+  components:
+  - type: Tag
+    tags:
+      - N14MagazinePistol357
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - N14CartridgePistol357
+    proto: N14CartridgePistol357
+    capacity: 7
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    netsync: false
+    sprite: _Nuclear14/Objects/Weapons/Guns/Ammunition/Magazines/44/pistolmag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance

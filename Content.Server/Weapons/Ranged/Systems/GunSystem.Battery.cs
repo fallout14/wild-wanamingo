@@ -21,6 +21,7 @@ public sealed partial class GunSystem
         SubscribeLocalEvent<HitscanBatteryAmmoProviderComponent, ComponentStartup>(OnBatteryStartup);
         SubscribeLocalEvent<HitscanBatteryAmmoProviderComponent, ChargeChangedEvent>(OnBatteryChargeChange);
         SubscribeLocalEvent<HitscanBatteryAmmoProviderComponent, DamageExamineEvent>(OnBatteryDamageExamine);
+        SubscribeLocalEvent<HitscanBatteryAmmoProviderComponent, BatteryFireCostChangedEvent>(OnBatteryFireCostChanged); // #Misfits Add
 
         // Projectile
         SubscribeLocalEvent<ProjectileBatteryAmmoProviderComponent, ComponentStartup>(OnBatteryStartup);
@@ -36,6 +37,12 @@ public sealed partial class GunSystem
     private void OnBatteryChargeChange(EntityUid uid, BatteryAmmoProviderComponent component, ref ChargeChangedEvent args)
     {
         UpdateShots(uid, component, args.Charge, args.MaxCharge);
+    }
+
+    // #Misfits Add - GunDamageBonus changed the cell's FireCost; refresh shot counts immediately
+    private void OnBatteryFireCostChanged(EntityUid uid, HitscanBatteryAmmoProviderComponent component, BatteryFireCostChangedEvent args)
+    {
+        UpdateShots(uid, component);
     }
 
     private void UpdateShots(EntityUid uid, BatteryAmmoProviderComponent component)
@@ -104,6 +111,15 @@ public sealed partial class GunSystem
             if (_container.TryGetContainingContainer(uid, out var container) &&
                 TryComp<GunDamageBonusComponent>(container.Owner, out var gunBonus))
             {
+                // Gun fires a projectile from this cell (plasma weapons) — show that projectile's damage
+                if (gunBonus.ProjectileProtoOverride is { } projProto &&
+                    ProtoManager.Index(projProto).Components
+                        .TryGetValue(_factory.GetComponentName(typeof(ProjectileComponent)), out var overrideProjectile))
+                {
+                    var p = (ProjectileComponent) overrideProjectile.Component;
+                    return p.Damage.Empty ? null : p.Damage;
+                }
+
                 var overrideProto = gunBonus.HitscanProtoOverride;
                 if (overrideProto != null)
                 {

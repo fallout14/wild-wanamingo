@@ -19,6 +19,13 @@ public sealed partial class GunDamageBonusComponent : Component
     public string? HitscanProtoOverride;
 
     /// <summary>
+    /// If set, a hitscan cell inserted into this gun fires this projectile instead of a beam.
+    /// Lets plasma weapons run on standard energy/microfusion cells.
+    /// </summary>
+    [DataField("projectileProtoOverride"), AutoNetworkedField]
+    public EntProtoId? ProjectileProtoOverride;
+
+    /// <summary>
     /// Flat bonus damage added on top of the hitscan's base damage.
     /// Applied server-side when the hitscan hits a target.
     /// </summary>

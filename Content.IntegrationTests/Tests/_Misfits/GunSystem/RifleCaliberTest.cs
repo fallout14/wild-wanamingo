@@ -15,7 +15,6 @@ public sealed class RifleCaliberTest
     [TestCase("Magazine556Rifle", "N14Cartridge556FMJ")]
     [TestCase("Magazine556Rifle", "N14Cartridge556AP")]
     [TestCase("Magazine556Rifle", "N14Cartridge223JHP")]
-    [TestCase("Magazine556Rifle", "N14Cartridge223Match")]
     public async Task SharedCalibersFitExistingMagazines(string magazineId, string cartridgeId)
     {
         await using var pair = await PoolManager.GetServerClient();
@@ -34,7 +33,7 @@ public sealed class RifleCaliberTest
     }
 
     [TestCase("N14WeaponSniperEnfield")]
-    [TestCase("N14WeaponSniper308Ross")]
+    [TestCase("N14WeaponSniper303Ross")]
     [TestCase("N14Magazine303Bren")]
     [TestCase("N14SpeedLoader303")]
     public async Task BritishProvidersLoadOnly303(string prototype)

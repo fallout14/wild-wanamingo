@@ -58,7 +58,7 @@
       id: N14WeaponSMG10mm
       weight: 7
     - !type:EntSelector
-      id: N14WeaponSMG9mm
+      id: N14WeaponSMG45GreaseGun
       weight: 7
     - !type:EntSelector
       id: N14WeaponSMGUzi
@@ -67,7 +67,7 @@
       id: N14WeaponSMGMP5SD
       weight: 2
     - !type:EntSelector
-      id: N14WeaponSMG45
+      id: N14WeaponSMG45Thompson
       weight: 6
     - !type:EntSelector
       id: N14WeaponSMG9mmCanadian
@@ -79,19 +79,19 @@
       id: N14WeaponSMGPPSh41
       weight: 4
     - !type:EntSelector
-      id: N14WeaponSMG9mm
+      id: N14WeaponSMG45GreaseGun
       weight: 4
     - !type:EntSelector
-      id: N14WeaponRifle556CarbineOld
+      id: N14WeaponRifle10mmSkirmisher
       weight: 6
     - !type:EntSelector
-      id: N14WeaponRifle556Carbine
+      id: N14WeaponRifle5mmCarbine
       weight: 6
     - !type:EntSelector
       id: N14WeaponRifle762SKS
       weight: 5
     - !type:EntSelector
-      id: N14WeaponRifleSKS
+      id: N14WeaponRifle308SVT40
       weight: 5
     - !type:EntSelector
       id: N14WeaponRifle308Battle
@@ -173,7 +173,5 @@
       id: N14WeaponShotgunBloodyStick
     - !type:EntSelector
       id: N14WeaponEnclaveDesertEagle44
-    - !type:EntSelector
-      id: N14Glock
     - !type:EntSelector
       id: N14WeaponPistol9mmSpy

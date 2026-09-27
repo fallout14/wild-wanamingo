@@ -111,3 +111,59 @@
       gun_chamber: !type:ContainerSlot
   - type: StaticPrice
     price: 100
+
+# #Misfits Add - .357 Automag: a long-slide magnum automatic. The Desert Eagle covers .44.
+- type: entity
+  name: .357 automag
+  parent: N14BaseWeaponPistol
+  id: N14WeaponPistol357Automag
+  description: A long-slide stainless magnum automatic chambered in .357. Heavy, accurate and hard-hitting, fed from 7-round magazines. Will also fire .38 special.
+  components:
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: Sprite
+    sprite: _Misfits/Objects/Weapons/Guns/Pistols/automag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _Misfits/Objects/Weapons/Guns/Pistols/automag.rsi
+  - type: GunDamageModifier
+    damage: # long barrel: .357 22 + 3 = 25 (4-hit crit)
+      types:
+        Piercing: 3
+  - type: Gun
+    fireRate: 2.5
+    minAngle: 0
+    maxAngle: 5
+    angleIncrease: 1.5
+    angleDecay: 6
+    soundGunshot:
+      collection: N14PistolDesertEagleGunshot
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: N14MagazinePistol357Automag
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - N14MagazinePistol357
+      gun_chamber:
+        name: Chamber
+        startingItem: N14CartridgePistol357
+        priority: 1
+        whitelist:
+          tags:
+            - N14CartridgePistol357
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: StaticPrice
+    price: 150

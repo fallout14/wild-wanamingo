@@ -62,7 +62,7 @@
         - id: N14BoxPlasticFilledWastelander
         - id: Magazine45SubMachineGun
         - id: Magazine45SubMachineGun
-        - id: N14WeaponSMG45
+        - id: N14WeaponSMG45Thompson
 
 - type: entity
   categories: [ HideSpawnMenu ]

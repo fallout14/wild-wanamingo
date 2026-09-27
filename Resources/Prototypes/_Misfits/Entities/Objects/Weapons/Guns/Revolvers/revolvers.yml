@@ -1,0 +1,129 @@
+# #Misfits Add - Snub .44 and the single-action revolvers.
+# Revolvers already get double the LUCK crit chance (SpecialCombatSystem), which is their edge over semi-autos.
+# Single actions load one round at a time: their whitelists leave out speed loaders.
+
+- type: entity
+  name: snub .44
+  parent: N14WeaponRevolverBase
+  id: N14WeaponRevolver44Snub
+  description: A magnum revolver with its barrel cut down to a stub. Easy to hide and brutal up close, but it loses its punch quickly with distance. Uses .44 magnum ammo.
+  components:
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: Sprite
+    sprite: _Misfits/Objects/Weapons/Guns/Revolvers/snub44.rsi
+  - type: Clothing
+    sprite: _Misfits/Objects/Weapons/Guns/Revolvers/snub44.rsi
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,0,1
+    - 0,0,0,1
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - N14Cartridge44Magnum
+        - SpeedLoader44
+    proto: N14Cartridge44Magnum
+  - type: Gun
+    minAngle: 2
+    maxAngle: 9
+    angleIncrease: 1.5
+    angleDecay: 5
+    fireRate: 2
+    soundGunshot:
+      collection: N14RevolverMagnunGunshot
+  - type: GunDamageFalloffOverride # short barrel
+    falloffStartTiles: 5
+    maxFalloffTiles: 10
+    minDamageMultiplier: 0.45
+  - type: StaticPrice
+    price: 60
+
+- type: entity
+  name: .357 single action revolver
+  parent: N14WeaponRevolverBase
+  id: N14WeaponRevolver357SingleAction
+  description: A classic single-action .357 magnum revolver, the kind every other wastelander seems to carry. Loaded one round at a time through the gate. Will also chamber .38 special.
+  components:
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: Sprite
+    sprite: _Misfits/Objects/Weapons/Guns/Revolvers/singleaction357.rsi
+  - type: Clothing
+    sprite: _Misfits/Objects/Weapons/Guns/Revolvers/singleaction357.rsi
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - N14CartridgePistol357
+    proto: N14CartridgePistol357
+  - type: Gun
+    minAngle: 1
+    maxAngle: 6
+    angleIncrease: 1
+    angleDecay: 5
+    fireRate: 2
+    soundGunshot:
+      collection: N14RevolverMagnunGunshot
+  - type: StaticPrice
+    price: 30
+
+- type: entity
+  name: .44 single action revolver
+  parent: N14WeaponRevolverBase
+  id: N14WeaponRevolver44SingleAction
+  description: An old 1851-pattern cap-and-ball revolver converted to fire .44 magnum cartridges. Slow to load one round at a time, but it still hits like a mule.
+  components:
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: Sprite
+    sprite: _Misfits/Objects/Weapons/Guns/Revolvers/singleaction44.rsi
+  - type: Clothing
+    sprite: _Misfits/Objects/Weapons/Guns/Revolvers/singleaction44.rsi
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - N14Cartridge44Magnum
+    proto: N14Cartridge44Magnum
+  - type: Gun
+    minAngle: 1
+    maxAngle: 7
+    angleIncrease: 1.5
+    angleDecay: 5
+    fireRate: 1.5
+    soundGunshot:
+      collection: N14RevolverMagnunGunshot
+  - type: StaticPrice
+    price: 40
+
+- type: entity
+  name: .45 single action revolver
+  parent: N14WeaponRevolverBase
+  id: N14WeaponRevolver45SingleAction
+  description: A plain single-action revolver chambered in .45 ACP. Cheap and dependable, loaded one round at a time.
+  components:
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: Sprite
+    sprite: _Misfits/Objects/Weapons/Guns/Revolvers/singleaction45.rsi
+  - type: Clothing
+    sprite: _Misfits/Objects/Weapons/Guns/Revolvers/singleaction45.rsi
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - N14CartridgePistol45
+    proto: N14CartridgePistol45
+  - type: Gun
+    minAngle: 1
+    maxAngle: 6
+    angleIncrease: 1
+    angleDecay: 5
+    fireRate: 2
+    soundGunshot:
+      collection: N14RevolverMagnunGunshot
+  - type: StaticPrice
+    price: 25

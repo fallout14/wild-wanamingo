@@ -23,3 +23,12 @@
     - !type:EntSelector
       id: N14WeaponRevolver44Tribal
       weight: 7
+    - !type:EntSelector
+      id: N14WeaponRevolver357Police # #Misfits Add - police pistol
+      weight: 5
+    - !type:EntSelector
+      id: N14WeaponRevolver44Snub # #Misfits Add - snub .44
+      weight: 5
+    - !type:EntSelector
+      id: N14WeaponRevolver44SingleAction # #Misfits Add - .44 single action
+      weight: 5
