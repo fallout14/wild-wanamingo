@@ -75,9 +75,7 @@
     solutions:
       matchstick:
         maxVol: 0
-        reagents:
-        - ReagentId: Sulfur
-          Quantity: 0 # Forge-Add-End
+        reagents: [] # Spent matches contain no extractable sulfur.
 
 - type: entity
   name: match box

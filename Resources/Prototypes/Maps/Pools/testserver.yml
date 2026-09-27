@@ -1,0 +1,7 @@
+# #Misfits Add - Map pool for the private test/mapping server. Select it with game.map_pool = "TestServerMapPool".
+- type: gameMapPool
+  id: TestServerMapPool
+  maps:
+  - Wendover
+  - Sunnyvale
+  - MercerIsland

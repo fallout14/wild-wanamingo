@@ -264,6 +264,9 @@
   suffix: Filled, Medical, Surgery, Mapping
   parent: N14ShelfMetalMeds
   components:
+  - type: Storage
+    grid:
+    - 0,0,9,7 # Taller than the base shelf so the loose surgical kit fits.
   - type: StorageFill
     contents:
     - id: BoxNitrileGloves
@@ -272,7 +275,14 @@
       amount: 3
     - id: SurgicalSterilanSpray
       amount: 2
-    - id: ClothingBackpackDuffelSurgeryFilled
+    # Surgical tools stocked loose: a Huge duffel can't be stored in a Huge-max shelf.
+    - id: Hemostat
+    - id: SawElectric
+    - id: Drill
+    - id: Cautery
+    - id: Retractor
+    - id: Scalpel
+    - id: BoneGel
     - id: Bloodpack
       amount: 3
     - id: Portafib

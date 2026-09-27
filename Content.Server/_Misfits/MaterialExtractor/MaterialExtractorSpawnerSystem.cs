@@ -107,7 +107,10 @@ public sealed partial class MaterialExtractorSpawnerSystem : EntitySystem
 
                 var extractor = Spawn(ExtractorPrototype, _map.GridTileToLocal(gridUid, grid, tile));
                 // Anchor round-start landmarks to satisfy the portable-generator start path.
-                _transform.AnchorEntity(extractor, Transform(extractor));
+                // The prototype may already anchor itself during spawning.
+                var extractorTransform = Transform(extractor);
+                if (!extractorTransform.Anchored)
+                    _transform.AnchorEntity((extractor, extractorTransform));
                 _log.Info($"Spawned material extractor at {tile} beside boulder {rockTile} on Wendover map {mapId}.");
                 break;
             }

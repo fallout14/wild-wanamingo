@@ -22,10 +22,7 @@
   - type: SolutionContainerManager
     solutions:
       motorbikeFuel:
-        maxVol: 200
-        reagents:
-        - ReagentId: WeldingFuel
-          Quantity: 0
+        maxVol: 200 # Starts empty; zero-quantity reagent entries fail solution validation.
   - type: ExaminableSolution
     solution: motorbikeFuel
   - type: Strap

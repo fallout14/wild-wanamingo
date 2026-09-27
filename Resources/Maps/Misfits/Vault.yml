@@ -221349,8 +221349,6 @@ entities:
     components:
     - type: Transform
       parent: 10933
-    - type: BallisticAmmoProvider
-      unspawnedCount: 12
     - type: Physics
       linearDamping: 0
       canCollide: False
