@@ -3,7 +3,7 @@ maps: [1]
 grids: [2]
 orphans: []
 nullspace: []
-tilemap: {"0": "Space", "1": "FloorCarpetRed", "2": "FloorCave", "3": "FloorDirtIndoors", "4": "FloorDirtNew", "5": "FloorMS13CarpetGreen", "6": "FloorMS13TileBlackFull", "7": "FloorMS13TileCheck", "8": "FloorMetalGrey", "9": "FloorMetalGreyDarkSolid", "10": "FloorMetalTunnel", "11": "FloorMetalTunnelRusty", "12": "FloorRubble", "13": "FloorWasteland", "14": "FloorWoodHouse", "15": "FloorWoodOak", "16": "FloorWoodOakBroken", "17": "N14FloorConcrete", "18": "N14FloorConcreteRoad", "19": "Plating", "20": "WaterShallow"}
+tilemap: {0: "Space", 1: "FloorCarpetRed", 2: "FloorCave", 3: "FloorDirtIndoors", 4: "FloorDirtNew", 5: "FloorMS13CarpetGreen", 6: "FloorMS13TileBlackFull", 7: "FloorMS13TileCheck", 8: "FloorMetalGrey", 9: "FloorMetalGreyDarkSolid", 10: "FloorMetalTunnel", 11: "FloorMetalTunnelRusty", 12: "FloorRubble", 13: "FloorWasteland", 14: "FloorWoodHouse", 15: "FloorWoodOak", 16: "FloorWoodOakBroken", 17: "N14FloorConcrete", 18: "N14FloorConcreteRoad", 19: "Plating", 20: "WaterShallow"}
 entities:
 - proto: ""
   entities:
