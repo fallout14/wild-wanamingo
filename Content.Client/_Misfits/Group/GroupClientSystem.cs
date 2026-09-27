@@ -69,6 +69,7 @@ public sealed class GroupClientSystem : EntitySystem
     public override void Shutdown()
     {
         base.Shutdown();
+        _conHost.UnregisterCommand("group");
         _window?.Close();
         _window = null;
         RemoveOverlay();

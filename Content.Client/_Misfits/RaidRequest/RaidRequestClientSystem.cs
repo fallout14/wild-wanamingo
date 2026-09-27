@@ -72,6 +72,7 @@ public sealed class RaidRequestClientSystem : EntitySystem
     public override void Shutdown()
     {
         base.Shutdown();
+        _conHost.UnregisterCommand("raid");
         _window?.Close();
         _window = null;
         _peerWindow?.Close();

@@ -33,13 +33,14 @@ To participate in development, join our [Discord](https://discord.gg/yXsJnq3FbU)
 ### Requirements
 
 * Git
-* .NET SDK 10.0.101
+* .NET SDK 10.0.100 or a later .NET 10 SDK (see `global.json`)
 
 ### Windows
 
 1. Clone the repository:
 ```sh
-git clone https://github.com/Misfit-Sanctuary/nuclear-14.git
+git clone --recurse-submodules https://github.com/fallout14/wild-wanamingo.git
+cd wild-wanamingo
 
 ```
 
@@ -69,13 +70,25 @@ Scripts/bat/runQuickAll.bat
 
 ### Linux
 
-Similar to Windows, but use the `.sh` scripts:
+Clone and enter the repository as above. On Debian or another Linux host:
 
 ```sh
-Scripts/sh/buildAllDebug.sh
-Scripts/sh/runQuickAll.sh
+git submodule update --init --recursive
+dotnet build SpaceStation14.slnx -c Debug
+dotnet run --project Content.Server --no-build
 
 ```
+
+For a desktop client built from the same checkout, run
+`dotnet run --project Content.Client --no-build` in a second terminal and connect
+to the server's address (use `localhost` when both run on the same computer).
+A headless Debian server only needs the server process; run the client on your
+desktop.
+
+Keep RobustToolbox at the revision recorded by this repository. Use
+`git submodule update --init --recursive` after pulling updates; do not use
+`--remote` to select an unrelated engine revision. Copying the repository into a
+new Git repository can lose submodule links and files matched by ignore rules.
 
 ### MacOS
 

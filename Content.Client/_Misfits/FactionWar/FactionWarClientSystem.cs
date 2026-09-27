@@ -92,6 +92,10 @@ public sealed class FactionWarClientSystem : EntitySystem
     public override void Shutdown()
     {
         base.Shutdown();
+        _conHost.UnregisterCommand("war");
+        _conHost.UnregisterCommand("warjoin");
+        _conHost.UnregisterCommand("forcewar");
+        _conHost.UnregisterCommand("surrender");
         _window?.Close();
         _window = null;
         _warJoinWindow?.Close();
