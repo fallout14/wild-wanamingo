@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Desert Rose 2 at https://github.com/DesertRose2/desertrose and https://github.com/Superspheres/desertrose-2",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "c_cracker"
+    },
+    {
+      "name": "k_cracker"
+    }
+  ]
+}

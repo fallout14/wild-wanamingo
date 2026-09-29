@@ -4,112 +4,95 @@
   id: N14BoxCardboardMREBox
   description: An old cardboard box for storing things.
   components:
+  # #Misfits Change - Desert Rose 2 ration sprites; the box shows open while someone is looking through it, like a toolbox.
   - type: Sprite
-    sprite: _Nuclear14/Objects/Misc/storage.rsi
-    state: c-ration
+    sprite: _Misfits/Objects/Consumable/Food/Rations/c_ration.rsi
+    layers:
+    - map: [ base ]
+      state: icon
+  - type: GenericVisualizer
+    visuals:
+      enum.StorageVisuals.Open:
+        base:
+          True: { state: icon-open }
+          False: { state: icon }
+  - type: Appearance
+  # #Misfits Change - Room for a full ration unit plus every condiment it can roll.
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,3,3
   # #Misfits Fix - Match disposable box cleanup behavior while preserving boxes stored in backpacks or containers.
   - type: TimedDespawn
     lifetime: 300
   - type: PauseTimedDespawnInEntityStorage
 
+# #Misfits Change - Contents modeled on the Vietnam-era C ration (Meal, Combat, Individual):
+# a meat unit, a bread unit of crackers, a fruit or dessert unit, and an accessory packet
+# with salt, pepper, sugar and condensed milk, a chance at each sauce, four cigarettes and matches.
 - type: entity
   name: C ration
   parent: N14BoxCardboardMREBox
   id: N14BoxCardboardMREBoxCFilled
+  description: A military C ration. The olive drab carton holds a meat unit, a bread unit, a dessert unit and an accessory packet.
   components:
     - type: StorageFill
       contents:
         - id: N14FoodTinC1
         - id: N14FoodTinC2
         - id: N14FoodTinC3
-        - id: FoodCondimentPacketHotsauce
-          prob: 0.2
-          orGroup: Condiment
-        - id: FoodCondimentPacketKetchup
-          prob: 0.2
-          orGroup: Condiment
-        - id: FoodCondimentPacketBbq
-          prob: 0.2
-          orGroup: Condiment
-        - id: FoodCondimentPacketHorseradish
-          prob: 0.2
-          orGroup: Condiment
-        - id: FoodCondimentPacketMustard
-          prob: 0.2
-          orGroup: Condiment
-        - id: DrinkWaterBottleFull
-          prob: 0.9
-          orGroup: Bottle
-        - id: DrinkBeerBottleFull
-          prob: 0.1
-          orGroup: Bottle
-        - id: N14CigaretteWinston
-          prob: 0.1
-          orGroup: Cigarette
-        - id: N14CigaretteSalem
-          prob: 0.1
-          orGroup: Cigarette
-        - id: N14CigaretteRepublic
-          prob: 0.1
-          orGroup: Cigarette
-        - id: N14CigaretteMarlboro
-          prob: 0.2
-          orGroup: Cigarette
-        - id: N14CigaretteKool
-          prob: 0.1
-          orGroup: Cigarette
+        - id: FoodCondimentPacketSalt
+        - id: FoodCondimentPacketPepper
+        - id: FoodCondimentPacketSugar
+        - id: N14FoodCondimentRationTubeHotsauce
+          prob: 0.5
+        - id: N14FoodCondimentRationTubeKetchup
+          prob: 0.5
+        - id: N14FoodCondimentRationTubeBbq
+          prob: 0.5
+        - id: N14FoodCondimentRationTubeMustard
+          prob: 0.5
+        - id: N14FoodCondimentRationTubeCondensedMilk
+        - id: N14CigarettePackRation
         - id: Matchbox
 
+# #Misfits Change - Contents modeled on the WWII K ration: a tinned meat or cheese unit,
+# K biscuits, a chocolate or fruit bar, salt, pepper, sugar and condensed milk, a chance at
+# each sauce, four cigarettes and matches.
 - type: entity
   name: K ration
   parent: N14BoxCardboardMREBox
   id: N14BoxCardboardMREBoxKFilled
+  description: A military K ration. The waxed carton holds a tinned main, biscuits, a sweet and an accessory packet.
   components:
+    - type: Sprite
+      sprite: _Misfits/Objects/Consumable/Food/Rations/k_ration.rsi
+    # #Misfits Change - Pocket-sized, like the K rations paratroopers stuffed into their pockets.
+    - type: Item
+      size: Small
+      shape:
+      - 0,0,1,1
     - type: StorageFill
       contents:
         - id: N14FoodTinK
         - id: N14FoodTinKCracker
+        - id: FoodSnackChocolate
+          prob: 0.7
+          orGroup: Sweet
         - id: N14FoodTinC3
-        - id: FoodCondimentPacketHotsauce
-          prob: 0.2
-          orGroup: Condiment
-        - id: FoodCondimentPacketKetchup
-          prob: 0.2
-          orGroup: Condiment
-        - id: FoodCondimentPacketBbq
-          prob: 0.2
-          orGroup: Condiment
-        - id: FoodCondimentPacketHorseradish
-          prob: 0.2
-          orGroup: Condiment
-        - id: FoodCondimentPacketMustard
-          prob: 0.2
-          orGroup: Condiment
-        - id: DrinkWaterBottleFull
-          prob: 0.6
-          orGroup: Bottle
-        - id: DrinkBeerBottleFull
-          prob: 0.2
-          orGroup: Bottle
-        - id: DrinkMREFlask
-          prob: 0.1
-          orGroup: Bottle
-        - id: DrinkSodaWaterBottleFull
-          prob: 0.1
-          orGroup: Bottle
-        - id: N14CigarettePackWinston
-          prob: 0.1
-          orGroup: Cigarette
-        - id: N14CigarettePackSalem
-          prob: 0.1
-          orGroup: Cigarette
-        - id: N14CigarettePackRepublics
-          prob: 0.1
-          orGroup: Cigarette
-        - id: N14CigarettePackMarlboro
-          prob: 0.2
-          orGroup: Cigarette
-        - id: N14CigarettePackKool
-          prob: 0.1
-          orGroup: Cigarette
-        - id: Lighter
+          prob: 0.3
+          orGroup: Sweet
+        - id: FoodCondimentPacketSalt
+        - id: FoodCondimentPacketPepper
+        - id: FoodCondimentPacketSugar
+        - id: N14FoodCondimentRationTubeHotsauce
+          prob: 0.5
+        - id: N14FoodCondimentRationTubeKetchup
+          prob: 0.5
+        - id: N14FoodCondimentRationTubeBbq
+          prob: 0.5
+        - id: N14FoodCondimentRationTubeMustard
+          prob: 0.5
+        - id: N14FoodCondimentRationTubeCondensedMilk
+        - id: N14CigarettePackRation
+        - id: Matchbox

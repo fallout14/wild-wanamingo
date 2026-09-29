@@ -20,3 +20,13 @@
   physicalDesc: reagent-physical-desc-clumpy
   color: "#9e785b"
   flavor: zilk
+
+# #Misfits Add - Sweetened condensed milk, issued in ration condiment tubes.
+- type: reagent
+  id: MisfitsMilkCondensed
+  parent: Milk
+  name: reagent-name-milk-condensed
+  desc: reagent-desc-milk-condensed
+  physicalDesc: reagent-physical-desc-thick
+  flavor: condensed-milk
+  color: "#efe4c6"

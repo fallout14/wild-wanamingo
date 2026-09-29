@@ -5,7 +5,7 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: _Nuclear14/Objects/Consumable/Food/Tins/crackers.rsi
+    sprite: _Misfits/Objects/Consumable/Food/Rations/crackers.rsi # #Misfits Change - Desert Rose 2 cracker sprites
     layers:
     - state: c_cracker
   - type: StaticPrice

@@ -175,11 +175,12 @@
       - id: DrinkMREFlask
       - id: FoodSnackNutribrick
       - id: FoodSnackMREBrownie
-      - id: FoodCondimentPacketKetchup
+      - id: N14FoodCondimentRationTubeKetchup # #Misfits Change - Ration condiment tube
+  # #Misfits Change - Desert Rose 2 MRE sprite
   - type: Sprite
+    sprite: _Misfits/Objects/Consumable/Food/Rations/mre.rsi
     layers:
-      - state: box_olive
-      - state: writing
+      - state: icon
 
 - type: entity
   parent: BoxHug

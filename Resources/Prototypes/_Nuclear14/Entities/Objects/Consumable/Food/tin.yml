@@ -12,9 +12,7 @@
     sprite: _Nuclear14/Objects/Consumable/Food/Tins/c_ration_1.rsi
   - type: FlavorProfile
     flavors:
-    - meaty
-    - salty
-    - cheap
+    - ration-corned-brahmin-hash # #Misfits Change
   - type: Food
     trash: 
     - N14FoodTinC1Trash
@@ -98,9 +96,7 @@
     sprite: _Nuclear14/Objects/Consumable/Food/Tins/c_ration_3.rsi
   - type: FlavorProfile
     flavors:
-    - sweet
-    - fruity
-    - cheap
+    - ration-baked-apples # #Misfits Change
   - type: Food
     trash: 
     - N14FoodTinC3Trash
@@ -140,9 +136,7 @@
     sprite: _Nuclear14/Objects/Consumable/Food/Tins/k_ration.rsi
   - type: FlavorProfile
     flavors:
-    - piquant
-    - meaty
-    - salty
+    - ration-bighorner-jalapenos # #Misfits Change
   - type: Food
     trash: 
     - N14FoodTinKTrash

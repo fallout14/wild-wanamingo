@@ -1,0 +1,147 @@
+# #Misfits Add - Military ration accessories: the 4-count ration cigarette pack and ration condiment tubes.
+
+# Ration cigarettes
+# Modeled on the 4-cigarette packs issued in WWII K-ration and C-ration accessory packets.
+
+- type: entity
+  parent: BaseStorageItem
+  id: N14CigarettePackRation
+  name: ration cigarettes
+  description: A small waxed-cardboard pack of four cigarettes, packed as part of a military combat ration.
+  components:
+  - type: Sprite
+    sprite: _Misfits/Objects/Consumable/Food/Rations/ration_cigarettes.rsi
+    layers:
+    - state: closed
+    - state: open-4
+      map: ["openLayer"]
+      visible: false
+  # Opaque counter: swaps the open sprite to show how many cigarettes remain.
+  # Storage hides it while closed, so the sealed pack shows unless someone is looking inside.
+  - type: ItemCounter
+    count:
+      tags: [Cigarette]
+    amount: 4
+    composite: false
+    baseLayer: openLayer
+    layerStates:
+    - open-0
+    - open-1
+    - open-2
+    - open-3
+    - open-4
+  - type: Appearance
+  - type: Item
+    sprite: _Nuclear14/Objects/Consumable/Smokeables/Packs/winston.rsi
+    size: Tiny
+    shape:
+    - 0,0,0,1
+  - type: Storage
+    grid:
+    - 0,0,1,1
+    whitelist:
+      tags:
+      - Cigarette
+  - type: StorageFill
+    contents:
+    - id: N14Cigarette
+      amount: 4
+  - type: Tag
+    tags:
+    - CigPack
+    - Trash
+  - type: PhysicalComposition
+    materialComposition:
+      Cardboard: 10
+  - type: StaticPrice
+    price: 3
+
+# Ration condiment tubes
+# Standard single-serving tube issued in ration packs.
+
+- type: entity
+  parent: BaseFoodCondimentPacket
+  id: N14FoodCondimentRationTubeBase
+  name: ration condiment tube
+  abstract: true
+  description: A small foil tube of condiment packed into a military combat ration.
+  components:
+  - type: Sprite
+    sprite: _Misfits/Objects/Consumable/Food/Rations/condiment_tube.rsi
+    layers:
+    - state: icon
+      map: ["enum.OpenableVisuals.Layer"]
+  - type: GenericVisualizer
+    visuals:
+      enum.OpenableVisuals.Opened:
+        enum.OpenableVisuals.Layer:
+          True: {state: "icon"}
+          False: {state: "icon"}
+  - type: Icon
+    sprite: _Misfits/Objects/Consumable/Food/Rations/condiment_tube.rsi
+    state: icon
+
+- type: entity
+  parent: N14FoodCondimentRationTubeBase
+  id: N14FoodCondimentRationTubeKetchup
+  name: ration ketchup
+  description: A small foil tube of ketchup packed into a military combat ration.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Ketchup
+          Quantity: 10
+
+- type: entity
+  parent: N14FoodCondimentRationTubeBase
+  id: N14FoodCondimentRationTubeMustard
+  name: ration mustard
+  description: A small foil tube of mustard packed into a military combat ration.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Mustard
+          Quantity: 10
+
+- type: entity
+  parent: N14FoodCondimentRationTubeBase
+  id: N14FoodCondimentRationTubeHotsauce
+  name: ration hot sauce
+  description: A small foil tube of hot sauce packed into a military combat ration.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Hotsauce
+          Quantity: 10
+
+- type: entity
+  parent: N14FoodCondimentRationTubeBase
+  id: N14FoodCondimentRationTubeBbq
+  name: ration BBQ sauce
+  description: A small foil tube of BBQ sauce packed into a military combat ration.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: BbqSauce
+          Quantity: 10
+
+- type: entity
+  parent: N14FoodCondimentRationTubeBase
+  id: N14FoodCondimentRationTubeCondensedMilk
+  name: ration condensed milk
+  description: A small foil tube of sweetened condensed milk packed into a military combat ration.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: MisfitsMilkCondensed
+          Quantity: 10

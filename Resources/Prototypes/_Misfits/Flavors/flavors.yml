@@ -9,3 +9,25 @@
   id: zilk
   flavorType: Complex
   description: flavor-complex-zilk
+
+# military ration flavors
+
+- type: flavor
+  id: ration-corned-brahmin-hash
+  flavorType: Complex
+  description: flavor-complex-ration-corned-brahmin-hash
+
+- type: flavor
+  id: ration-baked-apples
+  flavorType: Complex
+  description: flavor-complex-ration-baked-apples
+
+- type: flavor
+  id: ration-bighorner-jalapenos
+  flavorType: Complex
+  description: flavor-complex-ration-bighorner-jalapenos
+
+- type: flavor
+  id: condensed-milk
+  flavorType: Complex
+  description: flavor-complex-condensed-milk
