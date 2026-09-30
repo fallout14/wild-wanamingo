@@ -9,7 +9,7 @@
     drawdepth: Mobs
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
-      state: grey_brahdo_horizontal
+      state: base
       sprite: _Misfits/Mobs/Animals/brahdo.rsi
       scale: 0.9, 0.9
   - type: Fixtures
@@ -27,7 +27,7 @@
   - type: DamageStateVisuals
     states:
       Alive:
-        Base: grey_brahdo_horizontal
+        Base: base
       Dead:
         Base: base-dead
   - type: Stamina
