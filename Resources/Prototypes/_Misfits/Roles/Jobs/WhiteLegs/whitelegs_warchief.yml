@@ -47,7 +47,7 @@
     belt: ClothingBeltMilitary
   storage:
     back:
-    - N14BoxPlasticFilledWastelander
+    - MisfitsSurvivalKitWastelander
 
 - type: playTimeTracker
   id: WhiteLegsWarChief

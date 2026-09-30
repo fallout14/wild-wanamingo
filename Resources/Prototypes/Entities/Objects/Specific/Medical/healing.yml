@@ -74,8 +74,14 @@
   - type: Tag
     tags:
     - Ointment
+  # #Misfits Change - regenerative mesh uses the Misfits sprite, which changes as the stack is used up.
   - type: Sprite
-    state: regenerative-mesh
+    sprite: _Misfits/Objects/Specific/Medical/wound_care.rsi
+    state: regen_mesh_closed
+    layers:
+    - state: regen_mesh_closed
+      map: ["base"]
+  - type: Appearance
   - type: Item
     heldPrefix: regenerative-mesh
   - type: Healing
@@ -94,6 +100,20 @@
   - type: Stack
     stackType: RegenerativeMesh
     count: 10 # Forge-Change
+    # #Misfits Change - index = stack count (0-10): 1-3 mesh, 4-6 _2, 7-9 _3, full stack closed.
+    baseLayer: base
+    layerStates:
+    - regen_mesh
+    - regen_mesh
+    - regen_mesh
+    - regen_mesh
+    - regen_mesh_2
+    - regen_mesh_2
+    - regen_mesh_2
+    - regen_mesh_3
+    - regen_mesh_3
+    - regen_mesh_3
+    - regen_mesh_closed
   - type: StackPrice
     price: 3 # Corvax-Change
 
@@ -162,8 +182,14 @@
   - type: Tag
     tags:
     - Brutepack
+  # #Misfits Change - medicated suture uses the Misfits sprite, which changes as the stack is used up.
   - type: Sprite
-    state: medicated-suture
+    sprite: _Misfits/Objects/Specific/Medical/wound_care.rsi
+    state: suture_purp_3
+    layers:
+    - state: suture_purp_3
+      map: ["base"]
+  - type: Appearance
   - type: Item
     heldPrefix: medicated-suture
     storedRotation: -90
@@ -181,6 +207,20 @@
   - type: Stack
     stackType: MedicatedSuture
     count: 10 # Forge-Change
+    # #Misfits Change - index = stack count (0-10): 1-3 small, 4-6 _2, 7-10 _3.
+    baseLayer: base
+    layerStates:
+    - suture_purp
+    - suture_purp
+    - suture_purp
+    - suture_purp
+    - suture_purp_2
+    - suture_purp_2
+    - suture_purp_2
+    - suture_purp_3
+    - suture_purp_3
+    - suture_purp_3
+    - suture_purp_3
   - type: StackPrice
     price: 3 # Corvax-Change
 

@@ -47,7 +47,7 @@
     pocket1: N14TribalMachete
   storage:
     back:
-    - N14BoxPlasticFilledWastelander
+    - MisfitsSurvivalKitWastelander
 
 - type: playTimeTracker
   id: WhiteLegsBoneBreaker

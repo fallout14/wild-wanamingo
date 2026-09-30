@@ -47,7 +47,7 @@
   duffelbag: N14ClothingBackpackDuffelMayorFilled
   storage:
     back:
-    - N14BoxPlasticFilledWastelander
+    - MisfitsSurvivalKitWastelander
 
 - type: playTimeTracker
   id: Ambassador

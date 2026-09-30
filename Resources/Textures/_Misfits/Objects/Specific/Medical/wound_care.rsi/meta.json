@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made for Misfits, ported from an older revision of the game",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "suture"
+    },
+    {
+      "name": "suture_2"
+    },
+    {
+      "name": "suture_3"
+    },
+    {
+      "name": "suture_purp"
+    },
+    {
+      "name": "suture_purp_2"
+    },
+    {
+      "name": "suture_purp_3"
+    },
+    {
+      "name": "suture_imp"
+    },
+    {
+      "name": "suture_imp_2"
+    },
+    {
+      "name": "suture_imp_3"
+    },
+    {
+      "name": "regen_mesh"
+    },
+    {
+      "name": "regen_mesh_2"
+    },
+    {
+      "name": "regen_mesh_3"
+    },
+    {
+      "name": "regen_mesh_closed"
+    },
+    {
+      "name": "aloe_mesh"
+    },
+    {
+      "name": "aloe_mesh_2"
+    },
+    {
+      "name": "aloe_mesh_3"
+    },
+    {
+      "name": "aloe_mesh_closed"
+    }
+  ]
+}

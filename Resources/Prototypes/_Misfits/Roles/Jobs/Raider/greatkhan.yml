@@ -39,7 +39,7 @@
     belt: ClothingBeltMilitary
   storage:
     back:
-    - N14BoxPlasticFilledRaider
+    - MisfitsSurvivalKitRaider
     - MisfitsClothingHeadRedBandana
     belt:
     - Magazine45SubMachineGun

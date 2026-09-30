@@ -15,9 +15,9 @@
   - type: Mail
     contents:
     - id: PaperMailWastelandNoteSupplyBox
-    - id: N14BoxPlasticFilledWastelander
+    - id: MisfitsSurvivalKitWastelander
       orGroup: box
-    - id: N14BoxPlasticFilledMilitary
+    - id: MisfitsIFAKMilitary
       orGroup: box
     - id: N14BoxCardboardMREBoxCFilled
       orGroup: box

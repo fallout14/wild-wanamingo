@@ -54,7 +54,7 @@
   satchel: N14ClothingBackpackSatchelNCRFilled
   storage:
     back:
-      - N14BoxPlasticFilledMilitaryNCR
+      - MisfitsIFAKMilitary
       - N14PoliceBaton
       - N14MagazineShotgun20
 

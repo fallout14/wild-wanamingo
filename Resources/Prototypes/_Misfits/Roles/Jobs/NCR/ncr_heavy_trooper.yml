@@ -57,7 +57,7 @@
   satchel: N14ClothingBackpackSatchelNCRFilled
   storage: # gave them plastic box with shite in it
     back:
-    - N14BoxPlasticFilledMilitaryNCR
+    - MisfitsIFAKMilitary
 
 - type: playTimeTracker
   id: NCRHeavyTrooper

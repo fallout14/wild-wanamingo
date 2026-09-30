@@ -58,7 +58,7 @@
   duffelbag: N14ClothingBackpackDuffelMilitaryFilled
   storage:
     back:
-    - N14BoxPlasticFilledMilitary
+    - MisfitsIFAKMilitary
     - FlashlightSeclite
     - N14Binoculars
 

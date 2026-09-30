@@ -51,7 +51,7 @@
   duffelbag: N14ClothingBackpackDuffelMilitaryFilled
   storage: # Corvax-Change
     back:
-    - N14BoxPlasticFilledMilitary
+    - MisfitsIFAKMilitary
     - FlashlightSeclite
 
 - type: playTimeTracker

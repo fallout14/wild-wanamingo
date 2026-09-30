@@ -6,7 +6,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: N14BoxPlasticFilledWastelander
+      - id: MisfitsSurvivalKitWastelander
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -15,7 +15,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: N14BoxPlasticFilledWastelander
+      - id: MisfitsSurvivalKitWastelander
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -24,7 +24,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: N14BoxPlasticFilledWastelander
+      - id: MisfitsSurvivalKitWastelander
       - id: AcousticGuitarInstrument
       - id: SaxophoneInstrument
 
@@ -36,7 +36,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: N14BoxPlasticFilledWastelander
+      - id: MisfitsSurvivalKitWastelander
 
 # Military
 - type: entity
@@ -46,7 +46,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: N14BoxPlasticFilledMilitary
+      - id: MisfitsIFAKMilitary
 
 # NCR
 - type: entity
@@ -56,7 +56,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: N14BoxPlasticFilledMilitaryNCR
+      - id: MisfitsIFAKMilitary
 
 # Townsfolk
 - type: entity
@@ -66,7 +66,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: N14BoxPlasticFilledWastelander
+      - id: MisfitsSurvivalKitWastelander
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -75,7 +75,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: N14BoxPlasticFilledWastelander
+      - id: MisfitsSurvivalKitWastelander
       - id: N14CombatKnife
       - id: MagazineBox10mm
       - id: MagazineBox44
@@ -87,7 +87,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: N14BoxPlasticFilledWastelander
+      - id: MisfitsSurvivalKitWastelander
       # - id: N14CombatKnife
       # - id: MagazineBox44
       # - id: MagazineBox308

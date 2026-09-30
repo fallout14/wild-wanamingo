@@ -47,7 +47,7 @@
   satchel: N14ClothingBackpackSatchelNCRFilled
   storage: # Corvax-Change
     back:
-    - N14BoxPlasticFilledMilitaryNCR
+    - MisfitsIFAKMilitary
 
 - type: playTimeTracker
   id: NCRTrooper

@@ -52,7 +52,7 @@
   duffelbag: N14ClothingBackpackDuffelFilled
   storage: # Corvax-Change
     back:
-    - N14BoxPlasticFilledWastelander
+    - MisfitsSurvivalKitWastelander
 
 - type: playTimeTracker
   id: WastelandBartender

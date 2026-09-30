@@ -81,7 +81,7 @@
   innerClothingSkirt: N14ClothingUniformJumpsuitLegionnaireOther
   storage:
     back:
-    - N14BoxPlasticFilledMilitaryLegion
+    - MisfitsIFAKLegion
     - N14HealingPowder
     - N14HealingPowder
     - N14HealingPoultice

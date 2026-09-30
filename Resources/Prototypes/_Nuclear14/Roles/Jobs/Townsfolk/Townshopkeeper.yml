@@ -47,7 +47,7 @@
   duffelbag: N14ClothingBackpackDuffelFilled  # N14TODO: Trader bag
   storage: # Corvax-Change
     back:
-    - N14BoxPlasticFilledWastelander
+    - MisfitsSurvivalKitWastelander
 
 - type: playTimeTracker
   id: TownShopkeeper

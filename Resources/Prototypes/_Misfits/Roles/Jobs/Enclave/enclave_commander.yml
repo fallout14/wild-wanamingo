@@ -57,7 +57,7 @@
   duffelbag: N14ClothingBackpackDuffelMilitaryFilled
   storage:
     back:
-    - N14BoxPlasticFilledMilitary
+    - MisfitsIFAKMilitary
 
 - type: playTimeTracker
   id: EnclaveCommander

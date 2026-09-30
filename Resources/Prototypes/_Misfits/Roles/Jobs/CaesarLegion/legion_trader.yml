@@ -52,7 +52,7 @@
   duffelbag: N14ClothingBackpackDuffelFilled  # N14TODO: Trader bag
   storage:
     back:
-    - N14BoxPlasticFilledWastelander
+    - MisfitsSurvivalKitWastelander
 
 
 - type: playTimeTracker

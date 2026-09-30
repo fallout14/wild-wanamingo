@@ -1,0 +1,181 @@
+# #Misfits Add - extra suture and mesh tiers ported from the old revision.
+#
+# SUTURES (brute + bleeding), best to worst:
+#   medicated suture   (MedicatedSuture, upstream)  Brute -45, bleed -10
+#   suture             (MisfitsSuture)              Brute -30, bleed -8
+#   improvised suture  (MisfitsImprovisedSuture)    Brute -15, bleed -5, slight infection risk
+#
+# MESHES (burn), best to worst:
+#   regenerative mesh  (RegenerativeMesh, upstream) Heat/Cold/Shock/Caustic -15
+#   aloe mesh          (MisfitsAloeMesh)            Heat/Cold/Shock/Caustic -10
+#
+# layerStates index = stack count (0-10), so each sprite state covers a fixed range of uses.
+
+# ============================================================================
+# SUTURES
+# ============================================================================
+
+- type: entity
+  name: suture
+  description: A plain surgical suture. Closes wounds and treats blunt-force trauma, though not as well as a medicated one.
+  parent: MedicatedSuture
+  id: MisfitsSuture
+  suffix: Full
+  components:
+  - type: Sprite
+    sprite: _Misfits/Objects/Specific/Medical/wound_care.rsi
+    state: suture_3
+    layers:
+    - state: suture_3
+      map: ["base"]
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      groups:
+        Brute: -30
+    bloodlossModifier: -8
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+  - type: Stack
+    stackType: MisfitsSuture
+    count: 10
+    baseLayer: base
+    layerStates:
+    - suture
+    - suture
+    - suture
+    - suture
+    - suture_2
+    - suture_2
+    - suture_2
+    - suture_3
+    - suture_3
+    - suture_3
+    - suture_3
+  - type: StackPrice
+    price: 2
+
+- type: entity
+  id: MisfitsSuture1
+  parent: MisfitsSuture
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: MisfitsSuture
+    count: 1
+
+- type: entity
+  name: improvised suture
+  description: Thread and a bent needle. It'll close a wound, but it's hardly sterile.
+  parent: MedicatedSuture
+  id: MisfitsImprovisedSuture
+  suffix: Full
+  components:
+  - type: Sprite
+    sprite: _Misfits/Objects/Specific/Medical/wound_care.rsi
+    state: suture_imp_3
+    layers:
+    - state: suture_imp_3
+      map: ["base"]
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      groups:
+        Brute: -15
+      types:
+        Poison: 1 # not sterile, same as dirty gauze
+    bloodlossModifier: -5
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+  - type: Stack
+    stackType: MisfitsImprovisedSuture
+    count: 10
+    baseLayer: base
+    layerStates:
+    - suture_imp
+    - suture_imp
+    - suture_imp
+    - suture_imp
+    - suture_imp_2
+    - suture_imp_2
+    - suture_imp_2
+    - suture_imp_3
+    - suture_imp_3
+    - suture_imp_3
+    - suture_imp_3
+  - type: StackPrice
+    price: 1
+
+- type: entity
+  id: MisfitsImprovisedSuture1
+  parent: MisfitsImprovisedSuture
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: MisfitsImprovisedSuture
+    count: 1
+
+# ============================================================================
+# MESHES
+# ============================================================================
+
+# No crafting recipe yet.
+- type: entity
+  name: aloe regenerative mesh
+  description: A regenerative mesh soaked in aloe. Soothes burns, but not as well as the real thing.
+  parent: RegenerativeMesh
+  id: MisfitsAloeMesh
+  suffix: Full
+  components:
+  - type: Sprite
+    sprite: _Misfits/Objects/Specific/Medical/wound_care.rsi
+    state: aloe_mesh_closed
+    layers:
+    - state: aloe_mesh_closed
+      map: ["base"]
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Heat: -10
+        Cold: -10
+        Shock: -10
+        Caustic: -10
+    healingBeginSound:
+      path: "/Audio/Items/Medical/ointment_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/ointment_end.ogg"
+  - type: Stack
+    stackType: MisfitsAloeMesh
+    count: 10
+    baseLayer: base
+    layerStates:
+    - aloe_mesh
+    - aloe_mesh
+    - aloe_mesh
+    - aloe_mesh
+    - aloe_mesh_2
+    - aloe_mesh_2
+    - aloe_mesh_2
+    - aloe_mesh_3
+    - aloe_mesh_3
+    - aloe_mesh_3
+    - aloe_mesh_closed
+  - type: StackPrice
+    price: 2
+
+- type: entity
+  id: MisfitsAloeMesh1
+  parent: MisfitsAloeMesh
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: MisfitsAloeMesh
+    count: 1

@@ -70,7 +70,7 @@
   satchel: N14ClothingBackpackSatchelNCRFilled
   storage:
     back:
-    - N14BoxPlasticFilledMilitaryNCR
+    - MisfitsIFAKMilitary
 
 - type: playTimeTracker
   id: OSIChiefScientist
@@ -135,7 +135,7 @@
   satchel: N14ClothingBackpackSatchelNCRFilled
   storage:
     back:
-    - N14BoxPlasticFilledMilitaryNCR
+    - MisfitsIFAKMilitary
 
 - type: playTimeTracker
   id: OSIScientist
@@ -200,7 +200,7 @@
   satchel: N14ClothingBackpackSatchelNCRFilled
   storage:
     back:
-    - N14BoxPlasticFilledMilitaryNCR
+    - MisfitsIFAKMilitary
 
 - type: playTimeTracker
   id: OSIAssistant
@@ -261,7 +261,7 @@
   satchel: N14ClothingBackpackSatchelNCRFilled
   storage:
     back:
-    - N14BoxPlasticFilledMilitaryNCR
+    - MisfitsIFAKMilitary
 
 - type: playTimeTracker
   id: OSIAgent

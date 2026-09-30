@@ -47,7 +47,7 @@
   duffelbag: N14ClothingBackpackDuffelFilled
   storage: # Forge-Change
     back:
-    - N14BoxPlasticFilledWastelander
+    - MisfitsSurvivalKitWastelander
 
 - type: playTimeTracker
   id: TownMechanic

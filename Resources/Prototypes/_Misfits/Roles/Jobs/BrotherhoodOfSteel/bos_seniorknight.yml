@@ -49,7 +49,7 @@
   storage:
     back:
     - N14ClothingHeadHatBrotherhoodHelmetKnight
-    - N14BoxPlasticFilledMilitary
+    - MisfitsIFAKMilitary
 
 - type: playTimeTracker
   id: BoSMidKnight

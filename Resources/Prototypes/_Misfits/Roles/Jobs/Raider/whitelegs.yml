@@ -44,7 +44,7 @@
     belt: ClothingBeltMilitary
   storage:
     back:
-    - N14BoxPlasticFilledWastelander
+    - MisfitsSurvivalKitWastelander
     belt:
     - Magazine45SubMachineGun
     - Magazine45SubMachineGun

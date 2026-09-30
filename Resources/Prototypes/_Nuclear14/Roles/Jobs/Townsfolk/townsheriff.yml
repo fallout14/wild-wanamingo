@@ -49,7 +49,7 @@
     pocket2: Handcuffs
   storage: # Forge-Change
     back:
-    - N14BoxPlasticFilledWastelander
+    - MisfitsSurvivalKitWastelander
 
 - type: playTimeTracker
   id: TownSheriff

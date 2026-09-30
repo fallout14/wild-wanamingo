@@ -61,7 +61,7 @@
   duffelbag: N14ClothingBackpackDuffelMilitaryFilled
   storage: # Corvax-Change
     back:
-    - N14BoxPlasticFilledMilitary
+    - MisfitsIFAKMilitary
     - FlashlightSeclite
     - N14Binoculars # #Misfits Add - Veteran Rangers spawn with binoculars for scouting
 

@@ -101,7 +101,7 @@
     belt: MisfitsClothingBeltPaladinWebbing
   storage:
     back:
-    - N14BoxPlasticFilledMilitary
+    - MisfitsIFAKMilitary
     - GrenadeShrapnel # #Misfits Add - faction council Paladin ordnance
 
 - type: playTimeTracker

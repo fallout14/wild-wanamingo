@@ -55,7 +55,7 @@
     belt: ClothingBeltMilitary
   storage:
     back:
-    - N14BoxPlasticFilledMilitary
+    - MisfitsIFAKMilitary
 
 - type: playTimeTracker
   id: BoSMidScribe

@@ -56,7 +56,7 @@
   storage:
     back:
     - N14ClothingHeadHatBrotherhoodHelmetMK2
-    - N14BoxPlasticFilledMilitary
+    - MisfitsIFAKMilitary
     # #Cythisiax Added - absorbed the Lancer deck-crew role; airframe repair needs a welding tool.
     - Welder
 

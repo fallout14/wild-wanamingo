@@ -49,7 +49,7 @@
   duffelbag: N14ClothingBackpackDuffelFilled  # N14TODO: Doctors Bag
   storage: # Corvax-Change
     back:
-    - N14BoxPlasticFilledWastelander
+    - MisfitsSurvivalKitWastelander
 
 - type: playTimeTracker
   id: TownDoctor

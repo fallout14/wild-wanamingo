@@ -41,7 +41,7 @@
 - type: stack
   id: MedicatedSuture
   name: medicated-suture
-  icon: {sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: medicated-suture }
+  icon: {sprite: "/Textures/_Misfits/Objects/Specific/Medical/wound_care.rsi", state: suture_purp_3 } # #Misfits Change
   spawn: MedicatedSuture
   maxCount: 10
   itemSize: 1
@@ -49,7 +49,7 @@
 - type: stack
   id: RegenerativeMesh
   name: regenerative-mesh
-  icon: {sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: regenerative-mesh}
+  icon: {sprite: "/Textures/_Misfits/Objects/Specific/Medical/wound_care.rsi", state: regen_mesh_closed} # #Misfits Change
   spawn: RegenerativeMesh
   maxCount: 10
   itemSize: 1

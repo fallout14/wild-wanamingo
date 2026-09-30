@@ -54,7 +54,7 @@
   duffelbag: N14ClothingBackpackDuffelMilitaryFilled
   storage: # Corvax-Change
     back:
-    - N14BoxPlasticFilledMilitary
+    - MisfitsIFAKMilitary
     - N14Binoculars # #Misfits Add - Rangers spawn with binoculars for scouting
 
 - type: playTimeTracker

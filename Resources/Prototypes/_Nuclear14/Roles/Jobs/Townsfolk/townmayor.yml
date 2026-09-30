@@ -47,7 +47,7 @@
   duffelbag: N14ClothingBackpackDuffelMayorFilled
   storage: # Corvax-Change
     back:
-    - N14BoxPlasticFilledWastelander
+    - MisfitsSurvivalKitWastelander
 
 - type: playTimeTracker
   id: TownMayor

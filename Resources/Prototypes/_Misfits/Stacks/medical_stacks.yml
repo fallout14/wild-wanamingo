@@ -1,0 +1,25 @@
+# #Misfits Add - stacks for the extra suture and mesh tiers.
+
+- type: stack
+  id: MisfitsSuture
+  name: suture
+  icon: { sprite: "/Textures/_Misfits/Objects/Specific/Medical/wound_care.rsi", state: suture_3 }
+  spawn: MisfitsSuture
+  maxCount: 10
+  itemSize: 1
+
+- type: stack
+  id: MisfitsImprovisedSuture
+  name: improvised suture
+  icon: { sprite: "/Textures/_Misfits/Objects/Specific/Medical/wound_care.rsi", state: suture_imp_3 }
+  spawn: MisfitsImprovisedSuture
+  maxCount: 10
+  itemSize: 1
+
+- type: stack
+  id: MisfitsAloeMesh
+  name: aloe regenerative mesh
+  icon: { sprite: "/Textures/_Misfits/Objects/Specific/Medical/wound_care.rsi", state: aloe_mesh_closed }
+  spawn: MisfitsAloeMesh
+  maxCount: 10
+  itemSize: 1

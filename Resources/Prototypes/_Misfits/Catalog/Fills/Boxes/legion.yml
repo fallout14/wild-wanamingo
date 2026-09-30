@@ -1,3 +1,4 @@
+# #Misfits Change - the filled plastic boxes below are no longer given out; loadouts use the IFAK / survival kits in _Misfits/Entities/Objects/Specific/Medical/pocket_kits.yml.
 # #Misfits Change /Add/: Legion-specific military box with healing powder instead of stimpaks.
 # Legion ideology forbids advanced chems/stimpaks; tribal medicine (healing powder, poultice, hydra) is used instead.
 - type: entity

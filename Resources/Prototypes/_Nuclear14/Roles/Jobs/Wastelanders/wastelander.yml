@@ -93,7 +93,7 @@
   duffelbag: N14ClothingBackpackDuffelFilled
   storage: # Corvax-Change
     back:
-    - N14BoxPlasticFilledWastelander
+    - MisfitsSurvivalKitWastelander
 
 - type: startingGear
   id: WasterTraderGear
@@ -111,7 +111,7 @@
   duffelbag: N14ClothingBackpackDuffelFilled
   storage: # Corvax-Change
     back:
-    - N14BoxPlasticFilledWastelander
+    - MisfitsSurvivalKitWastelander
 
 - type: playTimeTracker
   id: Wastelander

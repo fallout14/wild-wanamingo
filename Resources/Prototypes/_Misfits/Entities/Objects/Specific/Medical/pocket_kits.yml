@@ -1,0 +1,144 @@
+# #Misfits Add - pocket-sized kits that replace the plastic loadout boxes.
+# All kits are Small so they fit in pockets, and none of them despawn.
+# Grid sizes: Small items take 2 cells, Tiny items (pills, flares, pill canisters) take 1.
+
+# Individual first aid kit: medical items only.
+- type: entity
+  name: individual first aid kit
+  description: An individual first aid kit. Small enough for a pocket, and only holds medical supplies.
+  parent: BaseStorageItem
+  id: MisfitsIFAK
+  components:
+  - type: Sprite
+    sprite: _Misfits/Objects/Specific/Medical/pocket_kits.rsi
+    state: ifak
+  - type: Item
+    size: Small
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,4,1
+    whitelist:
+      tags:
+      - Brutepack
+      - Bloodpack
+      - Gauze
+      - Ointment
+      - PillCanister
+      - N14Bandage
+      - N14TribalMedicine
+      components:
+      - Healing
+      - Hypospray
+      - Injector
+      - Pill
+
+# Advanced first aid kit: a bigger IFAK. Not given to anyone yet.
+# TODO: needs its own sprite, currently uses the IFAK one.
+- type: entity
+  name: advanced first aid kit
+  description: An advanced first aid kit. Still fits in a pocket, with room for proper field surgery supplies.
+  parent: MisfitsIFAK
+  id: MisfitsAFAK
+  components:
+  - type: Storage
+    grid:
+    - 0,0,6,1
+
+# Survival kit: holds anything small.
+- type: entity
+  name: survival kit
+  description: A pocket-sized tin for keeping a few essentials on hand.
+  parent: BaseStorageItem
+  id: MisfitsSurvivalKit
+  components:
+  - type: Sprite
+    sprite: _Misfits/Objects/Specific/Medical/pocket_kits.rsi
+    state: survivalkit
+  - type: Item
+    size: Small
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,4,1
+
+# ============================================================================
+# FILLED KITS
+# Small items are listed first so the fill packs cleanly.
+# ============================================================================
+
+# Replaces N14BoxPlasticFilledWastelander.
+- type: entity
+  parent: MisfitsSurvivalKit
+  id: MisfitsSurvivalKitWastelander
+  suffix: Wastelander
+  components:
+  - type: StorageFill
+    contents:
+    - id: N14DirtyGauze10
+    - id: N14Stimpak
+    - id: Flare
+    - id: N14RadXPill
+      amount: 3
+
+# Replaces N14BoxPlasticFilledRaider.
+- type: entity
+  parent: MisfitsSurvivalKit
+  id: MisfitsSurvivalKitRaider
+  suffix: Raider
+  components:
+  - type: StorageFill
+    contents:
+    - id: N14DirtyGauze10
+    - id: N14Med-X
+    - id: N14Jet
+      prob: 0.5
+      orGroup: RandomDrug
+    - id: N14StimpakDirty
+      prob: 0.5
+      orGroup: RandomDrug
+    - id: Flare
+    - id: N14RadXPill
+      amount: 3
+
+# Replaces N14BoxPlasticFilledMilitary and N14BoxPlasticFilledMilitaryNCR.
+- type: entity
+  parent: MisfitsIFAK
+  id: MisfitsIFAKMilitary
+  suffix: Military
+  components:
+  - type: StorageFill
+    contents:
+    - id: N14CleanGauze10
+    - id: N14Ointment10
+    - id: MisfitsSuture
+    - id: N14Stimpak
+    - id: N14RadXCanisterFilled
+
+# Replaces N14BoxPlasticFilledMilitaryLegion. Tribal medicine only, no stimpaks.
+- type: entity
+  parent: MisfitsIFAK
+  id: MisfitsIFAKLegion
+  suffix: Legion
+  components:
+  - type: StorageFill
+    contents:
+    - id: N14CleanGauze10
+    - id: N14HealingPowder
+    - id: N14HealingPoultice
+    - id: N14CleansingPowder
+
+- type: entity
+  parent: MisfitsAFAK
+  id: MisfitsAFAKFilled
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: N14SuperStimpak
+    - id: RegenerativeMesh
+    - id: MedicatedSuture
+    - id: N14CleanGauze10
+    - id: N14Med-X
+    - id: N14RadAwayInhaler
+    - id: N14RadXCanisterFilled

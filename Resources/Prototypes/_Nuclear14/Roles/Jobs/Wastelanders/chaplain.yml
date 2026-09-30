@@ -41,7 +41,7 @@
   duffelbag: N14ClothingBackpackDuffelChaplainFilled
   storage: # Forge-Change
     back:
-    - N14BoxPlasticFilledWastelander
+    - MisfitsSurvivalKitWastelander
     - Bible
 
 - type: playTimeTracker

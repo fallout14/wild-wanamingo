@@ -270,7 +270,7 @@
   duffelbag: N14ClothingBackpackDuffelFilled
   storage:
     back:
-    - N14BoxPlasticFilledWastelander
+    - MisfitsSurvivalKitWastelander
     - N14PoliceBaton
     - N14CombatKnife
     - MagazineBox10mm

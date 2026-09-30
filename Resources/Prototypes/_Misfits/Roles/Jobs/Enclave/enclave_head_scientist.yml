@@ -60,7 +60,7 @@
   satchel: N14ClothingBackpackSatchelMilitaryFilled
   storage:
     back:
-    - N14BoxPlasticFilledMilitary
+    - MisfitsIFAKMilitary
 
 - type: playTimeTracker
   id: EnclaveHeadScientist

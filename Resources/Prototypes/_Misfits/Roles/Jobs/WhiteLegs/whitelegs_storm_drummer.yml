@@ -46,7 +46,7 @@
     pocket1: N14TribalKnife
   storage:
     back:
-    - N14BoxPlasticFilledWastelander
+    - MisfitsSurvivalKitWastelander
 
 - type: playTimeTracker
   id: WhiteLegsStormDrummer
